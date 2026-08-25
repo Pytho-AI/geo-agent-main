@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Module1" script:language="StarBasic">
+Sub ConfigMilitaryNumbering
+    &apos; Modify the numbering rules of the CURRENT paragraph&apos;s list.
+    &apos; Must be called AFTER DefaultNumbering has been activated on a paragraph.
+    Dim oDoc As Object
+    Dim oText As Object
+    Dim oVC As Object
+    Dim oRules As Object
+
+    oDoc = ThisComponent
+    oText = oDoc.getText()
+    oVC = oDoc.getCurrentController().getViewCursor()
+
+    &apos; Get numbering rules from cursor&apos;s current paragraph
+    oRules = oVC.getPropertyValue(&quot;NumberingRules&quot;)
+    If IsNull(oRules) Or IsEmpty(oRules) Then Exit Sub
+
+    &apos; Level 0: 1. 2. 3.
+    Dim a0(4) As New com.sun.star.beans.PropertyValue
+    a0(0).Name = &quot;NumberingType&quot; : a0(0).Value = 4
+    a0(1).Name = &quot;Prefix&quot; : a0(1).Value = &quot;&quot;
+    a0(2).Name = &quot;Suffix&quot; : a0(2).Value = &quot;.&quot;
+    a0(3).Name = &quot;ParentNumbering&quot; : a0(3).Value = 0
+    a0(4).Name = &quot;StartWith&quot; : a0(4).Value = 1
+    oRules.replaceByIndex 0, a0()
+
+    &apos; Level 1: a. b. c.
+    Dim a1(4) As New com.sun.star.beans.PropertyValue
+    a1(0).Name = &quot;NumberingType&quot; : a1(0).Value = 1
+    a1(1).Name = &quot;Prefix&quot; : a1(1).Value = &quot;&quot;
+    a1(2).Name = &quot;Suffix&quot; : a1(2).Value = &quot;.&quot;
+    a1(3).Name = &quot;ParentNumbering&quot; : a1(3).Value = 0
+    a1(4).Name = &quot;StartWith&quot; : a1(4).Value = 1
+    oRules.replaceByIndex 1, a1()
+
+    &apos; Level 2: (1) (2) (3)
+    Dim a2(4) As New com.sun.star.beans.PropertyValue
+    a2(0).Name = &quot;NumberingType&quot; : a2(0).Value = 4
+    a2(1).Name = &quot;Prefix&quot; : a2(1).Value = &quot;(&quot;
+    a2(2).Name = &quot;Suffix&quot; : a2(2).Value = &quot;)&quot;
+    a2(3).Name = &quot;ParentNumbering&quot; : a2(3).Value = 0
+    a2(4).Name = &quot;StartWith&quot; : a2(4).Value = 1
+    oRules.replaceByIndex 2, a2()
+
+    &apos; Level 3: (a) (b) (c)
+    Dim a3(4) As New com.sun.star.beans.PropertyValue
+    a3(0).Name = &quot;NumberingType&quot; : a3(0).Value = 1
+    a3(1).Name = &quot;Prefix&quot; : a3(1).Value = &quot;(&quot;
+    a3(2).Name = &quot;Suffix&quot; : a3(2).Value = &quot;)&quot;
+    a3(3).Name = &quot;ParentNumbering&quot; : a3(3).Value = 0
+    a3(4).Name = &quot;StartWith&quot; : a3(4).Value = 1
+    oRules.replaceByIndex 3, a3()
+
+    &apos; Apply back to the view cursor (modifies the list this paragraph belongs to)
+    oVC.setPropertyValue &quot;NumberingRules&quot;, oRules
+End Sub
+</script:module>

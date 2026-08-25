@@ -1,0 +1,195 @@
+/* SHELL THEME VARIABLES — copied from pytho-vite
+   packages/frontend/src/index.css so an embedded geo-agent surface uses
+   the SAME tokens as the page around it, in BOTH themes. The host
+   declares the theme (?theme= on load, geoagent.theme on toggle) and
+   utils/theme.js applies the class. NEVER hardcode a colour in an
+   embedded surface — read var(--color-*), or light mode ends up white
+   text on a white background. */
+
+:root,
+.light {
+  font-family: "Source Sans 3", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Brand colors - Light mode (lighter, softer blue) */
+  --color-brand-50: rgb(239, 246, 255);
+  --color-brand-100: rgb(219, 234, 254);
+  --color-brand-200: rgb(191, 219, 254);
+  --color-brand-300: rgb(147, 197, 253);
+  --color-brand-400: rgb(96, 165, 250);
+  --color-brand-500: rgb(96, 165, 250);
+  --color-brand-600: rgb(147, 197, 253);
+  --color-brand-700: rgb(96, 165, 250);
+  --color-brand-800: rgb(59, 130, 246);
+  --color-brand-900: rgb(37, 99, 235);
+
+  /* Neutral colors - Light mode (inverted from dark) */
+  --color-neutral-0: rgb(255, 255, 255);
+  --color-neutral-50: rgb(248, 250, 252);
+  --color-neutral-100: rgb(241, 245, 249);
+  --color-neutral-200: rgb(226, 232, 240);
+  --color-neutral-300: rgb(180, 190, 205);
+  --color-neutral-400: rgb(50, 60, 80);
+  --color-neutral-500: rgb(30, 41, 59);
+  --color-neutral-600: rgb(15, 23, 42);
+  --color-neutral-700: rgb(0, 0, 0);
+  --color-neutral-800: rgb(0, 0, 0);
+  --color-neutral-900: rgb(0, 0, 0);
+  --color-neutral-950: rgb(0, 0, 0);
+
+  /* Error colors - Light mode */
+  --color-error-50: rgb(254, 242, 242);
+  --color-error-100: rgb(254, 226, 226);
+  --color-error-200: rgb(254, 202, 202);
+  --color-error-300: rgb(252, 165, 165);
+  --color-error-400: rgb(248, 113, 113);
+  --color-error-500: rgb(239, 68, 68);
+  --color-error-600: rgb(220, 38, 38);
+  --color-error-700: rgb(185, 28, 28);
+  --color-error-800: rgb(153, 27, 27);
+  --color-error-900: rgb(127, 29, 29);
+
+  /* Warning colors - Light mode */
+  --color-warning-50: rgb(255, 251, 235);
+  --color-warning-100: rgb(254, 243, 199);
+  --color-warning-200: rgb(253, 230, 138);
+  --color-warning-300: rgb(252, 211, 77);
+  --color-warning-400: rgb(251, 191, 36);
+  --color-warning-500: rgb(245, 158, 11);
+  --color-warning-600: rgb(217, 119, 6);
+  --color-warning-700: rgb(180, 83, 9);
+  --color-warning-800: rgb(146, 64, 14);
+  --color-warning-900: rgb(120, 53, 15);
+
+  /* Success colors - Light mode */
+  --color-success-50: rgb(240, 253, 244);
+  --color-success-100: rgb(220, 252, 231);
+  --color-success-200: rgb(187, 247, 208);
+  --color-success-300: rgb(134, 239, 172);
+  --color-success-400: rgb(34, 150, 80);
+  --color-success-500: rgb(18, 120, 58);
+  --color-success-600: rgb(12, 90, 42);
+  --color-success-700: rgb(5, 60, 28);
+  --color-success-800: rgb(2, 45, 20);
+  --color-success-900: rgb(0, 30, 12);
+
+  /* Semantic color tokens - Light mode */
+  --color-brand-primary: rgb(59, 130, 246);
+  --color-default-font: rgb(0, 0, 0);
+  --color-subtext: rgb(30, 41, 59);
+  --color-neutral-border: rgb(203, 213, 225);
+  --color-black: rgb(0, 0, 0);
+  --color-default-background: rgb(255, 255, 255);
+  --color-link: rgb(59, 130, 246);
+  --color-link-hover: rgb(37, 99, 235);
+
+  /* Shadows - Light mode */
+  --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --shadow-default: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 4px 16px -2px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0px 12px 32px -4px rgba(0, 0, 0, 0.12), 0px 4px 8px -2px rgba(0, 0, 0, 0.08);
+  --shadow-overlay: 0px 12px 32px -4px rgba(0, 0, 0, 0.15), 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+
+  /* Set default colors */
+  color: var(--color-default-font);
+  background-color: var(--color-default-background);
+}
+
+.dark {
+  color-scheme: dark;
+
+  /* Brand colors - Dark mode */
+  --color-brand-50: rgb(16, 36, 62);
+  --color-brand-100: rgb(16, 42, 76);
+  --color-brand-200: rgb(15, 48, 88);
+  --color-brand-300: rgb(13, 56, 104);
+  --color-brand-400: rgb(10, 68, 129);
+  --color-brand-500: rgb(9, 84, 165);
+  --color-brand-600: rgb(0, 145, 255);
+  --color-brand-700: rgb(54, 158, 255);
+  --color-brand-800: rgb(82, 169, 255);
+  --color-brand-900: rgb(234, 246, 255);
+
+  /* Neutral colors - Dark mode */
+  --color-neutral-0: rgb(2, 6, 23);
+  --color-neutral-50: rgb(15, 23, 42);
+  --color-neutral-100: rgb(30, 41, 59);
+  --color-neutral-200: rgb(51, 65, 85);
+  --color-neutral-300: rgb(71, 85, 105);
+  --color-neutral-400: rgb(100, 116, 139);
+  --color-neutral-500: rgb(148, 163, 184);
+  --color-neutral-600: rgb(203, 213, 225);
+  --color-neutral-700: rgb(226, 232, 240);
+  --color-neutral-800: rgb(241, 245, 249);
+  --color-neutral-900: rgb(248, 250, 252);
+  --color-neutral-950: rgb(255, 255, 255);
+
+  /* Error colors - Dark mode */
+  --color-error-50: rgb(60, 24, 39);
+  --color-error-100: rgb(72, 26, 45);
+  --color-error-200: rgb(84, 27, 51);
+  --color-error-300: rgb(100, 29, 59);
+  --color-error-400: rgb(128, 29, 69);
+  --color-error-500: rgb(174, 25, 85);
+  --color-error-600: rgb(233, 61, 130);
+  --color-error-700: rgb(240, 79, 136);
+  --color-error-800: rgb(247, 97, 144);
+  --color-error-900: rgb(254, 236, 244);
+
+  /* Warning colors - Dark mode */
+  --color-warning-50: rgb(52, 28, 0);
+  --color-warning-100: rgb(63, 34, 0);
+  --color-warning-200: rgb(74, 41, 0);
+  --color-warning-300: rgb(87, 51, 0);
+  --color-warning-400: rgb(105, 63, 5);
+  --color-warning-500: rgb(130, 78, 0);
+  --color-warning-600: rgb(255, 178, 36);
+  --color-warning-700: rgb(255, 203, 71);
+  --color-warning-800: rgb(241, 161, 13);
+  --color-warning-900: rgb(254, 243, 221);
+
+  /* Success colors - Dark mode */
+  --color-success-50: rgb(15, 41, 30);
+  --color-success-100: rgb(17, 49, 35);
+  --color-success-200: rgb(19, 57, 41);
+  --color-success-300: rgb(22, 68, 48);
+  --color-success-400: rgb(27, 84, 58);
+  --color-success-500: rgb(35, 110, 74);
+  --color-success-600: rgb(48, 164, 108);
+  --color-success-700: rgb(60, 177, 121);
+  --color-success-800: rgb(76, 195, 138);
+  --color-success-900: rgb(229, 251, 235);
+
+  /* Semantic color tokens - Dark mode */
+  --color-brand-primary: rgb(0, 145, 255);
+  --color-default-font: rgb(248, 250, 252);
+  --color-subtext: rgb(148, 163, 184);
+  --color-neutral-border: rgb(51, 65, 85);
+  --color-black: rgb(2, 6, 23);
+  --color-default-background: rgb(2, 6, 23);
+  --color-link: rgb(96, 165, 250);
+  --color-link-hover: rgb(147, 197, 253);
+
+  /* Shadows - Dark mode (subtle for dark backgrounds) */
+  --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --shadow-default: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0px 4px 16px -2px rgba(0, 0, 0, 0.4), 0px 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0px 12px 32px -4px rgba(0, 0, 0, 0.5), 0px 4px 8px -2px rgba(0, 0, 0, 0.4);
+  --shadow-overlay: 0px 12px 32px -4px rgba(0, 0, 0, 0.6), 0px 4px 8px -2px rgba(0, 0, 0, 0.5);
+
+  /* Set default colors */
+  color: var(--color-default-font);
+  background-color: var(--color-default-background);
+}
+
+/* Embedded surfaces paint the shell's page background in either theme. */
+html, body {
+  background-color: var(--color-default-background);
+  color: var(--color-default-font);
+}

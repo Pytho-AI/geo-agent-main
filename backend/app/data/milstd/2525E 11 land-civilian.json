@@ -1,0 +1,260 @@
+{
+ "symbolset": "11",
+ "name": "Land Civilian",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "code": "110000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Environmental Protection",
+   "code": "110100",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Government Organization",
+   "code": "110200",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Individual",
+   "code": "110300",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Organization or Group",
+   "code": "110400",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Killing Victim",
+   "code": "110500",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Killing Victims",
+   "code": "110600",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Victim of an Attempted Crime",
+   "code": "110700",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Spy",
+   "code": "110800",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Composite Loss",
+   "code": "110900",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Emergency Medical Operation",
+   "code": "111000",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Murder Victims",
+   "category": "",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "08",
+   "remarks": ""
+  },
+  {
+   "modifier": "Displaced Person(s), Refugee(s) and Evacuee(s)",
+   "category": "",
+   "code": "09",
+   "remarks": ""
+  },
+  {
+   "modifier": "Foreign Fighter(s)",
+   "category": "",
+   "code": "10",
+   "remarks": ""
+  },
+  {
+   "modifier": "Gang Member or Gang",
+   "category": "",
+   "code": "11",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "12",
+   "remarks": ""
+  },
+  {
+   "modifier": "Leader or Leadership",
+   "category": "",
+   "code": "13",
+   "remarks": ""
+  },
+  {
+   "modifier": "Nongovernmental Organization Member or Nongovernmental Organization",
+   "category": "",
+   "code": "14",
+   "remarks": ""
+  },
+  {
+   "modifier": "Unwilling/Coerced Recruit",
+   "category": "",
+   "code": "15",
+   "remarks": ""
+  },
+  {
+   "modifier": "Willing Recruit",
+   "category": "",
+   "code": "16",
+   "remarks": ""
+  },
+  {
+   "modifier": "Religious or Religious Organization",
+   "category": "",
+   "code": "17",
+   "remarks": ""
+  },
+  {
+   "modifier": "Targeted Individual or Organization",
+   "category": "",
+   "code": "18",
+   "remarks": ""
+  },
+  {
+   "modifier": "Terrorist or Terrorist Organization",
+   "category": "",
+   "code": "19",
+   "remarks": ""
+  },
+  {
+   "modifier": "Speaker",
+   "category": "",
+   "code": "20",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "21",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "22",
+   "remarks": ""
+  },
+  {
+   "modifier": "Other",
+   "category": "",
+   "code": "23",
+   "remarks": ""
+  },
+  {
+   "modifier": "Loot",
+   "category": "",
+   "code": "24",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "25",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "26",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Leader or Leadership",
+   "category": "Organization",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "02",
+   "remarks": ""
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+  "version": 8,
+  "name": "Default — SITEMP-doctrine bland tactical basemap (major roads + hydrology + boundaries + hillshade)",
+  "metadata": {
+    "comment": "Server-rendered general-purpose basemap. Faithful port of omt-sitemp.json from OpenMapTiles v3.11 schema to Protomaps basemaps schema. INTENTIONALLY BLAND (SITEMP doctrine) so overlaid tactical graphics (mil units, EAs, AAs, control measures) read cleanly against it. NO landcover fills. NO minor/service roads. Just background + water + one road tier + boundaries + hillshade. Filter mapping: OMT waterway.class=river,canal -> Protomaps water.kind=river; OMT transportation.class=motorway,trunk -> Protomaps roads.kind=highway (Protomaps default schema collapses motorway/trunk/primary into a unified highway class). Hillshade layer added referencing terrain-dem (Mapterhorn Terrarium DEM via tiles: [...] pattern), per unification plan doc."
+  },
+  "center": [0, 0],
+  "zoom": 1,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "basemap": {
+      "type": "vector",
+      "url": "mbtiles://basemap"
+    },
+    "terrain-dem": {
+      "type": "raster-dem",
+      "tiles": ["https://tiles.mapterhorn.com/{z}/{x}/{y}.webp"],
+      "encoding": "terrarium",
+      "tileSize": 512,
+      "minzoom": 0,
+      "maxzoom": 12
+    }
+  },
+  "glyphs": "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#f8f4f0"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "hsl(210, 67%, 85%)"
+      }
+    },
+    {
+      "id": "waterway-river",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", ["get", "kind"], "river"],
+      "minzoom": 9,
+      "paint": {
+        "line-color": "#a0c8f0",
+        "line-width": [
+          "interpolate", ["exponential", 1.2], ["zoom"],
+          9, 0.4,
+          10, 0.8,
+          20, 6
+        ]
+      }
+    },
+    {
+      "id": "highway-casing",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["!", ["has", "is_tunnel"]],
+        ["!", ["has", "is_bridge"]]
+      ],
+      "minzoom": 4,
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#e9ac77",
+        "line-width": [
+          "interpolate", ["exponential", 1.2], ["zoom"],
+          4, 0,
+          5, 0.4,
+          6, 0.6,
+          7, 1.5,
+          20, 22
+        ]
+      }
+    },
+    {
+      "id": "highway",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["!", ["has", "is_tunnel"]],
+        ["!", ["has", "is_bridge"]]
+      ],
+      "minzoom": 5,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#fea",
+        "line-width": [
+          "interpolate", ["exponential", 1.2], ["zoom"],
+          5, 0,
+          6.5, 0,
+          7, 0.5,
+          20, 18
+        ]
+      }
+    },
+    {
+      "id": "bridge-highway-casing",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["has", "is_bridge"]
+      ],
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#e9ac77",
+        "line-width": [
+          "interpolate", ["exponential", 1.2], ["zoom"],
+          5, 0.4,
+          6, 0.6,
+          7, 1.5,
+          20, 26
+        ]
+      }
+    },
+    {
+      "id": "bridge-highway",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["has", "is_bridge"]
+      ],
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#fc8",
+        "line-width": [
+          "interpolate", ["exponential", 1.2], ["zoom"],
+          6.5, 0,
+          7, 0.5,
+          20, 18
+        ]
+      }
+    },
+    {
+      "id": "boundary-country",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundaries",
+      "filter": ["<=", ["get", "kind_detail"], 2],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "hsl(248, 7%, 66%)",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          0, 0.6,
+          4, 1.4,
+          5, 2,
+          12, 8
+        ]
+      }
+    },
+    {
+      "id": "boundary-admin1",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [">", ["get", "kind_detail"], 2],
+        ["<=", ["get", "kind_detail"], 4]
+      ],
+      "minzoom": 4,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "hsl(248, 7%, 76%)",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          0, 0.4,
+          5, 1.4,
+          12, 4
+        ]
+      }
+    },
+    {
+      "id": "hillshade",
+      "type": "hillshade",
+      "source": "terrain-dem",
+      "paint": {
+        "hillshade-exaggeration": 0.4,
+        "hillshade-illumination-direction": 315,
+        "hillshade-shadow-color": "#5a4f3a",
+        "hillshade-highlight-color": "#ffffff",
+        "hillshade-accent-color": "#8a7a5a"
+      }
+    }
+  ]
+}

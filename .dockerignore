@@ -1,0 +1,7 @@
+# The full-resolution ODIN image set rides the bind-mounted checkout
+# (provisioned by rsync), never the image — 1.8GB of JPEGs would ride
+# every build context and image transfer otherwise.
+backend/app/data/weg_images/odin/
+frontend/node_modules/
+frontend/dist/
+**/__pycache__/

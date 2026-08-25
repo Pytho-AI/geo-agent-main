@@ -1,0 +1,774 @@
+{
+ "symbolset": "27",
+ "name": "Dismounted Individual",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "code": "110000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Military",
+   "entity type": "{Disused}",
+   "code": "110100",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "code": "110200",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Explosive Ordnance Disposal",
+   "code": "110201",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Field Artillery Observer",
+   "code": "110202",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Joint Fire Support",
+   "code": "110203",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Liaison",
+   "code": "110204",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Messenger",
+   "code": "110205",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Military Police",
+   "code": "110206",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Observer",
+   "code": "110207",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Security",
+   "code": "110208",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Sniper",
+   "code": "110209",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Special Operation Forces",
+   "code": "110210",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Designated Marksman",
+   "code": "110211",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Medic",
+   "code": "110212",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Signaler",
+   "code": "110213",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Reconnaissance",
+   "code": "110214",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Infantry",
+   "code": "110215",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Close Protection",
+   "code": "110216",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Crowd and Riot Control",
+   "code": "110217",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "SWAT",
+   "code": "110218",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Demolition",
+   "code": "110219",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Commander  (CDR)",
+   "code": "110220",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Activity/Task",
+   "entity subtype": "Second In Command  (SIC)",
+   "code": "110221",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "code": "110300",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Rifle",
+   "code": "110301",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Single Shot Rifle",
+   "code": "110302",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Semiautomatic Rifle",
+   "code": "110303",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Automatic Rifle",
+   "code": "110304",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Machine Gun",
+   "code": "110305",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Machine Gun - Light",
+   "code": "110306",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Machine Gun - Medium",
+   "code": "110307",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Machine Gun - Heavy",
+   "code": "110308",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Grenade Launcher",
+   "code": "110309",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Grenade Launcher - Light",
+   "code": "110310",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Grenade Launcher - Medium",
+   "code": "110311",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Grenade Launcher - Heavy",
+   "code": "110312",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Flame Thrower",
+   "code": "110313",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Mortar",
+   "code": "110314",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Single Rocket Launcher",
+   "code": "110315",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Lethal Weapons",
+   "entity subtype": "Antitank Rocket Launcher",
+   "code": "110316",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Non-Lethal Weapons",
+   "code": "110400",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Military",
+   "entity type": "Non-Lethal Weapons",
+   "entity subtype": "Non-Lethal Weapon",
+   "code": "110401",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Non-Lethal Weapons",
+   "entity subtype": "Non-Lethal Grenade Launcher",
+   "code": "110402",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Non-Lethal Weapons",
+   "entity subtype": "Taser",
+   "code": "110403",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "08",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "09",
+   "remarks": ""
+  },
+  {
+   "modifier": "Field Artillery Observer",
+   "category": "",
+   "code": "11",
+   "remarks": ""
+  },
+  {
+   "modifier": "Joint Fire Support",
+   "category": "",
+   "code": "12",
+   "remarks": ""
+  },
+  {
+   "modifier": "Liaison",
+   "category": "",
+   "code": "13",
+   "remarks": ""
+  },
+  {
+   "modifier": "Messenger",
+   "category": "",
+   "code": "14",
+   "remarks": ""
+  },
+  {
+   "modifier": "Military Police",
+   "category": "",
+   "code": "15",
+   "remarks": ""
+  },
+  {
+   "modifier": "Observer",
+   "category": "",
+   "code": "16",
+   "remarks": ""
+  },
+  {
+   "modifier": "Designated Marksman",
+   "category": "",
+   "code": "17",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "18",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "19",
+   "remarks": ""
+  },
+  {
+   "modifier": "Signaler",
+   "category": "",
+   "code": "20",
+   "remarks": ""
+  },
+  {
+   "modifier": "Reconnaissance",
+   "category": "",
+   "code": "21",
+   "remarks": ""
+  },
+  {
+   "modifier": "Infantry",
+   "category": "",
+   "code": "22",
+   "remarks": ""
+  },
+  {
+   "modifier": "Commander (CDR)",
+   "category": "",
+   "code": "23",
+   "remarks": ""
+  },
+  {
+   "modifier": "Second In Command (SIC)",
+   "category": "",
+   "code": "24",
+   "remarks": ""
+  },
+  {
+   "modifier": "Demolition",
+   "category": "",
+   "code": "25",
+   "remarks": ""
+  },
+  {
+   "modifier": "Police",
+   "category": "",
+   "code": "26",
+   "remarks": ""
+  },
+  {
+   "modifier": "Individual",
+   "category": "",
+   "code": "46",
+   "remarks": ""
+  },
+  {
+   "modifier": "Team/Crew",
+   "category": "",
+   "code": "47",
+   "remarks": ""
+  },
+  {
+   "modifier": "Squad",
+   "category": "",
+   "code": "48",
+   "remarks": ""
+  },
+  {
+   "modifier": "Section",
+   "category": "",
+   "code": "49",
+   "remarks": ""
+  },
+  {
+   "modifier": "Platoon/Detachment",
+   "category": "",
+   "code": "50",
+   "remarks": ""
+  },
+  {
+   "modifier": "Company",
+   "category": "",
+   "code": "51",
+   "remarks": ""
+  },
+  {
+   "modifier": "Battalion",
+   "category": "",
+   "code": "52",
+   "remarks": ""
+  },
+  {
+   "modifier": "Regiment/Group",
+   "category": "",
+   "code": "53",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "54",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Video Imagery (Combat Camera)",
+   "category": "",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J1",
+   "category": "",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J2",
+   "category": "",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J3",
+   "category": "",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J4",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J5",
+   "category": "",
+   "code": "08",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J6",
+   "category": "",
+   "code": "09",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J7",
+   "category": "",
+   "code": "10",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J8",
+   "category": "",
+   "code": "11",
+   "remarks": ""
+  },
+  {
+   "modifier": "Functional Staff Area J9",
+   "category": "",
+   "code": "12",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "13",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-1/O-2 {Rank Code OF-1}",
+   "category": "",
+   "code": "14",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-3 {Rank Code OF-2}",
+   "category": "",
+   "code": "15",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-4 {Rank Code OF-3}",
+   "category": "",
+   "code": "16",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-5 Rank Code OF-4}",
+   "category": "",
+   "code": "17",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-6 {Rank Code OF-5}",
+   "category": "",
+   "code": "18",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-7 {Rank Code OF-6}",
+   "category": "",
+   "code": "19",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-8 {Rank Code OF-7}",
+   "category": "",
+   "code": "20",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-9 {Rank Code OF-8}",
+   "category": "",
+   "code": "21",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-10 {Rank Code OF-9}",
+   "category": "",
+   "code": "22",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank O-11 {Rank Code OF-10}",
+   "category": "",
+   "code": "23",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank Code OF-D",
+   "category": "",
+   "code": "24",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-1 {Rank Code OR-1}",
+   "category": "",
+   "code": "25",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-2 {Rank Code OR-2}",
+   "category": "",
+   "code": "26",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-3 {Rank Code OR-3}",
+   "category": "",
+   "code": "27",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-4 {Rank Code OR-4}",
+   "category": "",
+   "code": "28",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-5 {Rank Code OR-5}",
+   "category": "",
+   "code": "29",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-6 {Rank Code OR-6}",
+   "category": "",
+   "code": "30",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-7 {Rank Code OR-7}",
+   "category": "",
+   "code": "31",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-8 {Rank Code OR-8}",
+   "category": "",
+   "code": "32",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank E-9 {Rank Code OR-9}",
+   "category": "",
+   "code": "33",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank Code WO-1",
+   "category": "",
+   "code": "34",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank Code WO-2",
+   "category": "",
+   "code": "35",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank Code WO-3",
+   "category": "",
+   "code": "36",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank Code WO-4",
+   "category": "",
+   "code": "37",
+   "remarks": ""
+  },
+  {
+   "modifier": "Rank Code WO-5",
+   "category": "",
+   "code": "38",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "39",
+   "remarks": ""
+  }
+ ]
+}

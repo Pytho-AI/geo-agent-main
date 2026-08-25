@@ -1,0 +1,414 @@
+{
+  "version": 8,
+  "name": "Topo — military topographic sheet look (1:50k DMA installation-map aesthetic)",
+  "metadata": {
+    "comment": "Server-rendered topographic basemap modeled on the Defense Mapping Agency 1:50,000 sheet aesthetic (reference: V782S Fort Hood installation map): paper-white ground, flat sage vegetation tint with no outlines, powder-blue hydrology drawn as single strokes, red-brown road fills with the full road network zoom-gated in, rail with the alternating black/white ladder signature, pink built-up tint with dark building marks at town scale, faint sepia hillshade. Contour lines are NOT in this raster — they paint client-side from the shared DEM contour source (frontend utils/contours.js) so they stay crisp under rotation and print in product renders. Same Protomaps planet PMTiles + Mapterhorn Terrarium DEM sources as the default and terrain styles.",
+    "roads": "highway keeps a thin black casing per the sheet's primary-route signature; major_road and minor_road are single uncased strokes — fine linework, deliberately no heavy borders"
+  },
+  "center": [0, 0],
+  "zoom": 1,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "basemap": {
+      "type": "vector",
+      "url": "mbtiles://basemap"
+    },
+    "terrain-dem": {
+      "type": "raster-dem",
+      "tiles": ["https://tiles.mapterhorn.com/{z}/{x}/{y}.webp"],
+      "encoding": "terrarium",
+      "tileSize": 512,
+      "minzoom": 0,
+      "maxzoom": 12
+    }
+  },
+  "sprite": "topo",
+  "glyphs": "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#f7f4ec"
+      }
+    },
+    {
+      "id": "earth",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "earth",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#f7f4ec"
+      }
+    },
+
+    {
+      "id": "vegetation-landcover",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "scrub"]]],
+      "paint": {
+        "fill-color": "#cfe0b4",
+        "fill-opacity": 0.8
+      }
+    },
+    {
+      "id": "vegetation-landuse",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "wood", "protected_area", "nature_reserve", "national_park", "park", "cemetery", "golf_course"]]],
+      "paint": {
+        "fill-color": "#cfe0b4",
+        "fill-opacity": 0.8
+      }
+    },
+
+    {
+      "id": "wetland-landcover-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-color": "#d9e8da",
+        "fill-opacity": 0.75
+      }
+    },
+    {
+      "id": "wetland-landcover-tussock",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-pattern": "topo-pat-wetland",
+        "fill-opacity": 0.9
+      }
+    },
+    {
+      "id": "wetland-landuse-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-color": "#d9e8da",
+        "fill-opacity": 0.75
+      }
+    },
+    {
+      "id": "wetland-landuse-tussock",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-pattern": "topo-pat-wetland",
+        "fill-opacity": 0.9
+      }
+    },
+
+    {
+      "id": "urban-landcover-fill",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "urban_area"],
+      "paint": {
+        "fill-color": "#eac6ba",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "urban-landcover-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "urban_area"],
+      "paint": {
+        "line-color": "#8a5a50",
+        "line-width": 0.5,
+        "line-opacity": 0.7
+      }
+    },
+    {
+      "id": "urban-landuse-fill",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["industrial", "commercial", "residential", "retail"]]],
+      "paint": {
+        "fill-color": "#eac6ba",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "urban-landuse-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["industrial", "commercial", "residential", "retail"]]],
+      "paint": {
+        "line-color": "#8a5a50",
+        "line-width": 0.5,
+        "line-opacity": 0.7
+      }
+    },
+
+    {
+      "id": "water-fill",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#bcd8e8",
+        "fill-opacity": 1.0
+      }
+    },
+    {
+      "id": "water-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "line-color": "#5a94c0",
+        "line-width": 0.7,
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "waterway-river",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", ["get", "kind"], "river"],
+      "minzoom": 7,
+      "paint": {
+        "line-color": "#3d7ab5",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          7, 1.0,
+          10, 2.0,
+          14, 4.0
+        ]
+      }
+    },
+    {
+      "id": "waterway-stream",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", ["get", "kind"], "stream"],
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#4a86bd",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          12, 0.6,
+          14, 1.8
+        ]
+      }
+    },
+
+    {
+      "id": "buildings",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "buildings",
+      "minzoom": 13,
+      "paint": {
+        "fill-color": "#4a4a4a",
+        "fill-opacity": 0.7
+      }
+    },
+
+    {
+      "id": "rail-line",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "rail"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#1a1a1a",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          10, 1.0,
+          14, 1.8
+        ]
+      }
+    },
+    {
+      "id": "rail-ladder",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "rail"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          10, 0.6,
+          14, 1.1
+        ],
+        "line-dasharray": [5, 5]
+      }
+    },
+
+    {
+      "id": "minor-road",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "minor_road"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "minzoom": 12,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#3a3a3a",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          12, 0.5,
+          14, 1.6
+        ],
+        "line-opacity": 0.8
+      }
+    },
+    {
+      "id": "major-road",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "major_road"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "minzoom": 9,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#c86450",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          9, 0.6,
+          14, 2.6
+        ]
+      }
+    },
+    {
+      "id": "highway-casing",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#1a1a1a",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          5, 1.2,
+          14, 5.4
+        ]
+      }
+    },
+    {
+      "id": "highway-fill",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#c85a48",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          5, 0.8,
+          14, 4.0
+        ]
+      }
+    },
+
+    {
+      "id": "boundary-country",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundaries",
+      "filter": ["<=", ["get", "kind_detail"], 2],
+      "paint": {
+        "line-color": "#2a2a2a",
+        "line-width": 1.2,
+        "line-dasharray": [4, 2],
+        "line-opacity": 0.85
+      }
+    },
+    {
+      "id": "boundary-admin1",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [">", ["get", "kind_detail"], 2],
+        ["<=", ["get", "kind_detail"], 4]
+      ],
+      "minzoom": 7,
+      "paint": {
+        "line-color": "#4a4a4a",
+        "line-width": 0.7,
+        "line-dasharray": [2, 2],
+        "line-opacity": 0.7
+      }
+    },
+
+    {
+      "id": "hillshade",
+      "type": "hillshade",
+      "source": "terrain-dem",
+      "paint": {
+        "hillshade-exaggeration": 0.35,
+        "hillshade-shadow-color": "#8a7458",
+        "hillshade-highlight-color": "#ffffff",
+        "hillshade-accent-color": "#b09a78",
+        "hillshade-illumination-direction": 315
+      }
+    }
+  ]
+}

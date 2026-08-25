@@ -1,0 +1,182 @@
+{
+ "symbolset": "02",
+ "name": "Air Missile",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Missile",
+   "code": "110000",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Air",
+   "category": "Launch Origin",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Surface",
+   "category": "Launch Origin",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Subsurface",
+   "category": "Launch Origin",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Space",
+   "category": "Launch Origin",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "Anti–Ballistic",
+   "category": "Missile Class",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "Ballistic",
+   "category": "Missile Class",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "Cruise",
+   "category": "Missile Class",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "Interceptor",
+   "category": "Missile Class",
+   "code": "08",
+   "remarks": ""
+  },
+  {
+   "modifier": "Hypersonic",
+   "category": "Missile Class",
+   "code": "09",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Air",
+   "category": "Missile Destination",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Surface",
+   "category": "Missile Destination",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Subsurface",
+   "category": "Missile Destination",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Space",
+   "category": "Missile Destination",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "Launched",
+   "category": "Missile Status",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "Patriot",
+   "category": "Missile Type-BMD",
+   "code": "07",
+   "remarks": "Used with INTERCEPTOR modifier 1 only."
+  },
+  {
+   "modifier": "Standard Missile-2 (SM-2)",
+   "category": "Missile Type-AAW",
+   "code": "08",
+   "remarks": "Used with INTERCEPTOR modifier 1 only."
+  },
+  {
+   "modifier": "Standard Missile-6 (SM-6)",
+   "category": "Missile Type-AAW",
+   "code": "09",
+   "remarks": "Used with INTERCEPTOR modifier 1 only."
+  },
+  {
+   "modifier": "Evolved Sea Sparrow Missile (ESSM)",
+   "category": "Missile Type-AAW",
+   "code": "10",
+   "remarks": "Used with INTERCEPTOR modifier 1 only."
+  },
+  {
+   "modifier": "Rolling Airframe Missile (RAM)",
+   "category": "Missile Type-AAW",
+   "code": "11",
+   "remarks": "Used with INTERCEPTOR modifier 1 only."
+  },
+  {
+   "modifier": "Short Range",
+   "category": "Missile Range",
+   "code": "12",
+   "remarks": "1000km or less."
+  },
+  {
+   "modifier": "Medium Range",
+   "category": "Missile Range",
+   "code": "13",
+   "remarks": "1000km to 3500km. Typically used in reference to surface-to-air missile"
+  },
+  {
+   "modifier": "Intermediate Range",
+   "category": "Missile Range",
+   "code": "14",
+   "remarks": "1000km to 3500km. Typically used in reference to ballistic missile"
+  },
+  {
+   "modifier": "Long Range",
+   "category": "Missile Range",
+   "code": "15",
+   "remarks": "3500km to 5500km."
+  },
+  {
+   "modifier": "Intercontinental",
+   "category": "Missile Range",
+   "code": "16",
+   "remarks": "5500km or greater."
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "styles": "styles",
+      "sprites": "sprites"
+    },
+    "serveAllFonts": true,
+    "serveAllStyles": true,
+    "serveStaticMaps": true,
+    "formatQuality": {
+      "jpeg": 90,
+      "webp": 90
+    }
+  },
+  "data": {
+    "basemap": {
+      "pmtiles": "http://tilecache:8080/planet.pmtiles"
+    }
+  },
+  "styles": {
+    "default": {
+      "style": "default.json",
+      "tilejson": { "type": "baselayer" }
+    },
+    "terrain": {
+      "style": "terrain.json",
+      "tilejson": { "type": "baselayer" }
+    },
+    "topo": {
+      "style": "topo.json",
+      "tilejson": { "type": "baselayer" }
+    },
+    "labels": {
+      "style": "labels.json",
+      "tilejson": { "type": "overlay" }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+*.pyc
+__pycache__/
+/frontend/node_modules
+/frontend/dist
+/data
+data/offline/
+.env
+.env.local
+frontend/src/utils/geo-agent.code-workspace
+
+# editor / backup files
+*.bak
+*.bak.*
+
+# Full-resolution ODIN image set: lives in the object store (MinIO primary,
+# scripts/load_weg_images.py provisions it) — never in git or the image.
+backend/app/data/weg_images/odin/
+backend/app/data/weg_images_upload_ledger.json

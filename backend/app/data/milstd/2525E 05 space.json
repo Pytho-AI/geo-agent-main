@@ -1,0 +1,354 @@
+{
+ "symbolset": "05",
+ "name": "Space",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "code": "110000",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Space Vehicle",
+   "code": "110100",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Re–Entry Vehicle",
+   "code": "110200",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Planet Lander",
+   "code": "110300",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Orbiter Shuttle",
+   "code": "110400",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Capsule",
+   "code": "110500",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Satellite, General",
+   "code": "110600",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Satellite",
+   "code": "110700",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Antisatellite Weapon",
+   "code": "110800",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Astronomical Satellite",
+   "code": "110900",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Biosatellite",
+   "code": "111000",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Communications Satellite",
+   "code": "111100",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Earth Observation Satellite",
+   "code": "111200",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Miniaturized Satellite",
+   "code": "111300",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Navigational Satellite",
+   "code": "111400",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Reconnaissance Satellite",
+   "code": "111500",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Space Station",
+   "code": "111600",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Tethered Satellite",
+   "code": "111700",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Weather Satellite",
+   "code": "111800",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Space Launched Vehicle (SLV)",
+   "code": "111900",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "code": "120000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Orbiter Shuttle",
+   "code": "120100",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Capsule",
+   "code": "120200",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Satellite",
+   "code": "120300",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Astronomical Satellite",
+   "code": "120400",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Biosatellite",
+   "code": "120500",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Communications Satellite",
+   "code": "120600",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Earth Observation Satellite",
+   "code": "120700",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Miniaturized Satellite",
+   "code": "120800",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Navigational Satellite",
+   "code": "120900",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Space Station",
+   "code": "121000",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Tethered Satellite",
+   "code": "121100",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Weather Satellite",
+   "code": "121200",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Planetary Lander",
+   "code": "121300",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Space Vehicle",
+   "code": "121400",
+   "remarks": ""
+  },
+  {
+   "entity": "Manual Track",
+   "code": "130000",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Low Earth Orbit (LEO)",
+   "category": "Orbit",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Medium Earth Orbit  (MEO)",
+   "category": "Orbit",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "High Earth Orbit  (HEO)",
+   "category": "Orbit",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Geosynchronous Orbit (GSO)",
+   "category": "Orbit",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "Geostationary Orbit (GO)",
+   "category": "Orbit",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "Molniya Orbit (MO)",
+   "category": "Orbit",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Optical",
+   "category": "Sensor",
+   "code": "01",
+   "remarks": "Only used with satellite icons."
+  },
+  {
+   "modifier": "Infrared",
+   "category": "Sensor",
+   "code": "02",
+   "remarks": "Only used with satellite icons."
+  },
+  {
+   "modifier": "Radar",
+   "category": "Sensor",
+   "code": "03",
+   "remarks": "Only used with satellite icons."
+  },
+  {
+   "modifier": "Signals Intelligence (SIGINT)",
+   "category": "Sensor",
+   "code": "04",
+   "remarks": "Only used with satellite icons."
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "Electromagnetic Warfare (ASAT)",
+   "category": "",
+   "code": "06",
+   "remarks": "Only used with Anti-Satellite Weapon Main Icon."
+  },
+  {
+   "modifier": "High Power Microwave (ASAT)",
+   "category": "Capability",
+   "code": "07",
+   "remarks": "Only used with Anti-Satellite Weapon Main Icon."
+  },
+  {
+   "modifier": "Laser (ASAT)",
+   "category": "Capability",
+   "code": "08",
+   "remarks": "Only used with Anti-Satellite Weapon Main Icon."
+  },
+  {
+   "modifier": "Mine (ASAT)",
+   "category": "Capability",
+   "code": "09",
+   "remarks": "Only used with Anti-Satellite Weapon Main Icon."
+  },
+  {
+   "modifier": "Maintenance",
+   "category": "Capability",
+   "code": "10",
+   "remarks": ""
+  },
+  {
+   "modifier": "Refuel",
+   "category": "Capability",
+   "code": "11",
+   "remarks": ""
+  },
+  {
+   "modifier": "Tug",
+   "category": "Capability",
+   "code": "12",
+   "remarks": ""
+  }
+ ]
+}

@@ -1,0 +1,5756 @@
+{
+ "purpose": "Every retired seed `weg_id` to its final catalog id. 526 template holdings across 180 force templates resolve through these identifiers. A `split` entry means one seed sheet covered several systems that ODIN carries separately; `primary` is the part that keeps the sheet's own designation.",
+ "count": 816,
+ "split_count": 29,
+ "retired_count": 1,
+ "crosswalk": {
+  "mi_24_35": {
+   "primary": "1972_attack_helicopter_mi_24",
+   "targets": [
+    "1972_attack_helicopter_mi_24",
+    "2010_attack_helicopter_mi_35m"
+   ],
+   "split": true
+  },
+  "mi_28n": {
+   "primary": "1998_attack_helicopter_mi_28",
+   "targets": [
+    "1998_attack_helicopter_mi_28"
+   ],
+   "split": false
+  },
+  "mi_28nm": {
+   "primary": "2020_attack_helicopter_mi_28nm",
+   "targets": [
+    "2020_attack_helicopter_mi_28nm"
+   ],
+   "split": false
+  },
+  "ka_50_ka_52": {
+   "primary": "1995_attack_helicopter_ka_50_black_shark",
+   "targets": [
+    "1995_attack_helicopter_ka_50_black_shark",
+    "2008_attack_helicopter_ka_52_alligator"
+   ],
+   "split": true
+  },
+  "ka_52m": {
+   "primary": "2023_attack_helicopter_ka_52m",
+   "targets": [
+    "2023_attack_helicopter_ka_52m"
+   ],
+   "split": false
+  },
+  "ah_1w": {
+   "primary": "1986_attack_helicopter_ah_1w_super_cobra",
+   "targets": [
+    "1986_attack_helicopter_ah_1w_super_cobra"
+   ],
+   "split": false
+  },
+  "ah_1f": {
+   "primary": "1986_attack_helicopter_ah_1f_cobra",
+   "targets": [
+    "1986_attack_helicopter_ah_1f_cobra"
+   ],
+   "split": false
+  },
+  "z_10": {
+   "primary": "2012_attack_helicopter_wz_10",
+   "targets": [
+    "2012_attack_helicopter_wz_10"
+   ],
+   "split": false
+  },
+  "md_500md": {
+   "primary": "1976_scout_helicopter_md_500_defender",
+   "targets": [
+    "1976_scout_helicopter_md_500_defender"
+   ],
+   "split": false
+  },
+  "bo_105": {
+   "primary": "1970_utility_helicopter_bo_105",
+   "targets": [
+    "1970_utility_helicopter_bo_105"
+   ],
+   "split": false
+  },
+  "mi_2": {
+   "primary": "1965_utility_helicopter_mi_2",
+   "targets": [
+    "1965_utility_helicopter_mi_2"
+   ],
+   "split": false
+  },
+  "sa_341_342": {
+   "primary": "1973_utility_helicopter_sa_341_342_gazelle",
+   "targets": [
+    "1973_utility_helicopter_sa_341_342_gazelle"
+   ],
+   "split": false
+  },
+  "uh_60m_black_hawk": {
+   "primary": "2007_utility_helicopter_uh_60m_black_hawk",
+   "targets": [
+    "2007_utility_helicopter_uh_60m_black_hawk"
+   ],
+   "split": false
+  },
+  "uh_72_lakota": {
+   "primary": "2007_utility_helicopter_uh_72a_lakota",
+   "targets": [
+    "2007_utility_helicopter_uh_72a_lakota"
+   ],
+   "split": false
+  },
+  "z_9_wz_9": {
+   "primary": "1981_utility_helicopter_z_9_harbin",
+   "targets": [
+    "1981_utility_helicopter_z_9_harbin"
+   ],
+   "split": false
+  },
+  "lynx": {
+   "primary": "1977_utility_helicopter_lynx",
+   "targets": [
+    "1977_utility_helicopter_lynx"
+   ],
+   "split": false
+  },
+  "mi_8_hip_c": {
+   "primary": "1980_transport_helicopter_mi_8t",
+   "targets": [
+    "1980_transport_helicopter_mi_8t"
+   ],
+   "split": false
+  },
+  "mi_17_hip_h": {
+   "primary": "1975_transport_helicopter_mi_17",
+   "targets": [
+    "1975_transport_helicopter_mi_17"
+   ],
+   "split": false
+  },
+  "ch_47f_chinook": {
+   "primary": "2006_transport_helicopter_ch_47f",
+   "targets": [
+    "2006_transport_helicopter_ch_47f"
+   ],
+   "split": false
+  },
+  "as_532": {
+   "primary": "1978_transport_helicopter_as_532_cougar",
+   "targets": [
+    "1978_transport_helicopter_as_532_cougar"
+   ],
+   "split": false
+  },
+  "z_20": {
+   "primary": "2019_transport_helicopter_z_20",
+   "targets": [
+    "2019_transport_helicopter_z_20"
+   ],
+   "split": false
+  },
+  "mi_6_hook": {
+   "primary": "1957_heavy_lift_helicopter_mi_6",
+   "targets": [
+    "1957_heavy_lift_helicopter_mi_6"
+   ],
+   "split": false
+  },
+  "mi_26_halo": {
+   "primary": "1983_heavy_lift_helicopter_mi_26",
+   "targets": [
+    "1983_heavy_lift_helicopter_mi_26"
+   ],
+   "split": false
+  },
+  "ch_53k": {
+   "primary": "2022_heavy_lift_helicopter_ch_53k_king_stallion",
+   "targets": [
+    "2022_heavy_lift_helicopter_ch_53k_king_stallion"
+   ],
+   "split": false
+  },
+  "ka_27_helix": {
+   "primary": "1982_asw_helicopter_ka_27",
+   "targets": [
+    "1982_asw_helicopter_ka_27"
+   ],
+   "split": false
+  },
+  "r_360_neptune": {
+   "primary": "2021_ascm_r_360_neptune",
+   "targets": [
+    "2021_ascm_r_360_neptune"
+   ],
+   "split": false
+  },
+  "iskander_e_m_k": {
+   "primary": "2006_srbm_9k720_iskander",
+   "targets": [
+    "2006_srbm_9k720_iskander"
+   ],
+   "split": false
+  },
+  "fattah_1": {
+   "primary": "2022_mrbm_fattah",
+   "targets": [
+    "2022_mrbm_fattah"
+   ],
+   "split": false
+  },
+  "shahab_3a_3b": {
+   "primary": "2003_mrbm_shahab_3a",
+   "targets": [
+    "2003_mrbm_shahab_3a",
+    "2003_mrbm_shahab_3b"
+   ],
+   "split": true
+  },
+  "kheibar_shekan": {
+   "primary": "2022_mrbm_kheibar_shekan",
+   "targets": [
+    "2022_mrbm_kheibar_shekan"
+   ],
+   "split": false
+  },
+  "brahmos_brahmos_ii": {
+   "primary": "2005_ascm_brahmos",
+   "targets": [
+    "2005_ascm_brahmos",
+    "2018_ascm_brahmos_ii"
+   ],
+   "split": true
+  },
+  "lrhw": {
+   "primary": "2023_surface_to_surface_missile_launcher_lrhw",
+   "targets": [
+    "2023_surface_to_surface_missile_launcher_lrhw"
+   ],
+   "split": false
+  },
+  "mrc": {
+   "primary": "2023_surface_to_surface_missile_launcher_mrc",
+   "targets": [
+    "2023_surface_to_surface_missile_launcher_mrc"
+   ],
+   "split": false
+  },
+  "tochka_u": {
+   "primary": "1989_crbm_tochka_u",
+   "targets": [
+    "1989_crbm_tochka_u"
+   ],
+   "split": false
+  },
+  "long_neptune": {
+   "primary": "2023_lacm_neptune_long",
+   "targets": [
+    "2023_lacm_neptune_long"
+   ],
+   "split": false
+  },
+  "su_57_felon": {
+   "primary": "2020_multirole_fighter_su_57",
+   "targets": [
+    "2020_multirole_fighter_su_57"
+   ],
+   "split": false
+  },
+  "il_76_candid": {
+   "primary": "1974_transport_il_76",
+   "targets": [
+    "1974_transport_il_76"
+   ],
+   "split": false
+  },
+  "j_20a_b": {
+   "primary": "2017_fighter_j_20",
+   "targets": [
+    "2017_fighter_j_20"
+   ],
+   "split": false
+  },
+  "su_30_flanker_f": {
+   "primary": "1996_multirole_fighter_su_30",
+   "targets": [
+    "1996_multirole_fighter_su_30"
+   ],
+   "split": false
+  },
+  "rafale": {
+   "primary": "2001_multirole_fighter_rafale",
+   "targets": [
+    "2001_multirole_fighter_rafale"
+   ],
+   "split": false
+  },
+  "f_5": {
+   "primary": "1962_fighter_f_5a_freedom_fighter",
+   "targets": [
+    "1962_fighter_f_5a_freedom_fighter",
+    "1972_fighter_f_5e_tiger_ii"
+   ],
+   "split": true
+  },
+  "j_35a": {
+   "primary": "2023_multirole_fighter_j_35a",
+   "targets": [
+    "2023_multirole_fighter_j_35a"
+   ],
+   "split": false
+  },
+  "ef_2000": {
+   "primary": "2003_multirole_fighter_eurofighter_typhoon_ef_2000",
+   "targets": [
+    "2003_multirole_fighter_eurofighter_typhoon_ef_2000"
+   ],
+   "split": false
+  },
+  "q_5_fantan": {
+   "primary": "1970_attack_aircraft_q_5",
+   "targets": [
+    "1970_attack_aircraft_q_5"
+   ],
+   "split": false
+  },
+  "j_7_fishbed": {
+   "primary": "1966_fighter_j_7",
+   "targets": [
+    "1966_fighter_j_7"
+   ],
+   "split": false
+  },
+  "mirage_2000": {
+   "primary": "1984_multirole_fighter_mirage_2000",
+   "targets": [
+    "1984_multirole_fighter_mirage_2000"
+   ],
+   "split": false
+  },
+  "mig_23_mig_27_flogger": {
+   "primary": "1970_fighter_mig_23",
+   "targets": [
+    "1970_fighter_mig_23",
+    "1972_multirole_fighter_mig_27"
+   ],
+   "split": true
+  },
+  "mig_25_foxbat": {
+   "primary": "1970_fighter_mig_25",
+   "targets": [
+    "1970_fighter_mig_25"
+   ],
+   "split": false
+  },
+  "h_6": {
+   "primary": "1969_bomber_h_6",
+   "targets": [
+    "1969_bomber_h_6"
+   ],
+   "split": false
+  },
+  "j_6_f_6": {
+   "primary": "1962_fighter_j_6",
+   "targets": [
+    "1962_fighter_j_6"
+   ],
+   "split": false
+  },
+  "su_24_fencer": {
+   "primary": "1974_attack_aircraft_su_24",
+   "targets": [
+    "1974_attack_aircraft_su_24"
+   ],
+   "split": false
+  },
+  "jas39_gripen": {
+   "primary": "1996_multirole_fighter_jas_39_gripen",
+   "targets": [
+    "1996_multirole_fighter_jas_39_gripen"
+   ],
+   "split": false
+  },
+  "an_2_colt": {
+   "primary": "1947_utility_aircraft_an_2",
+   "targets": [
+    "1947_utility_aircraft_an_2"
+   ],
+   "split": false
+  },
+  "mig_21_fishbed": {
+   "primary": "1959_fighter_mig_21",
+   "targets": [
+    "1959_fighter_mig_21"
+   ],
+   "split": false
+  },
+  "f_4_phantom": {
+   "primary": "1972_multirole_fighter_f_4e_phantom_ii",
+   "targets": [
+    "1972_multirole_fighter_f_4e_phantom_ii"
+   ],
+   "split": false
+  },
+  "su_27_flanker_b": {
+   "primary": "1985_multirole_fighter_su_27",
+   "targets": [
+    "1985_multirole_fighter_su_27"
+   ],
+   "split": false
+  },
+  "mig_29_fulcrum": {
+   "primary": "1982_multirole_fighter_mig_29",
+   "targets": [
+    "1982_multirole_fighter_mig_29"
+   ],
+   "split": false
+  },
+  "il_18_coot": {
+   "primary": "1957_transport_il_18",
+   "targets": [
+    "1957_transport_il_18"
+   ],
+   "split": false
+  },
+  "mirage_iii_5_50": {
+   "primary": "1961_fighter_mirage_iii",
+   "targets": [
+    "1961_fighter_mirage_iii"
+   ],
+   "split": false
+  },
+  "aj37_viggen": {
+   "primary": "1971_multirole_fighter_37_viggen",
+   "targets": [
+    "1971_multirole_fighter_37_viggen"
+   ],
+   "split": false
+  },
+  "mig_31_foxhound": {
+   "primary": "1981_fighter_mig_31",
+   "targets": [
+    "1981_fighter_mig_31"
+   ],
+   "split": false
+  },
+  "an_12_cub": {
+   "primary": "1959_transport_an_12",
+   "targets": [
+    "1959_transport_an_12"
+   ],
+   "split": false
+  },
+  "tu_22m3_backfire_c": {
+   "primary": "1972_bomber_tu_22m3",
+   "targets": [
+    "1972_bomber_tu_22m3"
+   ],
+   "split": false
+  },
+  "kfir": {
+   "primary": "1976_multirole_fighter_kfir",
+   "targets": [
+    "1976_multirole_fighter_kfir"
+   ],
+   "split": false
+  },
+  "h_5_il_28": {
+   "primary": "1950_bomber_il_28",
+   "targets": [
+    "1950_bomber_il_28",
+    "1966_bomber_h_5"
+   ],
+   "split": true
+  },
+  "tu_95_bear": {
+   "primary": "1956_bomber_tu_95",
+   "targets": [
+    "1956_bomber_tu_95"
+   ],
+   "split": false
+  },
+  "tornado_ids": {
+   "primary": "1979_multirole_fighter_tornado",
+   "targets": [
+    "1979_multirole_fighter_tornado"
+   ],
+   "split": false
+  },
+  "mirage_f1": {
+   "primary": "1973_fighter_mirage_f1",
+   "targets": [
+    "1973_fighter_mirage_f1"
+   ],
+   "split": false
+  },
+  "l39": {
+   "primary": "1972_trainer_l_39_albatros",
+   "targets": [
+    "1972_trainer_l_39_albatros"
+   ],
+   "split": false
+  },
+  "su_25tm_su_39": {
+   "primary": "1995_attack_aircraft_su_39",
+   "targets": [
+    "1995_attack_aircraft_su_39"
+   ],
+   "split": false
+  },
+  "an_26_curl": {
+   "primary": "1970_transport_an_26",
+   "targets": [
+    "1970_transport_an_26"
+   ],
+   "split": false
+  },
+  "jaguar": {
+   "primary": "attack_aircraft_jaguar",
+   "targets": [
+    "attack_aircraft_jaguar"
+   ],
+   "split": false
+  },
+  "su_17_fitter": {
+   "primary": "1970_attack_aircraft_su_17",
+   "targets": [
+    "1970_attack_aircraft_su_17"
+   ],
+   "split": false
+  },
+  "j_8_finback": {
+   "primary": "1980_fighter_j_8",
+   "targets": [
+    "1980_fighter_j_8"
+   ],
+   "split": false
+  },
+  "b_21_raider": {
+   "primary": "2025_bomber_b_21",
+   "targets": [
+    "2025_bomber_b_21"
+   ],
+   "split": false
+  },
+  "quicksilver_sport_2s": {
+   "primary": "ultralight_quicksilver_sport_2s",
+   "targets": [
+    "ultralight_quicksilver_sport_2s"
+   ],
+   "split": false
+  },
+  "su_34m": {
+   "primary": "2021_multirole_fighter_su_34m",
+   "targets": [
+    "2021_multirole_fighter_su_34m"
+   ],
+   "split": false
+  },
+  "f_15ex": {
+   "primary": "2024_multirole_fighter_f_15ex",
+   "targets": [
+    "2024_multirole_fighter_f_15ex"
+   ],
+   "split": false
+  },
+  "camcopter_s_100": {
+   "primary": "2006_reconnaissance_uav_camcopter_s_100",
+   "targets": [
+    "2006_reconnaissance_uav_camcopter_s_100"
+   ],
+   "split": false
+  },
+  "gj_11": {
+   "primary": "2020_ucav_gj_11_sharp_sword",
+   "targets": [
+    "2020_ucav_gj_11_sharp_sword"
+   ],
+   "split": false
+  },
+  "asn_207": {
+   "primary": "2002_reconnaissance_uav_asn_207",
+   "targets": [
+    "2002_reconnaissance_uav_asn_207"
+   ],
+   "split": false
+  },
+  "dji_phantom": {
+   "primary": "2013_reconnaissance_uav_dji_phantom",
+   "targets": [
+    "2013_reconnaissance_uav_dji_phantom"
+   ],
+   "split": false
+  },
+  "firefly_40mm_ubgl": {
+   "primary": "2000_aerial_sensor_munition_firefly_40mm_ubgl_round",
+   "targets": [
+    "2000_aerial_sensor_munition_firefly_40mm_ubgl_round"
+   ],
+   "split": false
+  },
+  "rrg": {
+   "primary": "2000_aerial_sensor_munition_reconnaissance_rifle_grenade",
+   "targets": [
+    "2000_aerial_sensor_munition_reconnaissance_rifle_grenade"
+   ],
+   "split": false
+  },
+  "s407_sparcs": {
+   "primary": "2000_aerial_sensor_munition_s407",
+   "targets": [
+    "2000_aerial_sensor_munition_s407"
+   ],
+   "split": false
+  },
+  "firefly_pakistan_rocket": {
+   "primary": "2000_aerial_sensor_munition_firefly_rocket",
+   "targets": [
+    "2000_aerial_sensor_munition_firefly_rocket"
+   ],
+   "split": false
+  },
+  "r_90": {
+   "primary": "1990_aerial_sensor_munition_r_90",
+   "targets": [
+    "1990_aerial_sensor_munition_r_90"
+   ],
+   "split": false
+  },
+  "peklo": {
+   "primary": "2024_loitering_munition_peklo",
+   "targets": [
+    "2024_loitering_munition_peklo"
+   ],
+   "split": false
+  },
+  "spike_firefly": {
+   "primary": "2023_loitering_munition_spike_firefly",
+   "targets": [
+    "2023_loitering_munition_spike_firefly"
+   ],
+   "split": false
+  },
+  "wing_loong_3": {
+   "primary": "2022_ucav_wing_loong_3",
+   "targets": [
+    "2022_ucav_wing_loong_3"
+   ],
+   "split": false
+  },
+  "molniya": {
+   "primary": "2024_loitering_munition_molniya",
+   "targets": [
+    "2024_loitering_munition_molniya"
+   ],
+   "split": false
+  },
+  "starstreak": {
+   "primary": "1997_air_defense_missile_launcher_light_starstreak",
+   "targets": [
+    "1997_air_defense_missile_launcher_light_starstreak"
+   ],
+   "split": false
+  },
+  "temp_20": {
+   "primary": "land_mine_temp_20",
+   "targets": [
+    "land_mine_temp_20"
+   ],
+   "split": false
+  },
+  "ahm_uk": {
+   "primary": "land_mine_ahm_uk",
+   "targets": [
+    "land_mine_ahm_uk"
+   ],
+   "split": false
+  },
+  "gdf_003_005": {
+   "primary": "1982_air_defense_gun_oerlikon_gdf_003",
+   "targets": [
+    "1982_air_defense_gun_oerlikon_gdf_003",
+    "1985_air_defense_gun_oerlikon_gdf_005"
+   ],
+   "split": true
+  },
+  "m_1939": {
+   "primary": "1939_air_defense_gun_m_1939_61_k",
+   "targets": [
+    "1939_air_defense_gun_m_1939_61_k"
+   ],
+   "split": false
+  },
+  "ks_19m2": {
+   "primary": "1949_air_defense_gun_ks_19",
+   "targets": [
+    "1949_air_defense_gun_ks_19"
+   ],
+   "split": false
+  },
+  "s_60": {
+   "primary": "1950_air_defense_gun_s_60_m1950",
+   "targets": [
+    "1950_air_defense_gun_s_60_m1950"
+   ],
+   "split": false
+  },
+  "type_65": {
+   "primary": "1965_air_defense_gun_type_65",
+   "targets": [
+    "1965_air_defense_gun_type_65"
+   ],
+   "split": false
+  },
+  "zpu_4": {
+   "primary": "1949_air_defense_gun_zpu_4",
+   "targets": [
+    "1949_air_defense_gun_zpu_4"
+   ],
+   "split": false
+  },
+  "zu_23": {
+   "primary": "1960_air_defense_gun_zu_23_2",
+   "targets": [
+    "1960_air_defense_gun_zu_23_2"
+   ],
+   "split": false
+  },
+  "btr_zd_btr_zd_improved": {
+   "primary": "1981_air_defense_gun_btr_zd",
+   "targets": [
+    "1981_air_defense_gun_btr_zd"
+   ],
+   "split": false
+  },
+  "gepard": {
+   "primary": "1974_air_defense_gun_gepard_cheetah",
+   "targets": [
+    "1974_air_defense_gun_gepard_cheetah"
+   ],
+   "split": false
+  },
+  "zsu_23_4": {
+   "primary": "1962_air_defense_gun_zsu_23_4_shilka",
+   "targets": [
+    "1962_air_defense_gun_zsu_23_4_shilka"
+   ],
+   "split": false
+  },
+  "zsu_57_2": {
+   "primary": "1955_air_defense_gun_zsu_57_2_obyekt_500",
+   "targets": [
+    "1955_air_defense_gun_zsu_57_2_obyekt_500"
+   ],
+   "split": false
+  },
+  "sa_7b_grail": {
+   "primary": "1970_air_defense_missile_launcher_light_9k32_strela_2_sa_7_grail",
+   "targets": [
+    "1970_air_defense_missile_launcher_light_9k32_strela_2_sa_7_grail"
+   ],
+   "split": false
+  },
+  "sa_14_gremlin": {
+   "primary": "1974_air_defense_missile_launcher_light_9k34_strela_3_sa_14_gremlin",
+   "targets": [
+    "1974_air_defense_missile_launcher_light_9k34_strela_3_sa_14_gremlin"
+   ],
+   "split": false
+  },
+  "sa_16_gimlet": {
+   "primary": "1981_air_defense_missile_launcher_light_9k310_igla_1_sa_16_gimlet",
+   "targets": [
+    "1981_air_defense_missile_launcher_light_9k310_igla_1_sa_16_gimlet"
+   ],
+   "split": false
+  },
+  "sa_18_24": {
+   "primary": "1981_air_defense_missile_launcher_light_9k38_igla_sa_18_grouse",
+   "targets": [
+    "1981_air_defense_missile_launcher_light_9k38_igla_sa_18_grouse"
+   ],
+   "split": false
+  },
+  "stinger": {
+   "primary": "1981_air_defense_missile_launcher_light_fim_92_stinger",
+   "targets": [
+    "1981_air_defense_missile_launcher_light_fim_92_stinger"
+   ],
+   "split": false
+  },
+  "albi_mistral_2": {
+   "primary": "2000_air_defense_missile_launcher_light_albi_mistral_2",
+   "targets": [
+    "2000_air_defense_missile_launcher_light_albi_mistral_2"
+   ],
+   "split": false
+  },
+  "2s6m1": {
+   "primary": "2003_air_defense_gun_2s6m1_tunguska_m1",
+   "targets": [
+    "2003_air_defense_gun_2s6m1_tunguska_m1"
+   ],
+   "split": false
+  },
+  "pantsir_s1_s1_0": {
+   "primary": "2012_air_defense_gun_pantsir_s1_sa_22_greyhound",
+   "targets": [
+    "2012_air_defense_gun_pantsir_s1_sa_22_greyhound"
+   ],
+   "split": false
+  },
+  "crotale_5000_fm_90": {
+   "primary": "1972_air_defense_missile_launcher_light_telar_r440_crotale",
+   "targets": [
+    "1972_air_defense_missile_launcher_light_telar_r440_crotale"
+   ],
+   "split": false
+  },
+  "crotale_ng": {
+   "primary": "1989_air_defense_missile_launcher_light_telar_crotale_ng",
+   "targets": [
+    "1989_air_defense_missile_launcher_light_telar_crotale_ng"
+   ],
+   "split": false
+  },
+  "sa_8b_8p": {
+   "primary": "1971_air_defense_missile_launcher_light_telar_9k33_osa_sa_8_gecko",
+   "targets": [
+    "1971_air_defense_missile_launcher_light_telar_9k33_osa_sa_8_gecko"
+   ],
+   "split": false
+  },
+  "sa_9_gaskin": {
+   "primary": "1968_air_defense_missile_launcher_light_9k31_strela_1_sa_9_gaskin",
+   "targets": [
+    "1968_air_defense_missile_launcher_light_9k31_strela_1_sa_9_gaskin"
+   ],
+   "split": false
+  },
+  "sa_13b_gopher": {
+   "primary": "1976_air_defense_missile_launcher_light_telar_9k35_strela_10_sa_13_gopher",
+   "targets": [
+    "1976_air_defense_missile_launcher_light_telar_9k35_strela_10_sa_13_gopher"
+   ],
+   "split": false
+  },
+  "sa_15b_gauntlet": {
+   "primary": "1986_air_defense_missile_launcher_light_telar_9k330_tor_sa_15_gauntlet",
+   "targets": [
+    "1986_air_defense_missile_launcher_light_telar_9k330_tor_sa_15_gauntlet"
+   ],
+   "split": false
+  },
+  "aspide_2000": {
+   "primary": "1986_air_defense_missile_launcher_medium_aspide_2000",
+   "targets": [
+    "1986_air_defense_missile_launcher_medium_aspide_2000"
+   ],
+   "split": false
+  },
+  "sa_2_guideline": {
+   "primary": "1957_air_defense_missile_launcher_medium_s_75_dvina_sa_2_guideline",
+   "targets": [
+    "1957_air_defense_missile_launcher_medium_s_75_dvina_sa_2_guideline"
+   ],
+   "split": false
+  },
+  "sa_3_goa": {
+   "primary": "1961_air_defense_missile_launcher_medium_s_125_neva_pechora_sa_3_goa",
+   "targets": [
+    "1961_air_defense_missile_launcher_medium_s_125_neva_pechora_sa_3_goa"
+   ],
+   "split": false
+  },
+  "sa_4b_ganef": {
+   "primary": "1965_air_defense_missile_launcher_medium_2k11_krug_sa_4_ganef",
+   "targets": [
+    "1965_air_defense_missile_launcher_medium_2k11_krug_sa_4_ganef"
+   ],
+   "split": false
+  },
+  "sa_6_gainful": {
+   "primary": "1967_air_defense_missile_launcher_light_telar_2k12_kub_sa_6_gainful",
+   "targets": [
+    "1967_air_defense_missile_launcher_light_telar_2k12_kub_sa_6_gainful"
+   ],
+   "split": false
+  },
+  "sa_11_gadfly": {
+   "primary": "1979_air_defense_missile_launcher_medium_telar_9k37_buk_m1_sa_11_gadfly",
+   "targets": [
+    "1979_air_defense_missile_launcher_medium_telar_9k37_buk_m1_sa_11_gadfly"
+   ],
+   "split": false
+  },
+  "buk_m1_2": {
+   "primary": "1997_air_defense_missile_launcher_medium_telar_buk_m1_2",
+   "targets": [
+    "1997_air_defense_missile_launcher_medium_telar_buk_m1_2"
+   ],
+   "split": false
+  },
+  "sa_5b_gammon": {
+   "primary": "1967_air_defense_missile_launcher_heavy_s_200_dubna_sa_5_gammon",
+   "targets": [
+    "1967_air_defense_missile_launcher_heavy_s_200_dubna_sa_5_gammon"
+   ],
+   "split": false
+  },
+  "sa_10b_grumble": {
+   "primary": "1980_air_defense_missile_launcher_heavy_s_300pm",
+   "targets": [
+    "1980_air_defense_missile_launcher_heavy_s_300pm"
+   ],
+   "split": false
+  },
+  "sa_10c_grumble": {
+   "primary": "1984_air_defense_missile_launcher_heavy_s_300pmu",
+   "targets": [
+    "1984_air_defense_missile_launcher_heavy_s_300pmu"
+   ],
+   "split": false
+  },
+  "sa_12_gladiator": {
+   "primary": "1988_air_defense_missile_launcher_heavy_telar_s_300v_sa_12a_gladiator",
+   "targets": [
+    "1988_air_defense_missile_launcher_heavy_telar_s_300v_sa_12a_gladiator",
+    "1988_air_defense_missile_launcher_heavy_telar_s_300v_sa_12b_giant"
+   ],
+   "split": true
+  },
+  "sa_20a_gargoyle": {
+   "primary": "1993_air_defense_missile_launcher_heavy_s_300pmu_1_sa_20_gargoyle",
+   "targets": [
+    "1993_air_defense_missile_launcher_heavy_s_300pmu_1_sa_20_gargoyle"
+   ],
+   "split": false
+  },
+  "sa_20b_favorit": {
+   "primary": "1997_air_defense_missile_launcher_heavy_s_300pmu_2_favourite_sa_20b",
+   "targets": [
+    "1997_air_defense_missile_launcher_heavy_s_300pmu_2_favourite_sa_20b"
+   ],
+   "split": false
+  },
+  "sa_21a_growler": {
+   "primary": "2007_air_defense_missile_launcher_heavy_s_400_triumph_sa_21_growler",
+   "targets": [
+    "2007_air_defense_missile_launcher_heavy_s_400_triumph_sa_21_growler"
+   ],
+   "split": false
+  },
+  "s_500_prometheus": {
+   "primary": "2021_air_defense_missile_launcher_heavy_s_500_prometheus_prometey",
+   "targets": [
+    "2021_air_defense_missile_launcher_heavy_s_500_prometheus_prometey"
+   ],
+   "split": false
+  },
+  "2s38_derivatsiya_pvo": {
+   "primary": "2023_air_defense_gun_2s38_derivatsiya_pvo",
+   "targets": [
+    "2023_air_defense_gun_2s38_derivatsiya_pvo"
+   ],
+   "split": false
+  },
+  "s_350_vityaz": {
+   "primary": "2019_air_defense_missile_launcher_medium_50r6_vityaz_s_350e",
+   "targets": [
+    "2019_air_defense_missile_launcher_medium_50r6_vityaz_s_350e"
+   ],
+   "split": false
+  },
+  "pantsir_sm": {
+   "primary": "2019_air_defense_gun_pantsir_sm",
+   "targets": [
+    "2019_air_defense_gun_pantsir_sm"
+   ],
+   "split": false
+  },
+  "pantsir_sm_sv": {
+   "primary": "2025_air_defense_gun_pantsir_sm_sv",
+   "targets": [
+    "2025_air_defense_gun_pantsir_sm_sv"
+   ],
+   "split": false
+  },
+  "hq_22": {
+   "primary": "2017_air_defense_missile_launcher_heavy_hq_22_sa_20",
+   "targets": [
+    "2017_air_defense_missile_launcher_heavy_hq_22_sa_20"
+   ],
+   "split": false
+  },
+  "hq_17a": {
+   "primary": "2019_air_defense_missile_launcher_light_hq_17a_sa_15b",
+   "targets": [
+    "2019_air_defense_missile_launcher_light_hq_17a_sa_15b"
+   ],
+   "split": false
+  },
+  "lw_30": {
+   "primary": "2018_directed_energy_lw_30",
+   "targets": [
+    "2018_directed_energy_lw_30"
+   ],
+   "split": false
+  },
+  "m_shorad": {
+   "primary": "2021_air_defense_missile_launcher_light_sgt_stout",
+   "targets": [
+    "2021_air_defense_missile_launcher_light_sgt_stout"
+   ],
+   "split": false
+  },
+  "m_shorad_inc_1": {
+   "primary": "2021_air_defense_missile_launcher_light_sgt_stout",
+   "targets": [
+    "2021_air_defense_missile_launcher_light_sgt_stout"
+   ],
+   "split": false
+  },
+  "ifpc_inc_2": {
+   "primary": "2023_air_defense_missile_launcher_medium_ifpc_inc_2",
+   "targets": [
+    "2023_air_defense_missile_launcher_medium_ifpc_inc_2"
+   ],
+   "split": false
+  },
+  "ifpc_inc_2_2": {
+   "primary": "2023_air_defense_missile_launcher_medium_ifpc_inc_2",
+   "targets": [
+    "2023_air_defense_missile_launcher_medium_ifpc_inc_2"
+   ],
+   "split": false
+  },
+  "de_m_shorad": {
+   "primary": "2023_directed_energy_de_m_shorad",
+   "targets": [
+    "2023_directed_energy_de_m_shorad"
+   ],
+   "split": false
+  },
+  "de_m_shorad_2": {
+   "primary": "2023_directed_energy_de_m_shorad",
+   "targets": [
+    "2023_directed_energy_de_m_shorad"
+   ],
+   "split": false
+  },
+  "nasams_3": {
+   "primary": "2019_air_defense_missile_launcher_medium_nasams_3",
+   "targets": [
+    "2019_air_defense_missile_launcher_medium_nasams_3"
+   ],
+   "split": false
+  },
+  "iris_t_slm": {
+   "primary": "2022_air_defense_missile_launcher_medium_iris_t_slm",
+   "targets": [
+    "2022_air_defense_missile_launcher_medium_iris_t_slm"
+   ],
+   "split": false
+  },
+  "bavar_373": {
+   "primary": "2019_air_defense_missile_launcher_heavy_bavar_373",
+   "targets": [
+    "2019_air_defense_missile_launcher_heavy_bavar_373"
+   ],
+   "split": false
+  },
+  "khordad_15": {
+   "primary": "2019_air_defense_missile_launcher_heavy_khordad_15",
+   "targets": [
+    "2019_air_defense_missile_launcher_heavy_khordad_15"
+   ],
+   "split": false
+  },
+  "arrow_3": {
+   "primary": "2017_air_defense_missile_launcher_heavy_arrow_3",
+   "targets": [
+    "2017_air_defense_missile_launcher_heavy_arrow_3"
+   ],
+   "split": false
+  },
+  "davids_sling": {
+   "primary": "2017_air_defense_missile_launcher_heavy_davids_sling",
+   "targets": [
+    "2017_air_defense_missile_launcher_heavy_davids_sling"
+   ],
+   "split": false
+  },
+  "c_dome": {
+   "primary": "2017_air_defense_missile_launcher_light_c_dome",
+   "targets": [
+    "2017_air_defense_missile_launcher_light_c_dome"
+   ],
+   "split": false
+  },
+  "iron_beam": {
+   "primary": "2025_directed_energy_iron_beam",
+   "targets": [
+    "2025_directed_energy_iron_beam"
+   ],
+   "split": false
+  },
+  "pgz_09": {
+   "primary": "2009_air_defense_gun_pgz_09_type_09",
+   "targets": [
+    "2009_air_defense_gun_pgz_09_type_09"
+   ],
+   "split": false
+  },
+  "sa_25_grinch": {
+   "primary": "2014_air_defense_missile_launcher_light_9k333_verba_sa_29",
+   "targets": [
+    "2014_air_defense_missile_launcher_light_9k333_verba_sa_29"
+   ],
+   "split": false
+  },
+  "avenger": {
+   "primary": "1989_air_defense_missile_launcher_light_an_twq_1_avenger",
+   "targets": [
+    "1989_air_defense_missile_launcher_light_an_twq_1_avenger"
+   ],
+   "split": false
+  },
+  "ifpc_hpm": {
+   "primary": "directed_energy_ifpc_high_power_microwave",
+   "targets": [
+    "directed_energy_ifpc_high_power_microwave"
+   ],
+   "split": false
+  },
+  "idds_a": {
+   "primary": "2011_air_defense_missile_launcher_medium_iron_dome",
+   "targets": [
+    "2011_air_defense_missile_launcher_medium_iron_dome"
+   ],
+   "split": false
+  },
+  "m_shorad_inc_3": {
+   "primary": "air_defense_missile_launcher_light_m_shorad_increment_3",
+   "targets": [
+    "air_defense_missile_launcher_light_m_shorad_increment_3"
+   ],
+   "split": false
+  },
+  "pac_3_mse": {
+   "primary": "air_defense_missile_launcher_heavy_pac_3_mse",
+   "targets": [
+    "air_defense_missile_launcher_heavy_pac_3_mse"
+   ],
+   "split": false
+  },
+  "stinger_block_i_prox": {
+   "primary": "air_defense_missile_launcher_light_stinger_block_i_with_proximity_fuze",
+   "targets": [
+    "air_defense_missile_launcher_light_stinger_block_i_with_proximity_fuze"
+   ],
+   "split": false
+  },
+  "ifpc_hel": {
+   "primary": "directed_energy_ifpc_high_energy_laser",
+   "targets": [
+    "directed_energy_ifpc_high_energy_laser"
+   ],
+   "split": false
+  },
+  "m270_mlrs": {
+   "primary": "1983_mlrs_m270",
+   "targets": [
+    "1983_mlrs_m270"
+   ],
+   "split": false
+  },
+  "2s1_gvozdika": {
+   "primary": "1971_sph_2s1_gvozdika",
+   "targets": [
+    "1971_sph_2s1_gvozdika"
+   ],
+   "split": false
+  },
+  "m142_himars": {
+   "primary": "2000_mlrs_m142",
+   "targets": [
+    "2000_mlrs_m142"
+   ],
+   "split": false
+  },
+  "m77_128mm": {
+   "primary": "1977_mlrs_m77_oganj",
+   "targets": [
+    "1977_mlrs_m77_oganj"
+   ],
+   "split": false
+  },
+  "2s22_bohdana": {
+   "primary": "2019_sph_2s22_bogdana",
+   "targets": [
+    "2019_sph_2s22_bogdana"
+   ],
+   "split": false
+  },
+  "2s5_giatsint_s": {
+   "primary": "1976_spg_2s5_giatsint_s",
+   "targets": [
+    "1976_spg_2s5_giatsint_s"
+   ],
+   "split": false
+  },
+  "bm_21": {
+   "primary": "1963_mlrs_bm_21_grad",
+   "targets": [
+    "1963_mlrs_bm_21_grad"
+   ],
+   "split": false
+  },
+  "g_6_rhino": {
+   "primary": "1988_sph_g6_rhino",
+   "targets": [
+    "1988_sph_g6_rhino"
+   ],
+   "split": false
+  },
+  "9a52_2_smerch": {
+   "primary": "1989_mlrs_9a52_2",
+   "targets": [
+    "1989_mlrs_9a52_2"
+   ],
+   "split": false
+  },
+  "2a65": {
+   "primary": "1986_towed_howitzer_2a65_msta_b",
+   "targets": [
+    "1986_towed_howitzer_2a65_msta_b"
+   ],
+   "split": false
+  },
+  "wm_80": {
+   "primary": "1995_mlrs_wm_80",
+   "targets": [
+    "1995_mlrs_wm_80"
+   ],
+   "split": false
+  },
+  "2s19m1_msta_s": {
+   "primary": "2000_sph_2s19m1",
+   "targets": [
+    "2000_sph_2s19m1"
+   ],
+   "split": false
+  },
+  "au_f1": {
+   "primary": "1977_spg_gct",
+   "targets": [
+    "1977_spg_gct"
+   ],
+   "split": false
+  },
+  "pcl_181": {
+   "primary": "2017_sph_pcl_181",
+   "targets": [
+    "2017_sph_pcl_181"
+   ],
+   "split": false
+  },
+  "9p140_uragan": {
+   "primary": "1975_mlrs_9p140",
+   "targets": [
+    "1975_mlrs_9p140"
+   ],
+   "split": false
+  },
+  "astros_ii": {
+   "primary": "1983_mlrs_astros_ii",
+   "targets": [
+    "1983_mlrs_astros_ii"
+   ],
+   "split": false
+  },
+  "caesar_155mm": {
+   "primary": "2006_sph_caesar",
+   "targets": [
+    "2006_sph_caesar"
+   ],
+   "split": false
+  },
+  "m109_paladin": {
+   "primary": "1991_sph_m109a6_paladin",
+   "targets": [
+    "1991_sph_m109a6_paladin"
+   ],
+   "split": false
+  },
+  "type_63_107mm_mrl": {
+   "primary": "1963_mlrs_phl_63",
+   "targets": [
+    "1963_mlrs_phl_63"
+   ],
+   "split": false
+  },
+  "d_20": {
+   "primary": "1955_towed_howitzer_d_20",
+   "targets": [
+    "1955_towed_howitzer_d_20"
+   ],
+   "split": false
+  },
+  "2b9_type99_82mm_automatic_mortar": {
+   "primary": "1971_mortar_2b9_vasilek",
+   "targets": [
+    "1971_mortar_2b9_vasilek"
+   ],
+   "split": false
+  },
+  "m1978_m1989_koksan": {
+   "primary": "1978_spg_m_1978_koksan",
+   "targets": [
+    "1978_spg_m_1978_koksan"
+   ],
+   "split": false
+  },
+  "9a53_s_tornado_s": {
+   "primary": "2016_mlrs_9a53_s_tornado_s",
+   "targets": [
+    "2016_mlrs_9a53_s_tornado_s"
+   ],
+   "split": false
+  },
+  "g_5": {
+   "primary": "1983_towed_howitzer_g_5",
+   "targets": [
+    "1983_towed_howitzer_g_5"
+   ],
+   "split": false
+  },
+  "2s35_koalitsiya_sv": {
+   "primary": "2016_sph_2s35_koalitsiya_sv",
+   "targets": [
+    "2016_sph_2s35_koalitsiya_sv"
+   ],
+   "split": false
+  },
+  "type_83_152mm_sp_howitzer": {
+   "primary": "1983_sph_plz_83",
+   "targets": [
+    "1983_sph_plz_83"
+   ],
+   "split": false
+  },
+  "d_30": {
+   "primary": "1960_towed_howitzer_d_30",
+   "targets": [
+    "1960_towed_howitzer_d_30"
+   ],
+   "split": false
+  },
+  "2s43_malva": {
+   "primary": "2023_sph_2s43_malva",
+   "targets": [
+    "2023_sph_2s43_malva"
+   ],
+   "split": false
+  },
+  "2b16_nona_k": {
+   "primary": "1986_mortar_2b16",
+   "targets": [
+    "1986_mortar_2b16"
+   ],
+   "split": false
+  },
+  "2a36_giatsint_b": {
+   "primary": "1976_towed_gun_2a36_giatsint_b",
+   "targets": [
+    "1976_towed_gun_2a36_giatsint_b"
+   ],
+   "split": false
+  },
+  "m777a2": {
+   "primary": "2005_towed_howitzer_m777a2",
+   "targets": [
+    "2005_towed_howitzer_m777a2"
+   ],
+   "split": false
+  },
+  "fadjr_3": {
+   "primary": "1996_mlrs_fajr_3",
+   "targets": [
+    "1996_mlrs_fajr_3"
+   ],
+   "split": false
+  },
+  "phl_16": {
+   "primary": "2019_mlrs_phl_16",
+   "targets": [
+    "2019_mlrs_phl_16"
+   ],
+   "split": false
+  },
+  "9a51_prima": {
+   "primary": "1988_mlrs_9a51_prima",
+   "targets": [
+    "1988_mlrs_9a51_prima"
+   ],
+   "split": false
+  },
+  "lynx_rocket_missile_launcher": {
+   "primary": "2007_mlrs_lynx",
+   "targets": [
+    "2007_mlrs_lynx"
+   ],
+   "split": false
+  },
+  "lynx_mrl": {
+   "primary": "2007_mlrs_lynx",
+   "targets": [
+    "2007_mlrs_lynx"
+   ],
+   "split": false
+  },
+  "2s3m_akatsiya": {
+   "primary": "1971_sph_2s3m1",
+   "targets": [
+    "1971_sph_2s3m1"
+   ],
+   "split": false
+  },
+  "2s7_pion": {
+   "primary": "1975_spg_2s7_pion",
+   "targets": [
+    "1975_spg_2s7_pion"
+   ],
+   "split": false
+  },
+  "pcl_171": {
+   "primary": "2020_sph_pcl_171",
+   "targets": [
+    "2020_sph_pcl_171"
+   ],
+   "split": false
+  },
+  "m_46": {
+   "primary": "1946_towed_gun_m_46",
+   "targets": [
+    "1946_towed_gun_m_46"
+   ],
+   "split": false
+  },
+  "c_5k": {
+   "primary": "2000_improvised_rocket_launcher_c_5k",
+   "targets": [
+    "2000_improvised_rocket_launcher_c_5k"
+   ],
+   "split": false
+  },
+  "type_63_improvised_rocket_launcher": {
+   "primary": "1960_improvised_rocket_launcher_type_63_improvised",
+   "targets": [
+    "1960_improvised_rocket_launcher_type_63_improvised"
+   ],
+   "split": false
+  },
+  "type_wx_90": {
+   "primary": "1990_mortar_type_wx_90",
+   "targets": [
+    "1990_mortar_type_wx_90"
+   ],
+   "split": false
+  },
+  "sadarm": {
+   "primary": "submunition_sadarm",
+   "targets": [
+    "submunition_sadarm"
+   ],
+   "split": false
+  },
+  "mcs_e2_155mm": {
+   "primary": "submunition_mcs_e2_155mm",
+   "targets": [
+    "submunition_mcs_e2_155mm"
+   ],
+   "split": false
+  },
+  "mcs_e2_152mm": {
+   "primary": "submunition_mcs_e2_152mm",
+   "targets": [
+    "submunition_mcs_e2_152mm"
+   ],
+   "split": false
+  },
+  "mcs_e1": {
+   "primary": "submunition_mcs_e1",
+   "targets": [
+    "submunition_mcs_e1"
+   ],
+   "split": false
+  },
+  "universal_submunition": {
+   "primary": "submunition_universal_submunition",
+   "targets": [
+    "submunition_universal_submunition"
+   ],
+   "split": false
+  },
+  "motiv_3m": {
+   "primary": "submunition_motiv_3m",
+   "targets": [
+    "submunition_motiv_3m"
+   ],
+   "split": false
+  },
+  "meteor_submunition": {
+   "primary": "submunition_meteor",
+   "targets": [
+    "submunition_meteor"
+   ],
+   "split": false
+  },
+  "israeli_top_attack_sensing_submunition": {
+   "primary": "submunition_israeli_top_attack_sensing",
+   "targets": [
+    "submunition_israeli_top_attack_sensing"
+   ],
+   "split": false
+  },
+  "indian_sensor_fuzed_munition": {
+   "primary": "submunition_indian_sensor_fuzed_munition",
+   "targets": [
+    "submunition_indian_sensor_fuzed_munition"
+   ],
+   "split": false
+  },
+  "smart_155": {
+   "primary": "submunition_smart_155",
+   "targets": [
+    "submunition_smart_155"
+   ],
+   "split": false
+  },
+  "bonus_ii": {
+   "primary": "submunition_bonus_ii",
+   "targets": [
+    "submunition_bonus_ii"
+   ],
+   "split": false
+  },
+  "copperhead": {
+   "primary": "guided_projectile_copperhead",
+   "targets": [
+    "guided_projectile_copperhead"
+   ],
+   "split": false
+  },
+  "ugroza": {
+   "primary": "guided_projectile_ugroza",
+   "targets": [
+    "guided_projectile_ugroza"
+   ],
+   "split": false
+  },
+  "aurora_projectile": {
+   "primary": "guided_projectile_aurora",
+   "targets": [
+    "guided_projectile_aurora"
+   ],
+   "split": false
+  },
+  "santimeter_1": {
+   "primary": "guided_projectile_santimeter_1",
+   "targets": [
+    "guided_projectile_santimeter_1"
+   ],
+   "split": false
+  },
+  "krasnopol_m_km2": {
+   "primary": "guided_projectile_krasnopol_m",
+   "targets": [
+    "guided_projectile_krasnopol_m"
+   ],
+   "split": false
+  },
+  "krasnopol": {
+   "primary": "guided_projectile_krasnopol",
+   "targets": [
+    "guided_projectile_krasnopol"
+   ],
+   "split": false
+  },
+  "kitolov_2m_km3": {
+   "primary": "guided_projectile_kitolov_2m",
+   "targets": [
+    "guided_projectile_kitolov_2m"
+   ],
+   "split": false
+  },
+  "gran_mortar_projectile": {
+   "primary": "guided_mortar_bomb_gran",
+   "targets": [
+    "guided_mortar_bomb_gran"
+   ],
+   "split": false
+  },
+  "smelchak": {
+   "primary": "guided_mortar_bomb_smel_chak",
+   "targets": [
+    "guided_mortar_bomb_smel_chak"
+   ],
+   "split": false
+  },
+  "kitolov_2": {
+   "primary": "guided_projectile_kitolov_2",
+   "targets": [
+    "guided_projectile_kitolov_2"
+   ],
+   "split": false
+  },
+  "terminally_guided_mortar_bomb": {
+   "primary": "guided_mortar_bomb_terminally_guided_mortar_bomb",
+   "targets": [
+    "guided_mortar_bomb_terminally_guided_mortar_bomb"
+   ],
+   "split": false
+  },
+  "bussard_mortar_projectile": {
+   "primary": "guided_mortar_bomb_bussard",
+   "targets": [
+    "guided_mortar_bomb_bussard"
+   ],
+   "split": false
+  },
+  "star_fuze": {
+   "primary": "artillery_fuze_star",
+   "targets": [
+    "artillery_fuze_star"
+   ],
+   "split": false
+  },
+  "samprass_fuze": {
+   "primary": "artillery_fuze_samprass",
+   "targets": [
+    "artillery_fuze_samprass"
+   ],
+   "split": false
+  },
+  "bromsa_fuze": {
+   "primary": "artillery_fuze_bromsa",
+   "targets": [
+    "artillery_fuze_bromsa"
+   ],
+   "split": false
+  },
+  "ramjet_projectile_155mm": {
+   "primary": "guided_projectile_ramjet_projectile",
+   "targets": [
+    "guided_projectile_ramjet_projectile"
+   ],
+   "split": false
+  },
+  "bwb_gps_fin_stabilized_projectile": {
+   "primary": "guided_projectile_bwb_gps_fin_stabilized",
+   "targets": [
+    "guided_projectile_bwb_gps_fin_stabilized"
+   ],
+   "split": false
+  },
+  "pelican_projectile": {
+   "primary": "guided_projectile_pelican",
+   "targets": [
+    "guided_projectile_pelican"
+   ],
+   "split": false
+  },
+  "poleaxe_projectile": {
+   "primary": "guided_projectile_poleaxe",
+   "targets": [
+    "guided_projectile_poleaxe"
+   ],
+   "split": false
+  },
+  "diehl_gps_geschoss": {
+   "primary": "guided_projectile_diehl_gps_geschoss",
+   "targets": [
+    "guided_projectile_diehl_gps_geschoss"
+   ],
+   "split": false
+  },
+  "tcm_excalibur_projectile": {
+   "primary": "guided_projectile_tcm_excalibur",
+   "targets": [
+    "guided_projectile_tcm_excalibur"
+   ],
+   "split": false
+  },
+  "diehl_rm_70_upgrade_rocket": {
+   "primary": "guided_rocket_diehl_rm_70_upgrade",
+   "targets": [
+    "guided_rocket_diehl_rm_70_upgrade"
+   ],
+   "split": false
+  },
+  "lt_2000_mk45_rocket": {
+   "primary": "guided_rocket_lt_2000_mk45",
+   "targets": [
+    "guided_rocket_lt_2000_mk45"
+   ],
+   "split": false
+  },
+  "mars_naw_rocket": {
+   "primary": "guided_rocket_mars_naw",
+   "targets": [
+    "guided_rocket_mars_naw"
+   ],
+   "split": false
+  },
+  "corect_rocket": {
+   "primary": "guided_rocket_corect",
+   "targets": [
+    "guided_rocket_corect"
+   ],
+   "split": false
+  },
+  "angel_100_rocket": {
+   "primary": "guided_rocket_angel_100",
+   "targets": [
+    "guided_rocket_angel_100"
+   ],
+   "split": false
+  },
+  "mlrs_tcs": {
+   "primary": "guided_rocket_mlrs_tcs",
+   "targets": [
+    "guided_rocket_mlrs_tcs"
+   ],
+   "split": false
+  },
+  "accular_rocket": {
+   "primary": "guided_rocket_accular",
+   "targets": [
+    "guided_rocket_accular"
+   ],
+   "split": false
+  },
+  "9m5xx_series_guided_rocket": {
+   "primary": "guided_rocket_9m5xx_series",
+   "targets": [
+    "guided_rocket_9m5xx_series"
+   ],
+   "split": false
+  },
+  "9m55_series_guided_rocket": {
+   "primary": "guided_rocket_9m55_series",
+   "targets": [
+    "guided_rocket_9m55_series"
+   ],
+   "split": false
+  },
+  "gh_n_45": {
+   "primary": "1980_towed_howitzer_gh_n_45",
+   "targets": [
+    "1980_towed_howitzer_gh_n_45"
+   ],
+   "split": false
+  },
+  "china_120mm_sp_wheeled_combo_gun": {
+   "primary": "2001_spm_wz_551_combination_gun",
+   "targets": [
+    "2001_spm_wz_551_combination_gun"
+   ],
+   "split": false
+  },
+  "m_160_mortar": {
+   "primary": "1953_mortar_m_160",
+   "targets": [
+    "1953_mortar_m_160"
+   ],
+   "split": false
+  },
+  "m_240_m53_240mm_mortar": {
+   "primary": "1952_mortar_m_240_m_53",
+   "targets": [
+    "1952_mortar_m_240_m_53"
+   ],
+   "split": false
+  },
+  "type_89_100mm_mortar": {
+   "primary": "1989_mortar_type_89",
+   "targets": [
+    "1989_mortar_type_89"
+   ],
+   "split": false
+  },
+  "al_jaleel_120mm_mortar": {
+   "primary": "mortar_al_jaleel_120mm_mortar",
+   "targets": [
+    "mortar_al_jaleel_120mm_mortar"
+   ],
+   "split": false
+  },
+  "m74_120mm_mortar": {
+   "primary": "mortar_m74",
+   "targets": [
+    "mortar_m74"
+   ],
+   "split": false
+  },
+  "m75_120mm_mortar": {
+   "primary": "mortar_m75",
+   "targets": [
+    "mortar_m75"
+   ],
+   "split": false
+  },
+  "sl_120mm_mortar": {
+   "primary": "mortar_sl",
+   "targets": [
+    "mortar_sl"
+   ],
+   "split": false
+  },
+  "m_8_mortar_50mm": {
+   "primary": "mortar_m_8",
+   "targets": [
+    "mortar_m_8"
+   ],
+   "split": false
+  },
+  "al_jaleel_commando_mortar_m70": {
+   "primary": "mortar_al_jaleel_commando",
+   "targets": [
+    "mortar_al_jaleel_commando"
+   ],
+   "split": false
+  },
+  "al_jaleel_infantry_mortar_m57": {
+   "primary": "mortar_al_jaleel_infantry",
+   "targets": [
+    "mortar_al_jaleel_infantry"
+   ],
+   "split": false
+  },
+  "m70_commando_mortar": {
+   "primary": "mortar_m70_commando",
+   "targets": [
+    "mortar_m70_commando"
+   ],
+   "split": false
+  },
+  "brandt_commando_mortar": {
+   "primary": "mortar_brandt_commando",
+   "targets": [
+    "mortar_brandt_commando"
+   ],
+   "split": false
+  },
+  "t1_commando_mortar": {
+   "primary": "mortar_t1_commando",
+   "targets": [
+    "mortar_t1_commando"
+   ],
+   "split": false
+  },
+  "hadib_infantry_mortar_60mm": {
+   "primary": "mortar_hadib_infantry",
+   "targets": [
+    "mortar_hadib_infantry"
+   ],
+   "split": false
+  },
+  "type_85_w85_mortar": {
+   "primary": "1985_mortar_type_85",
+   "targets": [
+    "1985_mortar_type_85"
+   ],
+   "split": false
+  },
+  "type_90_w90_mortar": {
+   "primary": "1990_mortar_type_90",
+   "targets": [
+    "1990_mortar_type_90"
+   ],
+   "split": false
+  },
+  "hadid_81mm_mortar": {
+   "primary": "mortar_hadid",
+   "targets": [
+    "mortar_hadid"
+   ],
+   "split": false
+  },
+  "w87_81mm_mortar": {
+   "primary": "1987_mortar_w87",
+   "targets": [
+    "1987_mortar_w87"
+   ],
+   "split": false
+  },
+  "al_jaleel_82mm_mortar": {
+   "primary": "mortar_al_jaleel_82mm_mortar",
+   "targets": [
+    "mortar_al_jaleel_82mm_mortar"
+   ],
+   "split": false
+  },
+  "m69a_82mm_mortar": {
+   "primary": "1960_mortar_m69a",
+   "targets": [
+    "1960_mortar_m69a"
+   ],
+   "split": false
+  },
+  "type_84_82mm_mortar": {
+   "primary": "1984_mortar_type_84",
+   "targets": [
+    "1984_mortar_type_84"
+   ],
+   "split": false
+  },
+  "2s9_1_nona_s": {
+   "primary": "1981_spm_2s9_1",
+   "targets": [
+    "1981_spm_2s9_1"
+   ],
+   "split": false
+  },
+  "krasnopol_m2": {
+   "primary": "2023_guided_projectile_krasnopol_m2",
+   "targets": [
+    "2023_guided_projectile_krasnopol_m2"
+   ],
+   "split": false
+  },
+  "m1299_erca": {
+   "primary": "2024_sph_m1299_erca",
+   "targets": [
+    "2024_sph_m1299_erca"
+   ],
+   "split": false
+  },
+  "gmlrs_er": {
+   "primary": "2023_guided_rocket_gmlrs_er",
+   "targets": [
+    "2023_guided_rocket_gmlrs_er"
+   ],
+   "split": false
+  },
+  "prsm": {
+   "primary": "2023_surface_to_surface_missile_prsm",
+   "targets": [
+    "2023_surface_to_surface_missile_prsm"
+   ],
+   "split": false
+  },
+  "prsm_2": {
+   "primary": "2023_surface_to_surface_missile_prsm",
+   "targets": [
+    "2023_surface_to_surface_missile_prsm"
+   ],
+   "split": false
+  },
+  "glsdb": {
+   "primary": "2024_glide_munition_glsdb",
+   "targets": [
+    "2024_glide_munition_glsdb"
+   ],
+   "split": false
+  },
+  "caesar_ng": {
+   "primary": "2026_sph_caesar_ng",
+   "targets": [
+    "2026_sph_caesar_ng"
+   ],
+   "split": false
+  },
+  "sigma_155": {
+   "primary": "2025_sph_sigma_155",
+   "targets": [
+    "2025_sph_sigma_155"
+   ],
+   "split": false
+  },
+  "atacms": {
+   "primary": "surface_to_surface_missile_atacms",
+   "targets": [
+    "surface_to_surface_missile_atacms"
+   ],
+   "split": false
+  },
+  "gmlrs": {
+   "primary": "guided_rocket_gmlrs",
+   "targets": [
+    "guided_rocket_gmlrs"
+   ],
+   "split": false
+  },
+  "mortar_weapon_systems": {
+   "primary": "acquisition_program_mortar_weapon_systems",
+   "targets": [
+    "acquisition_program_mortar_weapon_systems"
+   ],
+   "split": false
+  },
+  "ricin_biotoxin": {
+   "primary": "1942_biological_agent_ricin",
+   "targets": [
+    "1942_biological_agent_ricin"
+   ],
+   "split": false
+  },
+  "sulfur_mustard_hd": {
+   "primary": "1920_chemical_agent_sulfur_mustard",
+   "targets": [
+    "1920_chemical_agent_sulfur_mustard"
+   ],
+   "split": false
+  },
+  "sarin_gb": {
+   "primary": "1939_chemical_agent_sarin",
+   "targets": [
+    "1939_chemical_agent_sarin"
+   ],
+   "split": false
+  },
+  "vx_nerve_agent": {
+   "primary": "1952_chemical_agent_vx",
+   "targets": [
+    "1952_chemical_agent_vx"
+   ],
+   "split": false
+  },
+  "chloroacetophenone_cn": {
+   "primary": "1970_chemical_agent_chloroacetophenone",
+   "targets": [
+    "1970_chemical_agent_chloroacetophenone"
+   ],
+   "split": false
+  },
+  "1v14": {
+   "primary": "1974_artillery_command_vehicle_1v14",
+   "targets": [
+    "1974_artillery_command_vehicle_1v14"
+   ],
+   "split": false
+  },
+  "1v18_1v19": {
+   "primary": "1979_artillery_command_vehicle_1v18_1v19",
+   "targets": [
+    "1979_artillery_command_vehicle_1v18_1v19"
+   ],
+   "split": false
+  },
+  "1v13": {
+   "primary": "1974_artillery_command_vehicle_1v13",
+   "targets": [
+    "1974_artillery_command_vehicle_1v13"
+   ],
+   "split": false
+  },
+  "r_142_nsa": {
+   "primary": "2008_command_and_signal_vehicle_r_142_nsa",
+   "targets": [
+    "2008_command_and_signal_vehicle_r_142_nsa"
+   ],
+   "split": false
+  },
+  "1v16": {
+   "primary": "1974_artillery_command_vehicle_1v16",
+   "targets": [
+    "1974_artillery_command_vehicle_1v16"
+   ],
+   "split": false
+  },
+  "1v110": {
+   "primary": "1979_artillery_command_vehicle_1v110",
+   "targets": [
+    "1979_artillery_command_vehicle_1v110"
+   ],
+   "split": false
+  },
+  "1v152": {
+   "primary": "1986_artillery_command_vehicle_1v152_fist",
+   "targets": [
+    "1986_artillery_command_vehicle_1v152_fist"
+   ],
+   "split": false
+  },
+  "1v111": {
+   "primary": "1979_artillery_command_vehicle_1v111",
+   "targets": [
+    "1979_artillery_command_vehicle_1v111"
+   ],
+   "split": false
+  },
+  "ibms_pakistan": {
+   "primary": "2010_battle_management_system_pak_ibms",
+   "targets": [
+    "2010_battle_management_system_pak_ibms"
+   ],
+   "split": false
+  },
+  "kushetka_b": {
+   "primary": "1990_command_and_signal_vehicle_r_149bmr",
+   "targets": [
+    "1990_command_and_signal_vehicle_r_149bmr"
+   ],
+   "split": false
+  },
+  "1v119": {
+   "primary": "1981_artillery_command_vehicle_1v119",
+   "targets": [
+    "1981_artillery_command_vehicle_1v119"
+   ],
+   "split": false
+  },
+  "1v15": {
+   "primary": "1974_artillery_command_vehicle_1v15",
+   "targets": [
+    "1974_artillery_command_vehicle_1v15"
+   ],
+   "split": false
+  },
+  "panther_v": {
+   "primary": "1995_vhf_radio_panther_v",
+   "targets": [
+    "1995_vhf_radio_panther_v"
+   ],
+   "split": false
+  },
+  "bmp_1kshm": {
+   "primary": "1976_command_vehicle_bmp_1kshm",
+   "targets": [
+    "1976_command_vehicle_bmp_1kshm"
+   ],
+   "split": false
+  },
+  "1v153": {
+   "primary": "2000_artillery_command_vehicle_1v153",
+   "targets": [
+    "2000_artillery_command_vehicle_1v153"
+   ],
+   "split": false
+  },
+  "mp_32m1": {
+   "primary": "artillery_command_vehicle_mp_32m1",
+   "targets": [
+    "artillery_command_vehicle_mp_32m1"
+   ],
+   "split": false
+  },
+  "chlorine_cl2": {
+   "primary": "chemical_agent_chlorine",
+   "targets": [
+    "chemical_agent_chlorine"
+   ],
+   "split": false
+  },
+  "hydrogen_cyanide_ac": {
+   "primary": "chemical_agent_hydrogen_cyanide",
+   "targets": [
+    "chemical_agent_hydrogen_cyanide"
+   ],
+   "split": false
+  },
+  "eritac": {
+   "primary": "1999_tactical_communications_system_eritac",
+   "targets": [
+    "1999_tactical_communications_system_eritac"
+   ],
+   "split": false
+  },
+  "panther_p": {
+   "primary": "1995_vhf_radio_panther_p",
+   "targets": [
+    "1995_vhf_radio_panther_p"
+   ],
+   "split": false
+  },
+  "prc104": {
+   "primary": "hf_radio_prc104",
+   "targets": [
+    "hf_radio_prc104"
+   ],
+   "split": false
+  },
+  "pvs5300": {
+   "primary": "hf_radio_pvs5300",
+   "targets": [
+    "hf_radio_pvs5300"
+   ],
+   "split": false
+  },
+  "prc138": {
+   "primary": "hf_radio_prc138",
+   "targets": [
+    "hf_radio_prc138"
+   ],
+   "split": false
+  },
+  "scimitar_h": {
+   "primary": "hf_radio_scimitar_h",
+   "targets": [
+    "hf_radio_scimitar_h"
+   ],
+   "split": false
+  },
+  "r161_5": {
+   "primary": "hf_radio_r161_5",
+   "targets": [
+    "hf_radio_r161_5"
+   ],
+   "split": false
+  },
+  "ksr8": {
+   "primary": "radio_relay_ksr8",
+   "targets": [
+    "radio_relay_ksr8"
+   ],
+   "split": false
+  },
+  "r423_1": {
+   "primary": "radio_relay_r423_1",
+   "targets": [
+    "radio_relay_r423_1"
+   ],
+   "split": false
+  },
+  "rl402": {
+   "primary": "radio_relay_rl402",
+   "targets": [
+    "radio_relay_rl402"
+   ],
+   "split": false
+  },
+  "r31k": {
+   "primary": "vhf_radio_r31k",
+   "targets": [
+    "vhf_radio_r31k"
+   ],
+   "split": false
+  },
+  "ach42": {
+   "primary": "vhf_radio_ach42",
+   "targets": [
+    "vhf_radio_ach42"
+   ],
+   "split": false
+  },
+  "trc5102": {
+   "primary": "vhf_radio_trc5102",
+   "targets": [
+    "vhf_radio_trc5102"
+   ],
+   "split": false
+  },
+  "r123m": {
+   "primary": "vhf_radio_r123m",
+   "targets": [
+    "vhf_radio_r123m"
+   ],
+   "split": false
+  },
+  "xk2000": {
+   "primary": "hf_radio_xk2000",
+   "targets": [
+    "hf_radio_xk2000"
+   ],
+   "split": false
+  },
+  "rf5000": {
+   "primary": "hf_radio_rf5000",
+   "targets": [
+    "hf_radio_rf5000"
+   ],
+   "split": false
+  },
+  "m3tr": {
+   "primary": "multiband_radio_m3tr",
+   "targets": [
+    "multiband_radio_m3tr"
+   ],
+   "split": false
+  },
+  "r173m": {
+   "primary": "vhf_radio_r173m",
+   "targets": [
+    "vhf_radio_r173m"
+   ],
+   "split": false
+  },
+  "r163_50u": {
+   "primary": "vhf_radio_r163_50u",
+   "targets": [
+    "vhf_radio_r163_50u"
+   ],
+   "split": false
+  },
+  "jaguar_v": {
+   "primary": "vhf_radio_jaguar_v",
+   "targets": [
+    "vhf_radio_jaguar_v"
+   ],
+   "split": false
+  },
+  "mt_55a": {
+   "primary": "1970_avlb_mt_55a",
+   "targets": [
+    "1970_avlb_mt_55a"
+   ],
+   "split": false
+  },
+  "imr_2m": {
+   "primary": "1987_combat_engineer_vehicle_imr_2m",
+   "targets": [
+    "1987_combat_engineer_vehicle_imr_2m"
+   ],
+   "split": false
+  },
+  "bat_m": {
+   "primary": "1975_combat_engineer_vehicle_bat_m",
+   "targets": [
+    "1975_combat_engineer_vehicle_bat_m"
+   ],
+   "split": false
+  },
+  "gmz_3": {
+   "primary": "1968_minelayer_gmz_3",
+   "targets": [
+    "1968_minelayer_gmz_3"
+   ],
+   "split": false
+  },
+  "tmm": {
+   "primary": "1964_truck_launched_bridge_tmm",
+   "targets": [
+    "1964_truck_launched_bridge_tmm"
+   ],
+   "split": false
+  },
+  "umz": {
+   "primary": "1979_minelayer_umz",
+   "targets": [
+    "1979_minelayer_umz"
+   ],
+   "split": false
+  },
+  "pmp": {
+   "primary": "1961_pontoon_bridge_pmp",
+   "targets": [
+    "1961_pontoon_bridge_pmp"
+   ],
+   "split": false
+  },
+  "kmt_5": {
+   "primary": "1960_mine_clearing_device_kmt_5",
+   "targets": [
+    "1960_mine_clearing_device_kmt_5"
+   ],
+   "split": false
+  },
+  "pmz_4_pmr_3": {
+   "primary": "1980_minelayer_pmz_4",
+   "targets": [
+    "1980_minelayer_pmz_4"
+   ],
+   "split": false
+  },
+  "btm_4_mdk_3": {
+   "primary": "1986_trencher_mdk_3",
+   "targets": [
+    "1986_trencher_mdk_3"
+   ],
+   "split": false
+  },
+  "pmm_2": {
+   "primary": "1983_amphibious_bridging_ferry_pmm_2",
+   "targets": [
+    "1983_amphibious_bridging_ferry_pmm_2"
+   ],
+   "split": false
+  },
+  "mtu_72": {
+   "primary": "1974_avlb_mtu_72",
+   "targets": [
+    "1974_avlb_mtu_72"
+   ],
+   "split": false
+  },
+  "bat_2": {
+   "primary": "1988_combat_engineer_vehicle_bat_2",
+   "targets": [
+    "1988_combat_engineer_vehicle_bat_2"
+   ],
+   "split": false
+  },
+  "dim": {
+   "primary": "1975_mine_detection_vehicle_dim",
+   "targets": [
+    "1975_mine_detection_vehicle_dim"
+   ],
+   "split": false
+  },
+  "mtk_2": {
+   "primary": "1979_mine_clearing_vehicle_ur_77_meteorit",
+   "targets": [
+    "1979_mine_clearing_vehicle_ur_77_meteorit"
+   ],
+   "split": false
+  },
+  "hmee_iv": {
+   "primary": "backhoe_loader_hmee_iv",
+   "targets": [
+    "backhoe_loader_hmee_iv"
+   ],
+   "split": false
+  },
+  "ur_83p": {
+   "primary": "mine_breaching_system_ur_83p",
+   "targets": [
+    "mine_breaching_system_ur_83p"
+   ],
+   "split": false
+  },
+  "type_81_mineclearing_rocket_system": {
+   "primary": "mine_breaching_system_type_81",
+   "targets": [
+    "mine_breaching_system_type_81"
+   ],
+   "split": false
+  },
+  "type_84_tracked_mounted_breaching_system": {
+   "primary": "mine_breaching_system_type_84",
+   "targets": [
+    "mine_breaching_system_type_84"
+   ],
+   "split": false
+  },
+  "type_762": {
+   "primary": "mine_breaching_system_type_762",
+   "targets": [
+    "mine_breaching_system_type_762"
+   ],
+   "split": false
+  },
+  "svo": {
+   "primary": "mine_breaching_system_svo",
+   "targets": [
+    "mine_breaching_system_svo"
+   ],
+   "split": false
+  },
+  "uz_67": {
+   "primary": "line_charge_uz_67",
+   "targets": [
+    "line_charge_uz_67"
+   ],
+   "split": false
+  },
+  "uz_77": {
+   "primary": "line_charge_uz_77",
+   "targets": [
+    "line_charge_uz_77"
+   ],
+   "split": false
+  },
+  "valsella_lstrice_vs_mtlu_1": {
+   "primary": "1987_minelayer_valsella_lstrice_vs_mtlu_1",
+   "targets": [
+    "1987_minelayer_valsella_lstrice_vs_mtlu_1"
+   ],
+   "split": false
+  },
+  "pkm_man_portable_minelaying_system": {
+   "primary": "portable_minelayer_pkm",
+   "targets": [
+    "portable_minelayer_pkm"
+   ],
+   "split": false
+  },
+  "dz_180a": {
+   "primary": "grader_dz_180a",
+   "targets": [
+    "grader_dz_180a"
+   ],
+   "split": false
+  },
+  "military_bridging_systems": {
+   "primary": "acquisition_program_military_bridging_systems",
+   "targets": [
+    "acquisition_program_military_bridging_systems"
+   ],
+   "split": false
+  },
+  "t_9_medium_dozer": {
+   "primary": "dozer_t_9",
+   "targets": [
+    "dozer_t_9"
+   ],
+   "split": false
+  },
+  "crs_h": {
+   "primary": "eod_robot_crs_h",
+   "targets": [
+    "eod_robot_crs_h"
+   ],
+   "split": false
+  },
+  "crs_i": {
+   "primary": "eod_robot_crs_i",
+   "targets": [
+    "eod_robot_crs_i"
+   ],
+   "split": false
+  },
+  "mtrs_inc_ii": {
+   "primary": "eod_robot_mtrs_inc_ii",
+   "targets": [
+    "eod_robot_mtrs_inc_ii"
+   ],
+   "split": false
+  },
+  "romans": {
+   "primary": "line_charge_romans",
+   "targets": [
+    "line_charge_romans"
+   ],
+   "split": false
+  },
+  "rambs": {
+   "primary": "line_charge_rambs",
+   "targets": [
+    "line_charge_rambs"
+   ],
+   "split": false
+  },
+  "rambs_2": {
+   "primary": "line_charge_rambs_2",
+   "targets": [
+    "line_charge_rambs_2"
+   ],
+   "split": false
+  },
+  "pomins_i": {
+   "primary": "line_charge_pomins_i",
+   "targets": [
+    "line_charge_pomins_i"
+   ],
+   "split": false
+  },
+  "pomins_ii": {
+   "primary": "line_charge_pomins_ii",
+   "targets": [
+    "line_charge_pomins_ii"
+   ],
+   "split": false
+  },
+  "clap_m": {
+   "primary": "line_charge_clap_m",
+   "targets": [
+    "line_charge_clap_m"
+   ],
+   "split": false
+  },
+  "m_60_sweden_line_charge": {
+   "primary": "line_charge_m_60",
+   "targets": [
+    "line_charge_m_60"
+   ],
+   "split": false
+  },
+  "ladder_80": {
+   "primary": "line_charge_ladder_80",
+   "targets": [
+    "line_charge_ladder_80"
+   ],
+   "split": false
+  },
+  "comet_no_3001": {
+   "primary": "line_charge_comet_no_3001",
+   "targets": [
+    "line_charge_comet_no_3001"
+   ],
+   "split": false
+  },
+  "comet_no_3010": {
+   "primary": "line_charge_comet_no_3010",
+   "targets": [
+    "line_charge_comet_no_3010"
+   ],
+   "split": false
+  },
+  "odmira_60": {
+   "primary": "line_charge_odmira_60",
+   "targets": [
+    "line_charge_odmira_60"
+   ],
+   "split": false
+  },
+  "fateh_1": {
+   "primary": "line_charge_fateh_1",
+   "targets": [
+    "line_charge_fateh_1"
+   ],
+   "split": false
+  },
+  "type_70_infantry_line_charge": {
+   "primary": "line_charge_type_70",
+   "targets": [
+    "line_charge_type_70"
+   ],
+   "split": false
+  },
+  "type_73_infantry_line_charge": {
+   "primary": "line_charge_type_73",
+   "targets": [
+    "line_charge_type_73"
+   ],
+   "split": false
+  },
+  "type_74_infantry_line_charge": {
+   "primary": "line_charge_type_74",
+   "targets": [
+    "line_charge_type_74"
+   ],
+   "split": false
+  },
+  "type_81_infantry_line_charge": {
+   "primary": "line_charge_type_81",
+   "targets": [
+    "line_charge_type_81"
+   ],
+   "split": false
+  },
+  "type_84_infantry_line_charge": {
+   "primary": "line_charge_type_84",
+   "targets": [
+    "line_charge_type_84"
+   ],
+   "split": false
+  },
+  "line_charge_unknown_iraq": {
+   "primary": "line_charge_unknown_iraq_40m",
+   "targets": [
+    "line_charge_unknown_iraq_40m"
+   ],
+   "split": false
+  },
+  "line_charge_unknown_north_korea": {
+   "primary": "line_charge_unknown_north_korea_180m",
+   "targets": [
+    "line_charge_unknown_north_korea_180m"
+   ],
+   "split": false
+  },
+  "line_charge_unknown_south_africa_1": {
+   "primary": "line_charge_unknown_south_africa_35m",
+   "targets": [
+    "line_charge_unknown_south_africa_35m"
+   ],
+   "split": false
+  },
+  "line_charge_unknown_south_africa_2": {
+   "primary": "line_charge_unknown_south_africa_120m",
+   "targets": [
+    "line_charge_unknown_south_africa_120m"
+   ],
+   "split": false
+  },
+  "optima_3": {
+   "primary": "2003_gnss_jammer_optima_3",
+   "targets": [
+    "2003_gnss_jammer_optima_3"
+   ],
+   "split": false
+  },
+  "eule": {
+   "primary": "2001_comint_eule",
+   "targets": [
+    "2001_comint_eule"
+   ],
+   "split": false
+  },
+  "leer_2": {
+   "primary": "2012_ew_complex_85ya6_tigr_m_leer_2",
+   "targets": [
+    "2012_ew_complex_85ya6_tigr_m_leer_2"
+   ],
+   "split": false
+  },
+  "rb_109a_bylina": {
+   "primary": "2017_ew_command_post_rb_109a_bylina",
+   "targets": [
+    "2017_ew_command_post_rb_109a_bylina"
+   ],
+   "split": false
+  },
+  "meerkat_s": {
+   "primary": "2013_elint_meerkat_sa",
+   "targets": [
+    "2013_elint_meerkat_sa"
+   ],
+   "split": false
+  },
+  "trc274": {
+   "primary": "2003_comms_jammer_trc_274",
+   "targets": [
+    "2003_comms_jammer_trc_274"
+   ],
+   "split": false
+  },
+  "r_330b": {
+   "primary": "1998_comms_jammer_r_330b",
+   "targets": [
+    "1998_comms_jammer_r_330b"
+   ],
+   "split": false
+  },
+  "infauna": {
+   "primary": "2011_ew_complex_rb_531b_infauna",
+   "targets": [
+    "2011_ew_complex_rb_531b_infauna"
+   ],
+   "split": false
+  },
+  "r_330k": {
+   "primary": "1998_ew_command_post_r_330k",
+   "targets": [
+    "1998_ew_command_post_r_330k"
+   ],
+   "split": false
+  },
+  "pelena_1": {
+   "primary": "2015_radar_jammer_pelena_1",
+   "targets": [
+    "2015_radar_jammer_pelena_1"
+   ],
+   "split": false
+  },
+  "spn_2_4": {
+   "primary": "1999_radar_jammer_1rl248_4_spn_4",
+   "targets": [
+    "1999_radar_jammer_1rl248_4_spn_4"
+   ],
+   "split": false
+  },
+  "cicada_c_and_r": {
+   "primary": "2007_comms_jammer_hummel",
+   "targets": [
+    "2007_comms_jammer_hummel"
+   ],
+   "split": false
+  },
+  "hummel_table5": {
+   "primary": "2007_comms_jammer_hummel",
+   "targets": [
+    "2007_comms_jammer_hummel"
+   ],
+   "split": false
+  },
+  "r_330_zh": {
+   "primary": "2011_comms_jammer_r_330zh_zhitel",
+   "targets": [
+    "2011_comms_jammer_r_330zh_zhitel"
+   ],
+   "split": false
+  },
+  "orion_elint": {
+   "primary": "1995_elint_85v6_v_orion",
+   "targets": [
+    "1995_elint_85v6_v_orion"
+   ],
+   "split": false
+  },
+  "palantin": {
+   "primary": "2019_ew_complex_palantin_k",
+   "targets": [
+    "2019_ew_complex_palantin_k"
+   ],
+   "split": false
+  },
+  "r_934b": {
+   "primary": "1996_comms_jammer_r_934b",
+   "targets": [
+    "1996_comms_jammer_r_934b"
+   ],
+   "split": false
+  },
+  "mcs90_tamara": {
+   "primary": "1991_elint_krtp_91_tamara_trash_can",
+   "targets": [
+    "1991_elint_krtp_91_tamara_trash_can"
+   ],
+   "split": false
+  },
+  "krasukha_4": {
+   "primary": "2010_radar_jammer_1rl257_krasukha_4",
+   "targets": [
+    "2010_radar_jammer_1rl257_krasukha_4"
+   ],
+   "split": false
+  },
+  "rp_377l": {
+   "primary": "2019_comms_jammer_rp_377l_lorandit_m",
+   "targets": [
+    "2019_comms_jammer_rp_377l_lorandit_m"
+   ],
+   "split": false
+  },
+  "r_378b": {
+   "primary": "comms_jammer_r_378b",
+   "targets": [
+    "comms_jammer_r_378b"
+   ],
+   "split": false
+  },
+  "avtobaza_m": {
+   "primary": "elint_avtobaza_m",
+   "targets": [
+    "elint_avtobaza_m"
+   ],
+   "split": false
+  },
+  "sophie_lr": {
+   "primary": "1996_thermal_imager_sophie_lr",
+   "targets": [
+    "1996_thermal_imager_sophie_lr"
+   ],
+   "split": false
+  },
+  "elektrobit": {
+   "primary": "2010_comint_elektrobit",
+   "targets": [
+    "2010_comint_elektrobit"
+   ],
+   "split": false
+  },
+  "aviaconversia": {
+   "primary": "1990_gnss_jammer_aviaconversia",
+   "targets": [
+    "1990_gnss_jammer_aviaconversia"
+   ],
+   "split": false
+  },
+  "1l245": {
+   "primary": "1979_radar_jammer_1l245",
+   "targets": [
+    "1979_radar_jammer_1l245"
+   ],
+   "split": false
+  },
+  "el_k_7029_a_b": {
+   "primary": "comint_el_k_7029_a_b",
+   "targets": [
+    "comint_el_k_7029_a_b"
+   ],
+   "split": false
+  },
+  "storm_h": {
+   "primary": "comms_jammer_storm_h",
+   "targets": [
+    "comms_jammer_storm_h"
+   ],
+   "split": false
+  },
+  "aj_045a": {
+   "primary": "comms_jammer_aj_045a",
+   "targets": [
+    "comms_jammer_aj_045a"
+   ],
+   "split": false
+  },
+  "barrage": {
+   "primary": "comms_jammer_barrage",
+   "targets": [
+    "comms_jammer_barrage"
+   ],
+   "split": false
+  },
+  "jn_1102": {
+   "primary": "comms_jammer_jn_1102",
+   "targets": [
+    "comms_jammer_jn_1102"
+   ],
+   "split": false
+  },
+  "sgs2000": {
+   "primary": "ew_complex_sgs2000",
+   "targets": [
+    "ew_complex_sgs2000"
+   ],
+   "split": false
+  },
+  "cbj_40_bome": {
+   "primary": "radar_jammer_cbj_40_bome",
+   "targets": [
+    "radar_jammer_cbj_40_bome"
+   ],
+   "split": false
+  },
+  "liman_p2": {
+   "primary": "comms_jammer_liman_p2",
+   "targets": [
+    "comms_jammer_liman_p2"
+   ],
+   "split": false
+  },
+  "pelena_6": {
+   "primary": "comms_jammer_pelena_6",
+   "targets": [
+    "comms_jammer_pelena_6"
+   ],
+   "split": false
+  },
+  "gsy1800": {
+   "primary": "ew_complex_gsy1800",
+   "targets": [
+    "ew_complex_gsy1800"
+   ],
+   "split": false
+  },
+  "r_703_709": {
+   "primary": "elint_r_703_709",
+   "targets": [
+    "elint_r_703_709"
+   ],
+   "split": false
+  },
+  "weasel_2000": {
+   "primary": "elint_weasel_2000",
+   "targets": [
+    "elint_weasel_2000"
+   ],
+   "split": false
+  },
+  "volnorez": {
+   "primary": "2023_counter_uas_jammer_volnorez",
+   "targets": [
+    "2023_counter_uas_jammer_volnorez"
+   ],
+   "split": false
+  },
+  "tls_bct_manpack": {
+   "primary": "2024_ew_complex_tls_bct_manpack",
+   "targets": [
+    "2024_ew_complex_tls_bct_manpack"
+   ],
+   "split": false
+  },
+  "mfew_al": {
+   "primary": "ew_complex_mfew_al",
+   "targets": [
+    "ew_complex_mfew_al"
+   ],
+   "split": false
+  },
+  "rp_377la": {
+   "primary": "comms_jammer_rp_377la",
+   "targets": [
+    "comms_jammer_rp_377la"
+   ],
+   "split": false
+  },
+  "rp_377u": {
+   "primary": "comms_jammer_rp_377u",
+   "targets": [
+    "comms_jammer_rp_377u"
+   ],
+   "split": false
+  },
+  "rp_377uv": {
+   "primary": "comms_jammer_rp_377uv",
+   "targets": [
+    "comms_jammer_rp_377uv"
+   ],
+   "split": false
+  },
+  "type_92": {
+   "primary": "1995_apc_wz_551_type_92",
+   "targets": [
+    "1995_apc_wz_551_type_92"
+   ],
+   "split": false
+  },
+  "pandur": {
+   "primary": "1996_apc_pandur_i",
+   "targets": [
+    "1996_apc_pandur_i"
+   ],
+   "split": false
+  },
+  "btr_70": {
+   "primary": "1972_apc_btr_70_btr_m1978",
+   "targets": [
+    "1972_apc_btr_70_btr_m1978"
+   ],
+   "split": false
+  },
+  "bov_m": {
+   "primary": "1971_apc_bov_m",
+   "targets": [
+    "1971_apc_bov_m"
+   ],
+   "split": false
+  },
+  "ampv": {
+   "primary": "2023_apc_ampv",
+   "targets": [
+    "2023_apc_ampv"
+   ],
+   "split": false
+  },
+  "m113a1": {
+   "primary": "1964_apc_m113a1",
+   "targets": [
+    "1964_apc_m113a1"
+   ],
+   "split": false
+  },
+  "btr_mdm": {
+   "primary": "2013_apc_btr_mdm_rakushka_m",
+   "targets": [
+    "2013_apc_btr_mdm_rakushka_m"
+   ],
+   "split": false
+  },
+  "btr_d": {
+   "primary": "1974_apc_btr_d_bmd_m1979",
+   "targets": [
+    "1974_apc_btr_d_bmd_m1979"
+   ],
+   "split": false
+  },
+  "btr_60": {
+   "primary": "1960_apc_btr_60",
+   "targets": [
+    "1960_apc_btr_60"
+   ],
+   "split": false
+  },
+  "rg_31": {
+   "primary": "2005_mrap_rg_31_nyala",
+   "targets": [
+    "2005_mrap_rg_31_nyala"
+   ],
+   "split": false
+  },
+  "mt_lb": {
+   "primary": "1966_apc_mt_lb",
+   "targets": [
+    "1966_apc_mt_lb"
+   ],
+   "split": false
+  },
+  "btr_152": {
+   "primary": "1951_apc_btr_152",
+   "targets": [
+    "1951_apc_btr_152"
+   ],
+   "split": false
+  },
+  "vab": {
+   "primary": "1976_apc_vab",
+   "targets": [
+    "1976_apc_vab"
+   ],
+   "split": false
+  },
+  "type_63": {
+   "primary": "1964_apc_yw_531_type_63",
+   "targets": [
+    "1964_apc_yw_531_type_63"
+   ],
+   "split": false
+  },
+  "btr_80": {
+   "primary": "1993_apc_btr_80a",
+   "targets": [
+    "1984_apc_btr_80",
+    "1993_apc_btr_80a"
+   ],
+   "split": true
+  },
+  "dingo": {
+   "primary": "2000_mrap_atf_dingo",
+   "targets": [
+    "2000_mrap_atf_dingo"
+   ],
+   "split": false
+  },
+  "btr_50": {
+   "primary": "1954_apc_btr_50",
+   "targets": [
+    "1954_apc_btr_50"
+   ],
+   "split": false
+  },
+  "type_85": {
+   "primary": "1988_apc_type_yw_531h_type_85",
+   "targets": [
+    "1988_apc_type_yw_531h_type_85"
+   ],
+   "split": false
+  },
+  "vtt_323": {
+   "primary": "1973_apc_vtt_323_m1973_sinhung",
+   "targets": [
+    "1973_apc_vtt_323_m1973_sinhung"
+   ],
+   "split": false
+  },
+  "btr_40": {
+   "primary": "1950_apc_btr_40",
+   "targets": [
+    "1950_apc_btr_40"
+   ],
+   "split": false
+  },
+  "btr_t": {
+   "primary": "1997_apc_btr_t",
+   "targets": [
+    "1997_apc_btr_t"
+   ],
+   "split": false
+  },
+  "cougar": {
+   "primary": "2002_mrap_cougar_h",
+   "targets": [
+    "2002_mrap_cougar_h"
+   ],
+   "split": false
+  },
+  "cobra_lav": {
+   "primary": "1997_apc_cobra",
+   "targets": [
+    "1997_apc_cobra"
+   ],
+   "split": false
+  },
+  "btr_82a": {
+   "primary": "2009_apc_btr_82a",
+   "targets": [
+    "2009_apc_btr_82a"
+   ],
+   "split": false
+  },
+  "eitan_afv": {
+   "primary": "2023_apc_eitan_afv",
+   "targets": [
+    "2023_apc_eitan_afv"
+   ],
+   "split": false
+  },
+  "bmp_2": {
+   "primary": "1980_ifv_bmp_2",
+   "targets": [
+    "1980_ifv_bmp_2"
+   ],
+   "split": false
+  },
+  "fnss": {
+   "primary": "1992_ifv_acv_15",
+   "targets": [
+    "1992_ifv_acv_15"
+   ],
+   "split": false
+  },
+  "bmp_3m": {
+   "primary": "2007_ifv_bmp_3m",
+   "targets": [
+    "2007_ifv_bmp_3m"
+   ],
+   "split": false
+  },
+  "marder_1a3": {
+   "primary": "1971_ifv_marder_1a3",
+   "targets": [
+    "1971_ifv_marder_1a3"
+   ],
+   "split": false
+  },
+  "bmp_2m_berezhok": {
+   "primary": "2010_ifv_bmp_2m_berezhok",
+   "targets": [
+    "2010_ifv_bmp_2m_berezhok"
+   ],
+   "split": false
+  },
+  "warrior_ifv": {
+   "primary": "1988_ifv_fv_510_warrior",
+   "targets": [
+    "1988_ifv_fv_510_warrior"
+   ],
+   "split": false
+  },
+  "bmd_1_bmd_2": {
+   "primary": "1969_ifv_bmd_1",
+   "targets": [
+    "1969_ifv_bmd_1",
+    "1985_ifv_bmd_2"
+   ],
+   "split": true
+  },
+  "cv90_mk_iv": {
+   "primary": "2017_ifv_cv90_mk_iv",
+   "targets": [
+    "2017_ifv_cv90_mk_iv"
+   ],
+   "split": false
+  },
+  "bmd_3_bmd_4": {
+   "primary": "1990_ifv_bmd_3",
+   "targets": [
+    "1990_ifv_bmd_3"
+   ],
+   "split": false
+  },
+  "kifv": {
+   "primary": "1986_ifv_k_200_kifv",
+   "targets": [
+    "1986_ifv_k_200_kifv"
+   ],
+   "split": false
+  },
+  "bmp_1": {
+   "primary": "1967_ifv_bmp_1",
+   "targets": [
+    "1967_ifv_bmp_1"
+   ],
+   "split": false
+  },
+  "bmp_1p": {
+   "primary": "1981_ifv_bmp_1p",
+   "targets": [
+    "1981_ifv_bmp_1p"
+   ],
+   "split": false
+  },
+  "amx_10p": {
+   "primary": "1973_ifv_amx_10p",
+   "targets": [
+    "1973_ifv_amx_10p"
+   ],
+   "split": false
+  },
+  "type_19": {
+   "primary": "2024_ifv_zbl_19",
+   "targets": [
+    "2024_ifv_zbl_19"
+   ],
+   "split": false
+  },
+  "brdm_2": {
+   "primary": "1962_scout_car_brdm_2",
+   "targets": [
+    "1962_scout_car_brdm_2"
+   ],
+   "split": false
+  },
+  "brm_3k": {
+   "primary": "1995_recon_vehicle_brm_3k_rys",
+   "targets": [
+    "1995_recon_vehicle_brm_3k_rys"
+   ],
+   "split": false
+  },
+  "brm_1k": {
+   "primary": "1972_recon_vehicle_brm_1k",
+   "targets": [
+    "1972_recon_vehicle_brm_1k"
+   ],
+   "split": false
+  },
+  "brdm_1": {
+   "primary": "1959_scout_car_brdm_1",
+   "targets": [
+    "1959_scout_car_brdm_1"
+   ],
+   "split": false
+  },
+  "bmp_3_uae": {
+   "primary": "1990_ifv_bmp_3_uae",
+   "targets": [
+    "1990_ifv_bmp_3_uae"
+   ],
+   "split": false
+  },
+  "bmp_3_mangal": {
+   "primary": "2025_ifv_bmp_3_mangal",
+   "targets": [
+    "2025_ifv_bmp_3_mangal"
+   ],
+   "split": false
+  },
+  "m2a4_bradley": {
+   "primary": "ifv_m2a4_bradley",
+   "targets": [
+    "ifv_m2a4_bradley"
+   ],
+   "split": false
+  },
+  "brdm_2m_98_97": {
+   "primary": "2004_scout_car_brdm_2m_98_97",
+   "targets": [
+    "2004_scout_car_brdm_2m_98_97"
+   ],
+   "split": false
+  },
+  "fox_fv721": {
+   "primary": "1973_scout_car_fox_fv721",
+   "targets": [
+    "1973_scout_car_fox_fv721"
+   ],
+   "split": false
+  },
+  "hj_62c": {
+   "primary": "1990_recon_vehicle_hj_62c",
+   "targets": [
+    "1990_recon_vehicle_hj_62c"
+   ],
+   "split": false
+  },
+  "ypr_765": {
+   "primary": "1978_ifv_ypr_765",
+   "targets": [
+    "1978_ifv_ypr_765"
+   ],
+   "split": false
+  },
+  "ratel": {
+   "primary": "1970_ifv_ratel",
+   "targets": [
+    "1970_ifv_ratel"
+   ],
+   "split": false
+  },
+  "btr_90": {
+   "primary": "1994_apc_btr_90",
+   "targets": [
+    "1994_apc_btr_90"
+   ],
+   "split": false
+  },
+  "xm30_mechanized_infantry_combat_vehicle": {
+   "primary": "ifv_xm30",
+   "targets": [
+    "ifv_xm30"
+   ],
+   "split": false
+  },
+  "stryker_family_of_vehicles": {
+   "primary": "2002_apc_stryker_family",
+   "targets": [
+    "2002_apc_stryker_family"
+   ],
+   "split": false
+  },
+  "mi_ap_dv": {
+   "primary": "1982_antipersonnel_mine_m61",
+   "targets": [
+    "1982_antipersonnel_mine_m61"
+   ],
+   "split": false
+  },
+  "sb_33": {
+   "primary": "1977_antipersonnel_mine_sb_33",
+   "targets": [
+    "1977_antipersonnel_mine_sb_33"
+   ],
+   "split": false
+  },
+  "mon_200": {
+   "primary": "1976_antipersonnel_mine_mon_200",
+   "targets": [
+    "1976_antipersonnel_mine_mon_200"
+   ],
+   "split": false
+  },
+  "m16a1": {
+   "primary": "1957_antipersonnel_mine_m16",
+   "targets": [
+    "1957_antipersonnel_mine_m16"
+   ],
+   "split": false
+  },
+  "p2_mk2_antipersonnel_mine": {
+   "primary": "1997_antipersonnel_mine_p2_mk_2",
+   "targets": [
+    "1997_antipersonnel_mine_p2_mk_2"
+   ],
+   "split": false
+  },
+  "pomz_2m": {
+   "primary": "1963_antipersonnel_mine_pomz_2m",
+   "targets": [
+    "1963_antipersonnel_mine_pomz_2m"
+   ],
+   "split": false
+  },
+  "pfm_1s": {
+   "primary": "1973_antipersonnel_mine_pfm_1",
+   "targets": [
+    "1973_antipersonnel_mine_pfm_1"
+   ],
+   "split": false
+  },
+  "prb_m35": {
+   "primary": "1972_antipersonnel_mine_prb_m35",
+   "targets": [
+    "1972_antipersonnel_mine_prb_m35"
+   ],
+   "split": false
+  },
+  "prom_1": {
+   "primary": "1996_antipersonnel_mine_prom_1",
+   "targets": [
+    "1996_antipersonnel_mine_prom_1"
+   ],
+   "split": false
+  },
+  "pmn": {
+   "primary": "1959_antipersonnel_mine_pmn_1",
+   "targets": [
+    "1959_antipersonnel_mine_pmn_1"
+   ],
+   "split": false
+  },
+  "m3_ap_mine": {
+   "primary": "1942_antipersonnel_mine_m3",
+   "targets": [
+    "1942_antipersonnel_mine_m3"
+   ],
+   "split": false
+  },
+  "pom_1s": {
+   "primary": "1962_antipersonnel_mine_pom_1s",
+   "targets": [
+    "1962_antipersonnel_mine_pom_1s"
+   ],
+   "split": false
+  },
+  "m18a1_claymore": {
+   "primary": "1960_antipersonnel_mine_m18a1",
+   "targets": [
+    "1960_antipersonnel_mine_m18a1"
+   ],
+   "split": false
+  },
+  "m14": {
+   "primary": "1955_antipersonnel_mine_m14",
+   "targets": [
+    "1955_antipersonnel_mine_m14"
+   ],
+   "split": false
+  },
+  "mon_100": {
+   "primary": "1962_antipersonnel_mine_mon_100",
+   "targets": [
+    "1962_antipersonnel_mine_mon_100"
+   ],
+   "split": false
+  },
+  "pmn_2": {
+   "primary": "1964_antipersonnel_mine_pmn_2",
+   "targets": [
+    "1964_antipersonnel_mine_pmn_2"
+   ],
+   "split": false
+  },
+  "type_69": {
+   "primary": "1961_antipersonnel_mine_type_69_ap",
+   "targets": [
+    "1961_antipersonnel_mine_type_69_ap"
+   ],
+   "split": false
+  },
+  "vs_50": {
+   "primary": "1985_antipersonnel_mine_vs_50",
+   "targets": [
+    "1985_antipersonnel_mine_vs_50"
+   ],
+   "split": false
+  },
+  "mi_ap_id_51": {
+   "primary": "1951_antipersonnel_mine_mle_1951",
+   "targets": [
+    "1951_antipersonnel_mine_mle_1951"
+   ],
+   "split": false
+  },
+  "pmd_6": {
+   "primary": "1939_antipersonnel_mine_pmd_6",
+   "targets": [
+    "1939_antipersonnel_mine_pmd_6"
+   ],
+   "split": false
+  },
+  "pp_mi_sr_ii": {
+   "primary": "1945_antipersonnel_mine_pp_mi_sr_ii",
+   "targets": [
+    "1945_antipersonnel_mine_pp_mi_sr_ii"
+   ],
+   "split": false
+  },
+  "dm_11": {
+   "primary": "1953_antipersonnel_mine_dm_11",
+   "targets": [
+    "1953_antipersonnel_mine_dm_11"
+   ],
+   "split": false
+  },
+  "ozm_4": {
+   "primary": "1967_antipersonnel_mine_ozm_4",
+   "targets": [
+    "1967_antipersonnel_mine_ozm_4"
+   ],
+   "split": false
+  },
+  "valmara_69": {
+   "primary": "1984_antipersonnel_mine_valmara_69",
+   "targets": [
+    "1984_antipersonnel_mine_valmara_69"
+   ],
+   "split": false
+  },
+  "ozm_72": {
+   "primary": "1972_antipersonnel_mine_ozm_72",
+   "targets": [
+    "1972_antipersonnel_mine_ozm_72"
+   ],
+   "split": false
+  },
+  "ozm_3": {
+   "primary": "1964_antipersonnel_mine_ozm_3",
+   "targets": [
+    "1964_antipersonnel_mine_ozm_3"
+   ],
+   "split": false
+  },
+  "pom_2s": {
+   "primary": "1948_antipersonnel_mine_pom_2s",
+   "targets": [
+    "1948_antipersonnel_mine_pom_2s"
+   ],
+   "split": false
+  },
+  "mon_50": {
+   "primary": "1965_antipersonnel_mine_mon_50",
+   "targets": [
+    "1965_antipersonnel_mine_mon_50"
+   ],
+   "split": false
+  },
+  "type_72_antipersonnel_mine": {
+   "primary": "antipersonnel_mine_type_72",
+   "targets": [
+    "antipersonnel_mine_type_72"
+   ],
+   "split": false
+  },
+  "ppm_2": {
+   "primary": "antipersonnel_mine_ppm_2",
+   "targets": [
+    "antipersonnel_mine_ppm_2"
+   ],
+   "split": false
+  },
+  "pmp_7_5": {
+   "primary": "antipersonnel_mine_pmp_7_1_2",
+   "targets": [
+    "antipersonnel_mine_pmp_7_1_2"
+   ],
+   "split": false
+  },
+  "v_italian_stake_mine": {
+   "primary": "antipersonnel_mine_v",
+   "targets": [
+    "antipersonnel_mine_v"
+   ],
+   "split": false
+  },
+  "pkm_pecheneg_pkp": {
+   "primary": "1968_gpmg_pkt",
+   "targets": [
+    "1961_gpmg_pkm",
+    "1968_gpmg_pkt",
+    "2001_gpmg_pkp_pecheneg"
+   ],
+   "split": true
+  },
+  "carl_gustaf_m2_3_4": {
+   "primary": "1948_recoilless_gun_carl_gustaf_m1",
+   "targets": [
+    "1948_recoilless_gun_carl_gustaf_m1",
+    "1964_recoilless_gun_carl_gustaf_m2",
+    "1991_recoilless_gun_carl_gustaf_m3",
+    "2011_recoilless_gun_carl_gustaf_m3_maaws",
+    "2014_recoilless_gun_carl_gustaf_m4"
+   ],
+   "split": true
+  },
+  "rpk_74": {
+   "primary": "1974_lmg_rpk_74",
+   "targets": [
+    "1974_lmg_rpk_74"
+   ],
+   "split": false
+  },
+  "m82a1a": {
+   "primary": "1984_anti_materiel_rifle_barrett_m82",
+   "targets": [
+    "1984_anti_materiel_rifle_barrett_m82"
+   ],
+   "split": false
+  },
+  "qbz_95": {
+   "primary": "1997_assault_rifle_qbz_95",
+   "targets": [
+    "1997_assault_rifle_qbz_95"
+   ],
+   "split": false
+  },
+  "sv_98": {
+   "primary": "1998_sniper_rifle_sv_98",
+   "targets": [
+    "1998_sniper_rifle_sv_98"
+   ],
+   "split": false
+  },
+  "ak_47_akm": {
+   "primary": "1959_assault_rifle_akm",
+   "targets": [
+    "1949_assault_rifle_ak_47",
+    "1959_assault_rifle_akm"
+   ],
+   "split": true
+  },
+  "ak_74_ak_74m": {
+   "primary": "1974_assault_rifle_ak_74",
+   "targets": [
+    "1974_assault_rifle_ak_74",
+    "1974_assault_rifle_ak_74m"
+   ],
+   "split": true
+  },
+  "g3": {
+   "primary": "1960_battle_rifle_heckler_and_koch_g3",
+   "targets": [
+    "1960_battle_rifle_heckler_and_koch_g3"
+   ],
+   "split": false
+  },
+  "fal": {
+   "primary": "1954_battle_rifle_fn_fal",
+   "targets": [
+    "1954_battle_rifle_fn_fal"
+   ],
+   "split": false
+  },
+  "6s8_1": {
+   "primary": "1992_anti_materiel_rifle_ksvk",
+   "targets": [
+    "1992_anti_materiel_rifle_ksvk"
+   ],
+   "split": false
+  },
+  "osv_96": {
+   "primary": "1990_anti_materiel_rifle_osv_96",
+   "targets": [
+    "1990_anti_materiel_rifle_osv_96"
+   ],
+   "split": false
+  },
+  "sks": {
+   "primary": "1950_carbine_sks",
+   "targets": [
+    "1950_carbine_sks"
+   ],
+   "split": false
+  },
+  "svd": {
+   "primary": "1963_sniper_rifle_svd_63",
+   "targets": [
+    "1963_sniper_rifle_svd_63"
+   ],
+   "split": false
+  },
+  "rpo_a_series_shmel_m": {
+   "primary": "1997_thermobaric_rocket_launcher_pf_97",
+   "targets": [
+    "1988_thermobaric_rocket_launcher_rpo_a_shmel",
+    "1997_thermobaric_rocket_launcher_pf_97",
+    "2006_thermobaric_rocket_launcher_rpo_pdm_a"
+   ],
+   "split": true
+  },
+  "gp_30": {
+   "primary": "1980_underbarrel_grenade_launcher_gp_30",
+   "targets": [
+    "1980_underbarrel_grenade_launcher_gp_30"
+   ],
+   "split": false
+  },
+  "rpo": {
+   "primary": "1978_flame_weapon_rpo",
+   "targets": [
+    "1978_flame_weapon_rpo"
+   ],
+   "split": false
+  },
+  "small_arms_crew_served_weapons": {
+   "primary": "2023_acquisition_program_small_arms_crew_served_weapons",
+   "targets": [
+    "2023_acquisition_program_small_arms_crew_served_weapons"
+   ],
+   "split": false
+  },
+  "gaz_66": {
+   "primary": "1964_cargo_truck_gaz_66",
+   "targets": [
+    "1964_cargo_truck_gaz_66"
+   ],
+   "split": false
+  },
+  "kraz_255b": {
+   "primary": "1967_cargo_truck_kraz_255b",
+   "targets": [
+    "1967_cargo_truck_kraz_255b"
+   ],
+   "split": false
+  },
+  "kamaz_4310": {
+   "primary": "1980_cargo_truck_kamaz_4310",
+   "targets": [
+    "1980_cargo_truck_kamaz_4310"
+   ],
+   "split": false
+  },
+  "ural_43206": {
+   "primary": "1996_cargo_truck_ural_43206",
+   "targets": [
+    "1996_cargo_truck_ural_43206"
+   ],
+   "split": false
+  },
+  "maz_8950": {
+   "primary": "1996_trailer_maz_8950",
+   "targets": [
+    "1996_trailer_maz_8950"
+   ],
+   "split": false
+  },
+  "ural_375d": {
+   "primary": "1965_cargo_truck_ural_375d",
+   "targets": [
+    "1965_cargo_truck_ural_375d"
+   ],
+   "split": false
+  },
+  "ural_43206_0651": {
+   "primary": "cargo_truck_ural_43206_0651",
+   "targets": [
+    "cargo_truck_ural_43206_0651"
+   ],
+   "split": false
+  },
+  "tz_2_66d": {
+   "primary": "fuel_tanker_tz_2_66d",
+   "targets": [
+    "fuel_tanker_tz_2_66d"
+   ],
+   "split": false
+  },
+  "atz_7_43101": {
+   "primary": "fuel_tanker_atz_7_43101",
+   "targets": [
+    "fuel_tanker_atz_7_43101"
+   ],
+   "split": false
+  },
+  "atz_10_4320": {
+   "primary": "fuel_tanker_atz_10_4320",
+   "targets": [
+    "fuel_tanker_atz_10_4320"
+   ],
+   "split": false
+  },
+  "atmz_5_4320": {
+   "primary": "fuel_tanker_atmz_5_4320",
+   "targets": [
+    "fuel_tanker_atmz_5_4320"
+   ],
+   "split": false
+  },
+  "atmz_5_5_4310": {
+   "primary": "fuel_tanker_atmz_5_5_4310",
+   "targets": [
+    "fuel_tanker_atmz_5_5_4310"
+   ],
+   "split": false
+  },
+  "kamaz_4326": {
+   "primary": "cargo_truck_kamaz_4326",
+   "targets": [
+    "cargo_truck_kamaz_4326"
+   ],
+   "split": false
+  },
+  "mercedes_benz_zetros_1833a": {
+   "primary": "cargo_truck_zetros_1833a",
+   "targets": [
+    "cargo_truck_zetros_1833a"
+   ],
+   "split": false
+  },
+  "nk_p_126": {
+   "primary": "2009_trailer_nk_p_126",
+   "targets": [
+    "2009_trailer_nk_p_126"
+   ],
+   "split": false
+  },
+  "soframe_rp": {
+   "primary": "2012_trailer_soframe_rp",
+   "targets": [
+    "2012_trailer_soframe_rp"
+   ],
+   "split": false
+  },
+  "m149a2_water_trailer": {
+   "primary": "trailer_m149a2",
+   "targets": [
+    "trailer_m149a2"
+   ],
+   "split": false
+  },
+  "e2fds": {
+   "primary": "fuel_distribution_system_e2fds",
+   "targets": [
+    "fuel_distribution_system_e2fds"
+   ],
+   "split": false
+  },
+  "s_met": {
+   "primary": "logistics_ugv_s_met",
+   "targets": [
+    "logistics_ugv_s_met"
+   ],
+   "split": false
+  },
+  "tep": {
+   "primary": "generator_set_tep",
+   "targets": [
+    "generator_set_tep"
+   ],
+   "split": false
+  },
+  "ehets": {
+   "primary": "tank_transporter_ehets",
+   "targets": [
+    "tank_transporter_ehets"
+   ],
+   "split": false
+  },
+  "pls_pls_esp": {
+   "primary": "load_handling_truck_pls",
+   "targets": [
+    "load_handling_truck_pls"
+   ],
+   "split": false
+  },
+  "fmtv_a2": {
+   "primary": "cargo_truck_fmtv_a2",
+   "targets": [
+    "cargo_truck_fmtv_a2"
+   ],
+   "split": false
+  },
+  "1l219m_zoopark": {
+   "primary": "1992_counterbattery_radar_1l219_zoopark_1",
+   "targets": [
+    "1992_counterbattery_radar_1l219_zoopark_1"
+   ],
+   "split": false
+  },
+  "long_track": {
+   "primary": "1967_air_surveillance_radar_p_40",
+   "targets": [
+    "1967_air_surveillance_radar_p_40"
+   ],
+   "split": false
+  },
+  "kredo_1e": {
+   "primary": "1993_ground_surveillance_radar_credo_1e",
+   "targets": [
+    "1993_ground_surveillance_radar_credo_1e"
+   ],
+   "split": false
+  },
+  "kolchuga_m": {
+   "primary": "2000_emitter_locating_system_kolchuga_m",
+   "targets": [
+    "2000_emitter_locating_system_kolchuga_m"
+   ],
+   "split": false
+  },
+  "an_tpq_53": {
+   "primary": "2010_counterbattery_radar_an_tpq_53",
+   "targets": [
+    "2010_counterbattery_radar_an_tpq_53"
+   ],
+   "split": false
+  },
+  "fara_1e": {
+   "primary": "1978_ground_surveillance_radar_sbr_3",
+   "targets": [
+    "1978_ground_surveillance_radar_sbr_3"
+   ],
+   "split": false
+  },
+  "slc_2": {
+   "primary": "1994_counterbattery_radar_slc_2",
+   "targets": [
+    "1994_counterbattery_radar_slc_2"
+   ],
+   "split": false
+  },
+  "1l260_zoopark_1m": {
+   "primary": "2017_counterbattery_radar_1l260_zoopark_1m",
+   "targets": [
+    "2017_counterbattery_radar_1l260_zoopark_1m"
+   ],
+   "split": false
+  },
+  "giraffe_50at_amb": {
+   "primary": "1992_air_surveillance_radar_giraffe_50at",
+   "targets": [
+    "1992_air_surveillance_radar_giraffe_50at",
+    "2005_air_surveillance_radar_giraffe_amb"
+   ],
+   "split": true
+  },
+  "bl_904": {
+   "primary": "1995_counterbattery_radar_bl_904",
+   "targets": [
+    "1995_counterbattery_radar_bl_904"
+   ],
+   "split": false
+  },
+  "1l220_u": {
+   "primary": "1999_counterbattery_radar_1l220_u",
+   "targets": [
+    "1999_counterbattery_radar_1l220_u"
+   ],
+   "split": false
+  },
+  "snar_10": {
+   "primary": "1975_ground_surveillance_radar_snar_10",
+   "targets": [
+    "1975_ground_surveillance_radar_snar_10"
+   ],
+   "split": false
+  },
+  "an_tpq_50": {
+   "primary": "2004_counterbattery_radar_an_tpq_50",
+   "targets": [
+    "2004_counterbattery_radar_an_tpq_50"
+   ],
+   "split": false
+  },
+  "psnr_5_5m_kredo_m1": {
+   "primary": "1974_ground_surveillance_radar_psnr_5",
+   "targets": [
+    "1974_ground_surveillance_radar_psnr_5"
+   ],
+   "split": false
+  },
+  "arthur_radar": {
+   "primary": "1994_counterbattery_radar_arthur",
+   "targets": [
+    "1994_counterbattery_radar_arthur"
+   ],
+   "split": false
+  },
+  "ark_1m_rys": {
+   "primary": "1986_counterbattery_radar_ark_1m_rys",
+   "targets": [
+    "1986_counterbattery_radar_ark_1m_rys"
+   ],
+   "split": false
+  },
+  "rasit_rasit_e": {
+   "primary": "1975_ground_surveillance_radar_rasit",
+   "targets": [
+    "1975_ground_surveillance_radar_rasit"
+   ],
+   "split": false
+  },
+  "jy_27v": {
+   "primary": "2025_early_warning_radar_jy_27v",
+   "targets": [
+    "2025_early_warning_radar_jy_27v"
+   ],
+   "split": false
+  },
+  "ltamds_2": {
+   "primary": "2023_fire_control_radar_ltamds",
+   "targets": [
+    "2023_fire_control_radar_ltamds"
+   ],
+   "split": false
+  },
+  "ltamds": {
+   "primary": "2023_fire_control_radar_ltamds",
+   "targets": [
+    "2023_fire_control_radar_ltamds"
+   ],
+   "split": false
+  },
+  "sentinel": {
+   "primary": "air_surveillance_radar_an_mpq_64",
+   "targets": [
+    "air_surveillance_radar_an_mpq_64"
+   ],
+   "split": false
+  },
+  "rezonans_n": {
+   "primary": "2018_over_the_horizon_radar_rezonans_n",
+   "targets": [
+    "2018_over_the_horizon_radar_rezonans_n"
+   ],
+   "split": false
+  },
+  "cobra_radar": {
+   "primary": "2003_counterbattery_radar_cobra",
+   "targets": [
+    "2003_counterbattery_radar_cobra"
+   ],
+   "split": false
+  },
+  "horizon": {
+   "primary": "1994_airborne_surveillance_radar_horizon",
+   "targets": [
+    "1994_airborne_surveillance_radar_horizon"
+   ],
+   "split": false
+  },
+  "uaz_469": {
+   "primary": "1970_light_utility_vehicle_uaz_469",
+   "targets": [
+    "1970_light_utility_vehicle_uaz_469"
+   ],
+   "split": false
+  },
+  "luaz_967": {
+   "primary": "1961_amphibious_utility_vehicle_luaz_967",
+   "targets": [
+    "1961_amphibious_utility_vehicle_luaz_967"
+   ],
+   "split": false
+  },
+  "vamtac": {
+   "primary": "1998_light_utility_vehicle_uro_vamtac",
+   "targets": [
+    "1998_light_utility_vehicle_uro_vamtac"
+   ],
+   "split": false
+  },
+  "spider_lsv": {
+   "primary": "2008_light_strike_vehicle_light_strike_vehicle",
+   "targets": [
+    "2008_light_strike_vehicle_light_strike_vehicle"
+   ],
+   "split": false
+  },
+  "milan_atgm": {
+   "primary": "1972_atgm_milan_1",
+   "targets": [
+    "1972_atgm_milan_1",
+    "1984_atgm_milan_2",
+    "1996_atgm_milan_3"
+   ],
+   "split": true
+  },
+  "kornet_e_kvartet": {
+   "primary": "1998_atgm_9m133_kornet",
+   "targets": [
+    "1998_atgm_9m133_kornet"
+   ],
+   "split": false
+  },
+  "spike_atgm": {
+   "primary": "1997_atgm_spike_lr_i",
+   "targets": [
+    "1997_atgm_spike_er",
+    "1997_atgm_spike_lr_i",
+    "1997_atgm_spike_mr"
+   ],
+   "split": true
+  },
+  "red_arrow_8": {
+   "primary": "1985_atgm_hj_8",
+   "targets": [
+    "1985_atgm_hj_8"
+   ],
+   "split": false
+  },
+  "at_7_at_13": {
+   "primary": "1992_atgm_9k115_2_metis_m",
+   "targets": [
+    "1978_atgm_9k115_metis",
+    "1992_atgm_9k115_2_metis_m"
+   ],
+   "split": true
+  },
+  "at_3_malyutka_2": {
+   "primary": "1963_atgm_9m14_malyutka",
+   "targets": [
+    "1963_atgm_9m14_malyutka"
+   ],
+   "split": false
+  },
+  "eryx": {
+   "primary": "1994_atgm_eryx",
+   "targets": [
+    "1994_atgm_eryx"
+   ],
+   "split": false
+  },
+  "hj_12": {
+   "primary": "2014_atgm_hj_12",
+   "targets": [
+    "2014_atgm_hj_12"
+   ],
+   "split": false
+  },
+  "fgm_148f_javelin": {
+   "primary": "1996_atgm_fgm_148f_javelin",
+   "targets": [
+    "1996_atgm_fgm_148f_javelin"
+   ],
+   "split": false
+  },
+  "panzerfaust_3": {
+   "primary": "1997_antitank_rocket_launcher_panzerfaust_3",
+   "targets": [
+    "1997_antitank_rocket_launcher_panzerfaust_3"
+   ],
+   "split": false
+  },
+  "rpg_30": {
+   "primary": "2012_antitank_rocket_launcher_rpg_30",
+   "targets": [
+    "2012_antitank_rocket_launcher_rpg_30"
+   ],
+   "split": false
+  },
+  "stugna_p_4th_gen": {
+   "primary": "2023_atgm_stugna_p_4th_generation",
+   "targets": [
+    "2023_atgm_stugna_p_4th_generation"
+   ],
+   "split": false
+  },
+  "2s25m_sprut_sdm1": {
+   "primary": "2023_self_propelled_antitank_gun_2s25m_sprut_sdm1",
+   "targets": [
+    "2023_self_propelled_antitank_gun_2s25m_sprut_sdm1"
+   ],
+   "split": false
+  },
+  "amx_10_hot": {
+   "primary": "atgm_carrier_amx_10_hot",
+   "targets": [
+    "atgm_carrier_amx_10_hot"
+   ],
+   "split": false
+  },
+  "brdm_2_hot_3": {
+   "primary": "atgm_carrier_brdm_2_hot_3",
+   "targets": [
+    "atgm_carrier_brdm_2_hot_3"
+   ],
+   "split": false
+  },
+  "p2_mk3": {
+   "primary": "antitank_mine_p2_mk3",
+   "targets": [
+    "antitank_mine_p2_mk3"
+   ],
+   "split": false
+  },
+  "panzerfaust_3_side_attack_mine": {
+   "primary": "off_route_mine_panzerfaust_3_side_attack_mine",
+   "targets": [
+    "off_route_mine_panzerfaust_3_side_attack_mine"
+   ],
+   "split": false
+  },
+  "type_92b_red_arrow_9": {
+   "primary": "1999_atgm_carrier_type_92b",
+   "targets": [
+    "1999_atgm_carrier_type_92b"
+   ],
+   "split": false
+  },
+  "explosive_formed_projectile": {
+   "primary": "2006_improvised_explosive_device_explosive_formed_projectile",
+   "targets": [
+    "2006_improvised_explosive_device_explosive_formed_projectile"
+   ],
+   "split": false
+  },
+  "isv": {
+   "primary": "light_utility_vehicle_isv",
+   "targets": [
+    "light_utility_vehicle_isv"
+   ],
+   "split": false
+  },
+  "jagm": {
+   "primary": "atgm_jagm",
+   "targets": [
+    "atgm_jagm"
+   ],
+   "split": false
+  },
+  "jltv": {
+   "primary": "protected_mobility_vehicle_jltv",
+   "targets": [
+    "protected_mobility_vehicle_jltv"
+   ],
+   "split": false
+  },
+  "karaba_vtg01": {
+   "primary": "2008_light_utility_vehicle_karaba_vtg01",
+   "targets": [
+    "2008_light_utility_vehicle_karaba_vtg01"
+   ],
+   "split": false
+  },
+  "mokopa": {
+   "primary": "1990_atgm_mokopa",
+   "targets": [
+    "1990_atgm_mokopa"
+   ],
+   "split": false
+  },
+  "pd_mi_pk_horizontal": {
+   "primary": "off_route_mine_pd_mi_pk",
+   "targets": [
+    "off_route_mine_pd_mi_pk"
+   ],
+   "split": false
+  },
+  "toyota_hilux_technical": {
+   "primary": "1968_technical_toyota_hilux",
+   "targets": [
+    "1968_technical_toyota_hilux"
+   ],
+   "split": false
+  },
+  "javelin": {
+   "primary": "atgm_javelin_programme",
+   "targets": [
+    "atgm_javelin_programme"
+   ],
+   "split": false
+  },
+  "kornet_d1": {
+   "primary": "2022_atgm_carrier_kornet_d1",
+   "targets": [
+    "2022_atgm_carrier_kornet_d1"
+   ],
+   "split": false
+  },
+  "9p135_at_4_5": {
+   "primary": "1973_atgm_launcher_9p135",
+   "targets": [
+    "1973_atgm_launcher_9p135"
+   ],
+   "split": false
+  },
+  "t_90a_t_90s": {
+   "primary": "1993_tank_t_90a_t_90s",
+   "targets": [
+    "1993_tank_t_90a_t_90s"
+   ],
+   "split": false
+  },
+  "t_80b_t_80u": {
+   "primary": "1978_tank_t_80b",
+   "targets": [
+    "1978_tank_t_80b",
+    "1985_tank_t_80u"
+   ],
+   "split": true
+  },
+  "t_72bm": {
+   "primary": "1989_tank_t_72bm",
+   "targets": [
+    "1989_tank_t_72bm"
+   ],
+   "split": false
+  },
+  "t_64b": {
+   "primary": "1964_tank_t_64b",
+   "targets": [
+    "1964_tank_t_64b"
+   ],
+   "split": false
+  },
+  "t_62am": {
+   "primary": "1983_tank_t_62am",
+   "targets": [
+    "1983_tank_t_62am"
+   ],
+   "split": false
+  },
+  "t_55amv": {
+   "primary": "1985_tank_t_55amv",
+   "targets": [
+    "1985_tank_t_55amv"
+   ],
+   "split": false
+  },
+  "type_98_type_99a2": {
+   "primary": "1999_tank_type_98",
+   "targets": [
+    "1999_tank_type_98",
+    "2014_tank_type_99a2"
+   ],
+   "split": true
+  },
+  "type_96_type_96g": {
+   "primary": "1997_tank_type_96",
+   "targets": [
+    "1997_tank_type_96",
+    "2009_tank_type_96g"
+   ],
+   "split": true
+  },
+  "type_59d": {
+   "primary": "1995_tank_type_59d",
+   "targets": [
+    "1995_tank_type_59d"
+   ],
+   "split": false
+  },
+  "type_63a": {
+   "primary": "1997_tank_type_63a",
+   "targets": [
+    "1997_tank_type_63a"
+   ],
+   "split": false
+  },
+  "type_15": {
+   "primary": "2017_tank_type_15",
+   "targets": [
+    "2017_tank_type_15"
+   ],
+   "split": false
+  },
+  "leopard_2": {
+   "primary": "1979_tank_leopard_2",
+   "targets": [
+    "1979_tank_leopard_2"
+   ],
+   "split": false
+  },
+  "leopard_2a7v": {
+   "primary": "2021_tank_leopard_2a7v",
+   "targets": [
+    "2021_tank_leopard_2a7v"
+   ],
+   "split": false
+  },
+  "leclerc_eau": {
+   "primary": "1996_tank_leclerc_eau",
+   "targets": [
+    "1996_tank_leclerc_eau"
+   ],
+   "split": false
+  },
+  "challenger_3": {
+   "primary": "2027_tank_challenger_3",
+   "targets": [
+    "2027_tank_challenger_3"
+   ],
+   "split": false
+  },
+  "merkava_mk4_barak": {
+   "primary": "2023_tank_merkava_mk4_barak",
+   "targets": [
+    "2023_tank_merkava_mk4_barak"
+   ],
+   "split": false
+  },
+  "m1a2_sepv3": {
+   "primary": "2017_tank_m1a2_sepv3_abrams",
+   "targets": [
+    "2017_tank_m1a2_sepv3_abrams"
+   ],
+   "split": false
+  },
+  "abrams_main_battle_tank": {
+   "primary": "tank_abrams",
+   "targets": [
+    "tank_abrams"
+   ],
+   "split": false
+  },
+  "karrar": {
+   "primary": "2017_tank_karrar",
+   "targets": [
+    "2017_tank_karrar"
+   ],
+   "split": false
+  },
+  "t_14_armata": {
+   "primary": "2015_tank_t_14_armata",
+   "targets": [
+    "2015_tank_t_14_armata"
+   ],
+   "split": false
+  },
+  "t_72b3m": {
+   "primary": "2017_tank_t_72b3m",
+   "targets": [
+    "2017_tank_t_72b3m"
+   ],
+   "split": false
+  },
+  "t_90m_proryv": {
+   "primary": "2019_tank_t_90m_proryv",
+   "targets": [
+    "2019_tank_t_90m_proryv"
+   ],
+   "split": false
+  },
+  "t_80bvm": {
+   "primary": "2017_tank_t_80bvm",
+   "targets": [
+    "2017_tank_t_80bvm"
+   ],
+   "split": false
+  },
+  "pt_76b": {
+   "primary": "1952_tank_pt_76b",
+   "targets": [
+    "1952_tank_pt_76b"
+   ],
+   "split": false
+  },
+  "m1985_pt_85": {
+   "primary": "1982_tank_m1985",
+   "targets": [
+    "1982_tank_m1985"
+   ],
+   "split": false
+  },
+  "scorpion": {
+   "primary": "1973_recon_vehicle_scorpion",
+   "targets": [
+    "1973_recon_vehicle_scorpion"
+   ],
+   "split": false
+  },
+  "scorpion_fv101": {
+   "primary": "1973_recon_vehicle_scorpion",
+   "targets": [
+    "1973_recon_vehicle_scorpion"
+   ],
+   "split": false
+  },
+  "amx_10rc": {
+   "primary": "1979_recon_vehicle_amx_10rc",
+   "targets": [
+    "1979_recon_vehicle_amx_10rc"
+   ],
+   "split": false
+  },
+  "amx_13": {
+   "primary": "1966_tank_amx_13",
+   "targets": [
+    "1966_tank_amx_13"
+   ],
+   "split": false
+  },
+  "ee_9_cascavel": {
+   "primary": "1975_recon_vehicle_ee_9_cascavel",
+   "targets": [
+    "1975_recon_vehicle_ee_9_cascavel"
+   ],
+   "split": false
+  },
+  "ee9_cascavel": {
+   "primary": "1975_recon_vehicle_ee_9_cascavel",
+   "targets": [
+    "1975_recon_vehicle_ee_9_cascavel"
+   ],
+   "split": false
+  },
+  "bmpt_72_terminator_2": {
+   "primary": "2013_armored_fighting_vehicle_bmpt_72_terminator_2",
+   "targets": [
+    "2013_armored_fighting_vehicle_bmpt_72_terminator_2"
+   ],
+   "split": false
+  },
+  "m10_booker": {
+   "primary": "2025_tank_m10_booker",
+   "targets": [
+    "2025_tank_m10_booker"
+   ],
+   "split": false
+  },
+  "m10_booker_2": {
+   "primary": "2025_tank_m10_booker",
+   "targets": [
+    "2025_tank_m10_booker"
+   ],
+   "split": false
+  },
+  "amos_satellite": {
+   "primary": "communications_satellite_amos",
+   "targets": [
+    "communications_satellite_amos"
+   ],
+   "split": false
+  },
+  "apstar": {
+   "primary": "communications_satellite_apstar",
+   "targets": [
+    "communications_satellite_apstar"
+   ],
+   "split": false
+  },
+  "asiasat": {
+   "primary": "communications_satellite_asiasat",
+   "targets": [
+    "communications_satellite_asiasat"
+   ],
+   "split": false
+  },
+  "chuangxin": {
+   "primary": "communications_satellite_chuangxin",
+   "targets": [
+    "communications_satellite_chuangxin"
+   ],
+   "split": false
+  },
+  "express_satellite": {
+   "primary": "communications_satellite_express",
+   "targets": [
+    "communications_satellite_express"
+   ],
+   "split": false
+  },
+  "gonets": {
+   "primary": "communications_satellite_gonets",
+   "targets": [
+    "communications_satellite_gonets"
+   ],
+   "split": false
+  },
+  "meridian_satellite": {
+   "primary": "communications_satellite_meridian",
+   "targets": [
+    "communications_satellite_meridian"
+   ],
+   "split": false
+  },
+  "raduga_satellite": {
+   "primary": "communications_satellite_raduga",
+   "targets": [
+    "communications_satellite_raduga"
+   ],
+   "split": false
+  },
+  "rodnik_satellite": {
+   "primary": "communications_satellite_rodnik",
+   "targets": [
+    "communications_satellite_rodnik"
+   ],
+   "split": false
+  },
+  "thuraya": {
+   "primary": "communications_satellite_thuraya",
+   "targets": [
+    "communications_satellite_thuraya"
+   ],
+   "split": false
+  },
+  "yahsat_y1a": {
+   "primary": "communications_satellite_yahsat_y1a",
+   "targets": [
+    "communications_satellite_yahsat_y1a"
+   ],
+   "split": false
+  },
+  "zhongxing": {
+   "primary": "communications_satellite_zhongxing",
+   "targets": [
+    "communications_satellite_zhongxing"
+   ],
+   "split": false
+  },
+  "glonass": {
+   "primary": "navigation_satellite_glonass",
+   "targets": [
+    "navigation_satellite_glonass"
+   ],
+   "split": false
+  },
+  "parus_satellite": {
+   "primary": "navigation_satellite_parus",
+   "targets": [
+    "navigation_satellite_parus"
+   ],
+   "split": false
+  },
+  "electro_satellite": {
+   "primary": "weather_satellite_electro",
+   "targets": [
+    "weather_satellite_electro"
+   ],
+   "split": false
+  },
+  "haiyang": {
+   "primary": "weather_satellite_haiyang",
+   "targets": [
+    "weather_satellite_haiyang"
+   ],
+   "split": false
+  },
+  "meteor_satellite": {
+   "primary": "weather_satellite_meteor",
+   "targets": [
+    "weather_satellite_meteor"
+   ],
+   "split": false
+  },
+  "kliver_turret": {
+   "primary": "1996_turret_kliver",
+   "targets": [
+    "1996_turret_kliver"
+   ],
+   "split": false
+  },
+  "pipe_bomb": {
+   "primary": "ied_pipe_bomb",
+   "targets": [
+    "ied_pipe_bomb"
+   ],
+   "split": false
+  },
+  "trophy_hv": {
+   "primary": "2009_active_protection_system_trophy_hv",
+   "targets": [
+    "2009_active_protection_system_trophy_hv"
+   ],
+   "split": false
+  },
+  "jets": {
+   "primary": "laser_designator_rangefinder_jets",
+   "targets": [
+    "laser_designator_rangefinder_jets"
+   ],
+   "split": false
+  },
+  "rcv": {
+   "primary": "combat_ugv_rcv",
+   "targets": [
+    "combat_ugv_rcv"
+   ],
+   "split": false
+  },
+  "nbcrv_ssu": {
+   "primary": "cbrn_sensor_suite_nbcrv_ssu",
+   "targets": [
+    "cbrn_sensor_suite_nbcrv_ssu"
+   ],
+   "split": false
+  },
+  "m153_crows": {
+   "primary": "remote_weapon_station_m153_crows",
+   "targets": [
+    "remote_weapon_station_m153_crows"
+   ],
+   "split": false
+  },
+  "srr_skydio_x10d": {
+   "primary": "reconnaissance_uav_srr_skydio_x10d",
+   "targets": [
+    "reconnaissance_uav_srr_skydio_x10d"
+   ],
+   "split": false
+  },
+  "hellfire": {
+   "primary": "1984_atgm_hellfire",
+   "targets": [
+    "1984_atgm_hellfire"
+   ],
+   "split": false
+  },
+  "a_50_mainstay": {
+   "primary": "1987_aew_aircraft_a_50e",
+   "targets": [
+    "1987_aew_aircraft_a_50e"
+   ],
+   "split": false
+  },
+  "zala_421_08": {
+   "primary": "2008_reconnaissance_uav_zala_421_08",
+   "targets": [
+    "2008_reconnaissance_uav_zala_421_08"
+   ],
+   "split": false
+  },
+  "zala_421_12": {
+   "primary": "2001_reconnaissance_uav_zala_421_12",
+   "targets": [
+    "2001_reconnaissance_uav_zala_421_12"
+   ],
+   "split": false
+  },
+  "zala_421_21": {
+   "primary": "2010_reconnaissance_uav_zala_421_21",
+   "targets": [
+    "2010_reconnaissance_uav_zala_421_21"
+   ],
+   "split": false
+  },
+  "spylite_skylite": {
+   "primary": "2003_reconnaissance_uav_spylite_b",
+   "targets": [
+    "2003_reconnaissance_uav_spylite_b"
+   ],
+   "split": false
+  },
+  "skylark_i_iv_le": {
+   "primary": "2006_reconnaissance_uav_skylark_i",
+   "targets": [
+    "2006_reconnaissance_uav_skylark_i"
+   ],
+   "split": false
+  },
+  "skylark_ii_iii": {
+   "primary": "2006_reconnaissance_uav_skylark_ii",
+   "targets": [
+    "2006_reconnaissance_uav_skylark_ii"
+   ],
+   "split": false
+  },
+  "fox_at2": {
+   "primary": "1998_reconnaissance_uav_cac_fox",
+   "targets": [
+    "1998_reconnaissance_uav_cac_fox"
+   ],
+   "split": false
+  },
+  "mohadjer_4": {
+   "primary": "1997_reconnaissance_uav_mohajer_4",
+   "targets": [
+    "1997_reconnaissance_uav_mohajer_4"
+   ],
+   "split": false
+  },
+  "shmel_1_pchela_1k": {
+   "primary": "1991_reconnaissance_uav_shmel_1",
+   "targets": [
+    "1991_reconnaissance_uav_shmel_1"
+   ],
+   "split": false
+  },
+  "hermes_450": {
+   "primary": "1998_reconnaissance_uav_hermes_450",
+   "targets": [
+    "1998_reconnaissance_uav_hermes_450"
+   ],
+   "split": false
+  },
+  "hermes_900": {
+   "primary": "2012_reconnaissance_uav_hermes_900",
+   "targets": [
+    "2012_reconnaissance_uav_hermes_900"
+   ],
+   "split": false
+  },
+  "harpy": {
+   "primary": "1988_loitering_munition_harpy",
+   "targets": [
+    "1988_loitering_munition_harpy"
+   ],
+   "split": false
+  },
+  "harop": {
+   "primary": "2009_loitering_munition_harop",
+   "targets": [
+    "2009_loitering_munition_harop"
+   ],
+   "split": false
+  },
+  "wing_loong": {
+   "primary": "2011_ucav_wing_loong_i",
+   "targets": [
+    "2011_ucav_wing_loong_i",
+    "2017_reconnaissance_uav_wing_loong_ii"
+   ],
+   "split": true
+  },
+  "wing_loong_ii": {
+   "primary": "2017_reconnaissance_uav_wing_loong_ii",
+   "targets": [
+    "2017_reconnaissance_uav_wing_loong_ii"
+   ],
+   "split": false
+  },
+  "zala_lancet": {
+   "primary": "2016_loitering_munition_lancet_1",
+   "targets": [
+    "2016_loitering_munition_lancet_1",
+    "2019_loitering_munition_lancet_3"
+   ],
+   "split": true
+  },
+  "geran_2": {
+   "primary": "2022_loitering_munition_geran_2",
+   "targets": [
+    "2022_loitering_munition_geran_2"
+   ],
+   "split": false
+  },
+  "shahed_136": {
+   "primary": "2021_loitering_munition_shahed_136",
+   "targets": [
+    "2021_loitering_munition_shahed_136"
+   ],
+   "split": false
+  },
+  "orlan_10": {
+   "primary": "2010_reconnaissance_uav_orlan_10",
+   "targets": [
+    "2010_reconnaissance_uav_orlan_10"
+   ],
+   "split": false
+  },
+  "orlan_30": {
+   "primary": "2017_reconnaissance_uav_orlan_30",
+   "targets": [
+    "2017_reconnaissance_uav_orlan_30"
+   ],
+   "split": false
+  },
+  "zala_kub_bla": {
+   "primary": "2019_loitering_munition_zala_kub",
+   "targets": [
+    "2019_loitering_munition_zala_kub"
+   ],
+   "split": false
+  },
+  "wz_7": {
+   "primary": "2018_reconnaissance_uav_wz_7",
+   "targets": [
+    "2018_reconnaissance_uav_wz_7"
+   ],
+   "split": false
+  },
+  "vampire_r18": {
+   "primary": "2022_ucav_baba_yagas",
+   "targets": [
+    "2022_ucav_baba_yagas"
+   ],
+   "split": false
+  },
+  "mohajer_10": {
+   "primary": "2023_ucav_mohajer_10",
+   "targets": [
+    "2023_ucav_mohajer_10"
+   ],
+   "split": false
+  },
+  "arash_2": {
+   "primary": "2019_loitering_munition_arash_2",
+   "targets": [
+    "2019_loitering_munition_arash_2"
+   ],
+   "split": false
+  },
+  "bayraktar_akinci": {
+   "primary": "2020_ucav_bayraktar_akinci",
+   "targets": [
+    "2020_ucav_bayraktar_akinci"
+   ],
+   "split": false
+  },
+  "bayraktar_kizilelma": {
+   "primary": "2025_ucav_bayraktar_kizilelma",
+   "targets": [
+    "2025_ucav_bayraktar_kizilelma"
+   ],
+   "split": false
+  },
+  "palianytsia": {
+   "primary": "2025_loitering_munition_palianytsia",
+   "targets": [
+    "2025_loitering_munition_palianytsia"
+   ],
+   "split": false
+  },
+  "switchblade_600": {
+   "primary": "2011_loitering_munition_switchblade_600",
+   "targets": [
+    "2011_loitering_munition_switchblade_600"
+   ],
+   "split": false
+  },
+  "rq_11b_raven": {
+   "primary": "2001_reconnaissance_uav_rq_11b_raven",
+   "targets": [
+    "2001_reconnaissance_uav_rq_11b_raven"
+   ],
+   "split": false
+  },
+  "rq_7b_shadow": {
+   "primary": "2004_reconnaissance_uav_rq_7b_shadow",
+   "targets": [
+    "2004_reconnaissance_uav_rq_7b_shadow"
+   ],
+   "split": false
+  },
+  "mq_1c_25m": {
+   "primary": "2024_ucav_mq_1c_25m_gray_eagle",
+   "targets": [
+    "2024_ucav_mq_1c_25m_gray_eagle"
+   ],
+   "split": false
+  },
+  "ahm_200": {
+   "primary": "2008_land_mine_ahm_200",
+   "targets": [
+    "2008_land_mine_ahm_200"
+   ],
+   "split": false
+  },
+  "sborka_m1_m1_2": {
+   "primary": "1985_air_defense_command_vehicle_ppru_m1",
+   "targets": [
+    "1985_air_defense_command_vehicle_ppru_m1",
+    "2007_air_defense_command_vehicle_ppru_m1_2"
+   ],
+   "split": true
+  },
+  "zis_3": {
+   "primary": "1942_towed_antitank_gun_m1942",
+   "targets": [
+    "1942_towed_antitank_gun_m1942"
+   ],
+   "split": false
+  },
+  "2a45m": {
+   "primary": "1989_towed_antitank_gun_2a45m",
+   "targets": [
+    "1989_towed_antitank_gun_2a45m"
+   ],
+   "split": false
+  },
+  "mt_12_mt_12r": {
+   "primary": "1961_towed_antitank_gun_mt_12",
+   "targets": [
+    "1961_towed_antitank_gun_mt_12"
+   ],
+   "split": false
+  },
+  "soras_6": {
+   "primary": "1993_sound_ranging_system_soras_6",
+   "targets": [
+    "1993_sound_ranging_system_soras_6"
+   ],
+   "split": false
+  },
+  "d_44_85mm": {
+   "primary": "1944_towed_gun_d_44",
+   "targets": [
+    "1944_towed_gun_d_44"
+   ],
+   "split": false
+  },
+  "tms_65m": {
+   "primary": "1969_decontamination_vehicle_tms_65m",
+   "targets": [
+    "1969_decontamination_vehicle_tms_65m"
+   ],
+   "split": false
+  },
+  "tz_74": {
+   "primary": "1970_decontamination_vehicle_tz_74",
+   "targets": [
+    "1970_decontamination_vehicle_tz_74"
+   ],
+   "split": false
+  },
+  "m160_robotic_mine_flail": {
+   "primary": "2011_mine_clearing_ugv_dok_ing_mv_4",
+   "targets": [
+    "2011_mine_clearing_ugv_dok_ing_mv_4"
+   ],
+   "split": false
+  },
+  "t_54_t": {
+   "primary": "1965_recovery_vehicle_t_54t",
+   "targets": [
+    "1965_recovery_vehicle_t_54t"
+   ],
+   "split": false
+  },
+  "m88a2_hercules": {
+   "primary": "1997_recovery_vehicle_m88a2",
+   "targets": [
+    "1997_recovery_vehicle_m88a2"
+   ],
+   "split": false
+  },
+  "brem_1": {
+   "primary": "1984_recovery_vehicle_brem_1",
+   "targets": [
+    "1984_recovery_vehicle_brem_1"
+   ],
+   "split": false
+  },
+  "supacat": {
+   "primary": "1982_all_terrain_vehicle_supacat",
+   "targets": [
+    "1982_all_terrain_vehicle_supacat"
+   ],
+   "split": false
+  },
+  "9p162_kornet_lr": {
+   "primary": "2012_atgm_carrier_9p162_kornet_t",
+   "targets": [
+    "2012_atgm_carrier_9p162_kornet_t"
+   ],
+   "split": false
+  },
+  "9p148": {
+   "primary": "1977_atgm_carrier_9p148",
+   "targets": [
+    "1977_atgm_carrier_9p148"
+   ],
+   "split": false
+  },
+  "m901": {
+   "primary": "1978_atgm_carrier_m901_itv",
+   "targets": [
+    "1978_atgm_carrier_m901_itv"
+   ],
+   "split": false
+  },
+  "9p149_shturm_s": {
+   "primary": "1979_atgm_carrier_9p149_shturm_s",
+   "targets": [
+    "1979_atgm_carrier_9p149_shturm_s"
+   ],
+   "split": false
+  },
+  "9p157_2_khrizantema_s": {
+   "primary": "2004_atgm_carrier_9p157_khrizantema_s",
+   "targets": [
+    "2004_atgm_carrier_9p157_khrizantema_s"
+   ],
+   "split": false
+  },
+  "irm": {
+   "primary": "1980_engineer_recon_vehicle_irm",
+   "targets": [
+    "1980_engineer_recon_vehicle_irm"
+   ],
+   "split": false
+  },
+  "zrp_2": {
+   "primary": "1974_line_charge_zrp_2",
+   "targets": [
+    "1974_line_charge_zrp_2"
+   ],
+   "split": false
+  },
+  "helkir": {
+   "primary": "1994_antihelicopter_mine_helkir",
+   "targets": [
+    "1994_antihelicopter_mine_helkir"
+   ],
+   "split": false
+  },
+  "85v6_vega_orion": {
+   "primary": "2003_elint_85v6_a_vega",
+   "targets": [
+    "2003_elint_85v6_a_vega"
+   ],
+   "split": false
+  },
+  "avtobaza": {
+   "primary": "1985_elint_kvant_1l222_avtobaza",
+   "targets": [
+    "1985_elint_kvant_1l222_avtobaza"
+   ],
+   "split": false
+  },
+  "lldr_an_ped_1": {
+   "primary": "2004_laser_designator_an_ped_1",
+   "targets": [
+    "2004_laser_designator_an_ped_1"
+   ],
+   "split": false
+  },
+  "s55": {
+   "primary": "1976_apc_shorland_s55",
+   "targets": [
+    "1976_apc_shorland_s55"
+   ],
+   "split": false
+  },
+  "tos_2_tosochka": {
+   "primary": "2021_heavy_flamethrower_system_tos_2",
+   "targets": [
+    "2021_heavy_flamethrower_system_tos_2"
+   ],
+   "split": false
+  },
+  "amx_10_pac_90": {
+   "primary": "1979_tank_destroyer_amx_10_pac_90",
+   "targets": [
+    "1979_tank_destroyer_amx_10_pac_90"
+   ],
+   "split": false
+  },
+  "vbl": {
+   "primary": "1978_light_armored_vehicle_panhard_vbl",
+   "targets": [
+    "1978_light_armored_vehicle_panhard_vbl"
+   ],
+   "split": false
+  },
+  "gear_up": {
+   "primary": "1999_motorcycle_imz_8",
+   "targets": [
+    "1999_motorcycle_imz_8"
+   ],
+   "split": false
+  },
+  "v_150": {
+   "primary": "1971_light_armored_vehicle_v_150",
+   "targets": [
+    "1971_light_armored_vehicle_v_150"
+   ],
+   "split": false
+  },
+  "prp_4m": {
+   "primary": "2009_artillery_recon_vehicle_prp_4a",
+   "targets": [
+    "2009_artillery_recon_vehicle_prp_4a"
+   ],
+   "split": false
+  },
+  "prp_3": {
+   "primary": "1972_artillery_recon_vehicle_prp_3",
+   "targets": [
+    "1972_artillery_recon_vehicle_prp_3"
+   ],
+   "split": false
+  },
+  "2s23": {
+   "primary": "1990_spm_2s23_nona_svk",
+   "targets": [
+    "1990_spm_2s23_nona_svk"
+   ],
+   "split": false
+  },
+  "2s31_vena": {
+   "primary": "1996_spm_2s31_vena",
+   "targets": [
+    "1996_spm_2s31_vena"
+   ],
+   "split": false
+  },
+  "2s4_sp_240mm_mortar": {
+   "primary": "1975_spm_2s4_tyulpan",
+   "targets": [
+    "1975_spm_2s4_tyulpan"
+   ],
+   "split": false
+  },
+  "2s40_floks": {
+   "primary": "2023_spm_2s40_floks",
+   "targets": [
+    "2023_spm_2s40_floks"
+   ],
+   "split": false
+  },
+  "p2_mk2": {
+   "primary": "1997_antitank_mine_p2_mk2",
+   "targets": [
+    "1997_antitank_mine_p2_mk2"
+   ],
+   "split": false
+  },
+  "pt_mi_ba_iii": {
+   "primary": "1978_antitank_mine_pt_mi_ba_iii",
+   "targets": [
+    "1978_antitank_mine_pt_mi_ba_iii"
+   ],
+   "split": false
+  },
+  "tm_41": {
+   "primary": "1941_antitank_mine_tm_41",
+   "targets": [
+    "1941_antitank_mine_tm_41"
+   ],
+   "split": false
+  },
+  "m19": {
+   "primary": "1961_antitank_mine_m19",
+   "targets": [
+    "1961_antitank_mine_m19"
+   ],
+   "split": false
+  },
+  "tmk_2": {
+   "primary": "1955_antitank_mine_tmk_2",
+   "targets": [
+    "1955_antitank_mine_tmk_2"
+   ],
+   "split": false
+  },
+  "ptm_3": {
+   "primary": "1951_antitank_mine_ptm_3",
+   "targets": [
+    "1951_antitank_mine_ptm_3"
+   ],
+   "split": false
+  },
+  "tm_83": {
+   "primary": "1983_off_route_mine_tm_83",
+   "targets": [
+    "1983_off_route_mine_tm_83"
+   ],
+   "split": false
+  },
+  "tm_57": {
+   "primary": "1957_antitank_mine_tm_57",
+   "targets": [
+    "1957_antitank_mine_tm_57"
+   ],
+   "split": false
+  },
+  "pm_60_k1": {
+   "primary": "1929_antitank_mine_pm_60",
+   "targets": [
+    "1929_antitank_mine_pm_60"
+   ],
+   "split": false
+  },
+  "tm_46_tmn_46": {
+   "primary": "1962_antitank_mine_tm_46_tmn_46",
+   "targets": [
+    "1962_antitank_mine_tm_46_tmn_46"
+   ],
+   "split": false
+  },
+  "parm_1_dm12": {
+   "primary": "1983_off_route_mine_parm_1",
+   "targets": [
+    "1983_off_route_mine_parm_1"
+   ],
+   "split": false
+  },
+  "tmd_b": {
+   "primary": "1951_antitank_mine_tmd_b",
+   "targets": [
+    "1951_antitank_mine_tmd_b"
+   ],
+   "split": false
+  },
+  "mpb_zn_k": {
+   "primary": "1986_off_route_mine_mpb_zn_k",
+   "targets": [
+    "1986_off_route_mine_mpb_zn_k"
+   ],
+   "split": false
+  },
+  "mk7": {
+   "primary": "2003_antitank_mine_mk7",
+   "targets": [
+    "2003_antitank_mine_mk7"
+   ],
+   "split": false
+  },
+  "tm_89": {
+   "primary": "1993_antitank_mine_tm_89",
+   "targets": [
+    "1993_antitank_mine_tm_89"
+   ],
+   "split": false
+  },
+  "lmg_side_attack_mine": {
+   "primary": "1979_off_route_mine_lmg",
+   "targets": [
+    "1979_off_route_mine_lmg"
+   ],
+   "split": false
+  },
+  "pt_mi_ba_ii": {
+   "primary": "1952_antitank_mine_pt_mi_ba_ii",
+   "targets": [
+    "1952_antitank_mine_pt_mi_ba_ii"
+   ],
+   "split": false
+  },
+  "type_72_antitank_mine": {
+   "primary": "antitank_mine_type_72",
+   "targets": [
+    "antitank_mine_type_72"
+   ],
+   "split": false
+  },
+  "pmz_40": {
+   "primary": "1939_antitank_mine_pmz_40",
+   "targets": [
+    "1939_antitank_mine_pmz_40"
+   ],
+   "split": false
+  },
+  "ptm_1s_pgmdm": {
+   "primary": "1993_antitank_mine_ptm_1s_pgmdm",
+   "targets": [
+    "1993_antitank_mine_ptm_1s_pgmdm"
+   ],
+   "split": false
+  },
+  "m15": {
+   "primary": "1950_antitank_mine_m15",
+   "targets": [
+    "1950_antitank_mine_m15"
+   ],
+   "split": false
+  },
+  "tm_62m_p_b_d": {
+   "primary": "1960_antitank_mine_tm_62m_p_b_d",
+   "targets": [
+    "1960_antitank_mine_tm_62m_p_b_d"
+   ],
+   "split": false
+  },
+  "tma_3": {
+   "primary": "1972_antitank_mine_tma_3",
+   "targets": [
+    "1972_antitank_mine_tma_3"
+   ],
+   "split": false
+  },
+  "uka_63": {
+   "primary": "1978_antitank_mine_uka_63",
+   "targets": [
+    "1978_antitank_mine_uka_63"
+   ],
+   "split": false
+  },
+  "pt_mi_k": {
+   "primary": "1939_antitank_mine_pt_mi_k",
+   "targets": [
+    "1939_antitank_mine_pt_mi_k"
+   ],
+   "split": false
+  },
+  "tmm_1": {
+   "primary": "1943_antitank_mine_tmm_1",
+   "targets": [
+    "1943_antitank_mine_tmm_1"
+   ],
+   "split": false
+  },
+  "m7a2": {
+   "primary": "1942_antitank_mine_m7a2",
+   "targets": [
+    "1942_antitank_mine_m7a2"
+   ],
+   "split": false
+  },
+  "prb_m3_a": {
+   "primary": "1975_antitank_mine_prb_m3_a",
+   "targets": [
+    "1975_antitank_mine_prb_m3_a"
+   ],
+   "split": false
+  },
+  "miacah_f1": {
+   "primary": "1972_off_route_mine_miacah_f1",
+   "targets": [
+    "1972_off_route_mine_miacah_f1"
+   ],
+   "split": false
+  },
+  "m2_hb": {
+   "primary": "1933_hmg_m2_browning",
+   "targets": [
+    "1933_hmg_m2_browning"
+   ],
+   "split": false
+  },
+  "dshk_38_46": {
+   "primary": "1938_hmg_dshk_1938",
+   "targets": [
+    "1938_hmg_dshk_1938"
+   ],
+   "split": false
+  },
+  "nsv_nsvt_kord": {
+   "primary": "1974_hmg_nsv",
+   "targets": [
+    "1974_hmg_nsv",
+    "1998_hmg_kord_6p50"
+   ],
+   "split": true
+  },
+  "rpd": {
+   "primary": "1944_lmg_rpd",
+   "targets": [
+    "1944_lmg_rpd"
+   ],
+   "split": false
+  },
+  "rpk": {
+   "primary": "1961_lmg_rpk",
+   "targets": [
+    "1961_lmg_rpk"
+   ],
+   "split": false
+  },
+  "m37_m1937_type53_82mm_mortar": {
+   "primary": "1943_mortar_m_37",
+   "targets": [
+    "1943_mortar_m_37"
+   ],
+   "split": false
+  },
+  "m1943_m120_type53_mortar": {
+   "primary": "1943_mortar_m1943_120_pm_43",
+   "targets": [
+    "1943_mortar_m1943_120_pm_43"
+   ],
+   "split": false
+  },
+  "m_43_type56_160mm_mortar": {
+   "primary": "1943_mortar_m1943_mt_13",
+   "targets": [
+    "1943_mortar_m1943_mt_13"
+   ],
+   "split": false
+  },
+  "type_55_m55_120mm_mortar": {
+   "primary": "1950_mortar_type_55",
+   "targets": [
+    "1950_mortar_type_55"
+   ],
+   "split": false
+  },
+  "type_63_1_mortar": {
+   "primary": "1970_mortar_type_63_1",
+   "targets": [
+    "1970_mortar_type_63_1"
+   ],
+   "split": false
+  },
+  "l16_m252_81mm_mortar": {
+   "primary": "1960_mortar_l16",
+   "targets": [
+    "1960_mortar_l16"
+   ],
+   "split": false
+  },
+  "mo_120_rt": {
+   "primary": "1961_mortar_mo_120_rt_61",
+   "targets": [
+    "1961_mortar_mo_120_rt_61"
+   ],
+   "split": false
+  },
+  "type_67_82mm_mortar": {
+   "primary": "1971_mortar_type_67_82mm",
+   "targets": [
+    "1971_mortar_type_67_82mm"
+   ],
+   "split": false
+  },
+  "type_71_100mm_mortar": {
+   "primary": "1970_mortar_type_71",
+   "targets": [
+    "1970_mortar_type_71"
+   ],
+   "split": false
+  },
+  "2s12": {
+   "primary": "1980_mortar_2b11",
+   "targets": [
+    "1980_mortar_2b11"
+   ],
+   "split": false
+  },
+  "2b11_120mm_mortar": {
+   "primary": "1980_mortar_2b11",
+   "targets": [
+    "1980_mortar_2b11"
+   ],
+   "split": false
+  },
+  "2b14_1_82mm_mortar": {
+   "primary": "1983_mortar_2b14",
+   "targets": [
+    "1983_mortar_2b14"
+   ],
+   "split": false
+  },
+  "type_86_w86_120mm_mortar": {
+   "primary": "1980_mortar_w86",
+   "targets": [
+    "1980_mortar_w86"
+   ],
+   "split": false
+  },
+  "strix": {
+   "primary": "1994_guided_mortar_bomb_strix",
+   "targets": [
+    "1994_guided_mortar_bomb_strix"
+   ],
+   "split": false
+  },
+  "b10_82mm_recoilless_gun": {
+   "primary": "1954_recoilless_gun_b_10",
+   "targets": [
+    "1954_recoilless_gun_b_10"
+   ],
+   "split": false
+  },
+  "b_11_107mm_recoilless_gun": {
+   "primary": "1954_recoilless_gun_b_11",
+   "targets": [
+    "1954_recoilless_gun_b_11"
+   ],
+   "split": false
+  },
+  "m40_106mm": {
+   "primary": "1955_recoilless_gun_m40",
+   "targets": [
+    "1955_recoilless_gun_m40"
+   ],
+   "split": false
+  },
+  "m67": {
+   "primary": "1961_recoilless_gun_m67",
+   "targets": [
+    "1961_recoilless_gun_m67"
+   ],
+   "split": false
+  },
+  "spg_9m": {
+   "primary": "1962_recoilless_gun_spg_9",
+   "targets": [
+    "1962_recoilless_gun_spg_9"
+   ],
+   "split": false
+  },
+  "m60_82mm_recoilless_gun": {
+   "primary": "1965_recoilless_gun_m60",
+   "targets": [
+    "1965_recoilless_gun_m60"
+   ],
+   "split": false
+  },
+  "m79_82mm_recoilless_gun": {
+   "primary": "1970_recoilless_gun_m79",
+   "targets": [
+    "1970_recoilless_gun_m79"
+   ],
+   "split": false
+  },
+  "armbrust": {
+   "primary": "1971_antitank_rocket_launcher_armbrust",
+   "targets": [
+    "1971_antitank_rocket_launcher_armbrust"
+   ],
+   "split": false
+  },
+  "at4": {
+   "primary": "1987_antitank_rocket_launcher_at_4",
+   "targets": [
+    "1987_antitank_rocket_launcher_at_4"
+   ],
+   "split": false
+  },
+  "rpg_22": {
+   "primary": "1985_antitank_rocket_launcher_rpg_22",
+   "targets": [
+    "1985_antitank_rocket_launcher_rpg_22"
+   ],
+   "split": false
+  },
+  "pf_98": {
+   "primary": "1998_antitank_rocket_launcher_pf_98",
+   "targets": [
+    "1998_antitank_rocket_launcher_pf_98"
+   ],
+   "split": false
+  },
+  "rpg_28": {
+   "primary": "2007_antitank_rocket_launcher_rpg_28",
+   "targets": [
+    "2007_antitank_rocket_launcher_rpg_28"
+   ],
+   "split": false
+  },
+  "rpg_7v": {
+   "primary": "1961_antitank_rocket_launcher_rpg_7v",
+   "targets": [
+    "1961_antitank_rocket_launcher_rpg_7v"
+   ],
+   "split": false
+  },
+  "9p132": {
+   "primary": "1960_rocket_launcher_9p132",
+   "targets": [
+    "1960_rocket_launcher_9p132"
+   ],
+   "split": false
+  },
+  "rpg_29_rpg_32_hashim": {
+   "primary": "2013_antitank_rocket_launcher_rpg_32",
+   "targets": [
+    "1989_antitank_rocket_launcher_rpg_29",
+    "2013_antitank_rocket_launcher_rpg_32"
+   ],
+   "split": true
+  },
+  "rpg_29": {
+   "primary": "1989_antitank_rocket_launcher_rpg_29",
+   "targets": [
+    "1989_antitank_rocket_launcher_rpg_29"
+   ],
+   "split": false
+  },
+  "rpg_27": {
+   "primary": "1989_antitank_rocket_launcher_rpg_27",
+   "targets": [
+    "1989_antitank_rocket_launcher_rpg_27"
+   ],
+   "split": false
+  },
+  "ags_17_ags_30": {
+   "primary": "1970_automatic_grenade_launcher_ags_17_plamya",
+   "targets": [
+    "1970_automatic_grenade_launcher_ags_17_plamya",
+    "1995_automatic_grenade_launcher_ags_30_atlant"
+   ],
+   "split": true
+  },
+  "cis_40_abm": {
+   "primary": "1991_automatic_grenade_launcher_stk_40_agl",
+   "targets": [
+    "1991_automatic_grenade_launcher_stk_40_agl"
+   ],
+   "split": false
+  },
+  "w_87_qlz_87_qlb_06": {
+   "primary": "1985_automatic_grenade_launcher_qlz_87",
+   "targets": [
+    "1985_automatic_grenade_launcher_qlz_87"
+   ],
+   "split": false
+  },
+  "gm_94": {
+   "primary": "2007_grenade_launcher_gm_94",
+   "targets": [
+    "2007_grenade_launcher_gm_94"
+   ],
+   "split": false
+  },
+  "rg_6": {
+   "primary": "1994_grenade_launcher_rg_6",
+   "targets": [
+    "1994_grenade_launcher_rg_6"
+   ],
+   "split": false
+  },
+  "rkg_3_rgk_3m": {
+   "primary": "1950_hand_grenade_rkg_3",
+   "targets": [
+    "1950_hand_grenade_rkg_3"
+   ],
+   "split": false
+  },
+  "boq_x300": {
+   "primary": "2012_radar_jammer_boq_x300",
+   "targets": [
+    "2012_radar_jammer_boq_x300"
+   ],
+   "split": false
+  },
+  "saab_boq_x300": {
+   "primary": "2012_radar_jammer_boq_x300",
+   "targets": [
+    "2012_radar_jammer_boq_x300"
+   ],
+   "split": false
+  },
+  "tigr_m": {
+   "primary": "2004_light_utility_vehicle_tigr_m",
+   "targets": [
+    "2004_light_utility_vehicle_tigr_m"
+   ],
+   "split": false
+  },
+  "2s25": {
+   "primary": "1993_self_propelled_antitank_gun_2s25",
+   "targets": [
+    "1993_self_propelled_antitank_gun_2s25"
+   ],
+   "split": false
+  },
+  "magura_v5": {
+   "primary": "2023_usv_magura_v5",
+   "targets": [
+    "2023_usv_magura_v5"
+   ],
+   "split": false
+  },
+  "sea_baby": {
+   "primary": "2023_usv_sea_baby",
+   "targets": [
+    "2023_usv_sea_baby"
+   ],
+   "split": false
+  },
+  "beidou": {
+   "primary": "navigation_satellite_beidou",
+   "targets": [
+    "navigation_satellite_beidou"
+   ],
+   "split": false
+  },
+  "compass_nav_satellite": {
+   "primary": "navigation_satellite_beidou",
+   "targets": [
+    "navigation_satellite_beidou"
+   ],
+   "split": false
+  },
+  "army_watercraft_systems": {
+   "primary": null,
+   "targets": [],
+   "split": false,
+   "retired": true,
+   "reason": "A US Army acquisition PORTFOLIO page naming several watercraft programmes rather than an entity. The run's standing decision splits portfolio pages into the constituent systems ODIN already carries, so the weg_id retires with no single successor. Recorded in the crosswalk as a portfolio retirement."
+  }
+ }
+}

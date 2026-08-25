@@ -1,0 +1,29 @@
+{
+  "name": "@pytho/geo-agent-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@armyc2.c5isr.renderer/mil-sym-ts-web": "^2.6.6",
+    "@mapbox/mapbox-gl-draw": "^1.5.1",
+    "maplibre-contour": "^0.1.0",
+    "maplibre-gl": "^3.6.2",
+    "milsymbol": "^3.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "react-force-graph-2d": "^1.25.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.0.4",
+    "typescript": "^5.5.3",
+    "vite": "^8.1.5"
+  }
+}

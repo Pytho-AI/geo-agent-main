@@ -1,0 +1,11 @@
+# Tooling image for IDX 26 AOR raster pipeline.
+# Inherits from geo-agent-backend (GDAL 3.10.3) and adds:
+#   - mbutil       (mbtiles packaging)
+#   - requests     (HTTPS pulls of public S3 / Maaamet)
+#   - pystac-client (Element 84 STAC discovery for Sentinel-2 L2A)
+#   - pillow numpy  (raster derivatives / contrast stretches)
+# NOTE: NO awscli. Every bucket is fetched via plain HTTPS (--no-sign-request equivalent).
+FROM geo-agent-backend:latest
+USER root
+RUN pip3 install --no-cache-dir mbutil requests pystac-client pillow numpy
+WORKDIR /work

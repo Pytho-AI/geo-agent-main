@@ -1,0 +1,388 @@
+{
+ "symbolset": "35",
+ "name": "Sea Subsurface",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "code": "110000",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Submarine",
+   "code": "110100",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Submarine",
+   "entity subtype": "Submarine, Surfaced",
+   "code": "110101",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Submarine",
+   "entity subtype": "Submarine, Snorkeling",
+   "code": "110102",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Submarine",
+   "entity subtype": "Submarine, Bottomed",
+   "code": "110103",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Other Submersible",
+   "code": "110200",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Nonsubmarine",
+   "code": "110300",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Autonomous Underwater Vehicle (AUV)/Unmanned Underwater Vehicle (UUV)",
+   "code": "110400",
+   "remarks": ""
+  },
+  {
+   "entity": "Military",
+   "entity type": "Diver",
+   "code": "110500",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "code": "120000",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Submersible",
+   "code": "120100",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Autonomous Underwater Vehicle (AUV)/ Unmanned Underwater Vehicle (UUV)",
+   "code": "120200",
+   "remarks": ""
+  },
+  {
+   "entity": "Civilian",
+   "entity type": "Diver",
+   "code": "120300",
+   "remarks": ""
+  },
+  {
+   "entity": "Weapon",
+   "code": "130000",
+   "remarks": ""
+  },
+  {
+   "entity": "Weapon",
+   "entity type": "Torpedo",
+   "code": "130100",
+   "remarks": ""
+  },
+  {
+   "entity": "Weapon",
+   "entity type": "Improvised Explosive Device (IED)",
+   "code": "130200",
+   "remarks": "Used with hostile standard identity only."
+  },
+  {
+   "entity": "Weapon",
+   "entity type": "Decoy",
+   "code": "130300",
+   "remarks": ""
+  },
+  {
+   "entity": "Echo Tracker Classifier (ETC) / Possible Contact (POSCON)",
+   "code": "140000",
+   "remarks": "All ETC/POSCON tracks shall have a pending standard identity frame."
+  },
+  {
+   "entity": "Fused Track",
+   "code": "150000",
+   "remarks": "All fused tracks shall have a pending standard identity frame."
+  },
+  {
+   "entity": "Manual Track",
+   "code": "160000",
+   "remarks": ""
+  },
+  {
+   "entity": "Seabed Installation Man-Made, Military",
+   "code": "200000",
+   "remarks": ""
+  },
+  {
+   "entity": "Seabed Installation Man-Made, Non-Military",
+   "code": "210000",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Auxiliary",
+   "category": "Mission Area",
+   "code": "02",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "08",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "09",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "10",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "11",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "12",
+   "remarks": ""
+  },
+  {
+   "modifier": "Possible Submarine Low 1",
+   "category": "Submarine Confidence",
+   "code": "13",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "Possible Submarine Low 2",
+   "category": "Submarine Confidence",
+   "code": "14",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "Possible Submarine High 3",
+   "category": "Submarine Confidence",
+   "code": "15",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "Possible Submarine High 4",
+   "category": "Submarine Confidence",
+   "code": "16",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "Probable Submarine",
+   "category": "Submarine Confidence",
+   "code": "17",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "Certain Submarine",
+   "category": "Submarine Confidence",
+   "code": "18",
+   "remarks": "Used with SUBMARINE entity type only."
+  },
+  {
+   "modifier": "Anti-torpedo Torpedo",
+   "category": "Weapons Capability",
+   "code": "19",
+   "remarks": "Used with TORPEDO entity type only."
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "Crime",
+   "code": "20",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "Crime",
+   "code": "21",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "22",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Air Independent Propulsion",
+   "category": "Ship Propulsion",
+   "code": "01",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Diesel Electric, General",
+   "category": "Ship Propulsion",
+   "code": "02",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Diesel – Type 1",
+   "category": "Ship Propulsion",
+   "code": "03",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Diesel – Type 2",
+   "category": "Ship Propulsion",
+   "code": "04",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Diesel – Type 3",
+   "category": "Ship Propulsion",
+   "code": "05",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear Powered, General",
+   "category": "Ship Propulsion",
+   "code": "06",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 1",
+   "category": "Ship Propulsion",
+   "code": "07",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 2",
+   "category": "Ship Propulsion",
+   "code": "08",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 3",
+   "category": "Ship Propulsion",
+   "code": "09",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 4",
+   "category": "Ship Propulsion",
+   "code": "10",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 5",
+   "category": "Ship Propulsion",
+   "code": "11",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 6",
+   "category": "Ship Propulsion",
+   "code": "12",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "Nuclear – Type 7",
+   "category": "Ship Propulsion",
+   "code": "13",
+   "remarks": "Used with Submarine entity type only."
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "14",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "15",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "16",
+   "remarks": ""
+  },
+  {
+   "modifier": "{Disused}",
+   "category": "",
+   "code": "17",
+   "remarks": ""
+  }
+ ]
+}

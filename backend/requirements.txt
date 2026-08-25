@@ -1,0 +1,63 @@
+# API
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy[asyncio]>=2.0.25
+asyncpg>=0.29.0
+psycopg2-binary>=2.9.9
+geoalchemy2>=0.14.3
+
+# Geospatial
+shapely>=2.0.2
+geopandas>=0.14.2
+fiona>=1.9.5
+pyproj>=3.6.1
+rasterio>=1.3.0  # For reading Cloud Optimized GeoTIFFs (ESA WorldCover)
+mgrs>=1.4.6  # MGRS <-> lat/lon coordinate conversion
+scipy>=1.13.0  # Voronoi diagrams + sparse linear systems for Glinton MCOO method
+networkx>=3.2  # Graph algorithms for AA corridor circuit + grouping
+
+# Validation
+pydantic>=2.5.3
+pydantic-settings>=2.1.0
+
+# AWS
+boto3>=1.34.72
+# Bearer minting for the bedrock-mantle OpenAI-compatible endpoint
+# (services/llm/openai_compat.py) — same dependency pytho-agent uses.
+aws-bedrock-token-generator>=1.0.0
+
+# LLM
+langchain>=0.1.0
+langchain-aws>=0.1.0
+
+# BigQuery (supply chain intelligence)
+google-cloud-bigquery>=3.11.0
+
+# Utils
+python-dotenv>=1.0.0
+httpx>=0.26.0
+Pillow>=10.2.0
+
+# Headless map renderer. PYTHO_RENDER_CDP set -> connects via CDP to the
+# host-side GPU Chromium (chromium-cdp.service on spark). Empty/unset ->
+# launches the Chromium baked into the image by backend/Dockerfile's
+# `playwright install --with-deps chromium` (SwiftShader WebGL on
+# GPU-less cloud hosts). See app/services/render/headless.py.
+playwright>=1.40.0
+mapbox-vector-tile==2.2.0
+
+# Document → entity-graph ingestion (app/services/graph_ingest):
+# render PDFs (and Collabora-converted DOCX/XLSX) to page images for
+# the VLM. Office conversion is Collabora's job, not a local dep.
+PyMuPDF>=1.24.0
+
+# MCP wrapper over the extraction-agent tool surface (app/mcp_server.py,
+# mounted at /api/v1/mcp) — streamable-HTTP, stateless JSON.
+mcp>=2.0.0,<3
+python-docx
+python-pptx
+openpyxl
+websockets

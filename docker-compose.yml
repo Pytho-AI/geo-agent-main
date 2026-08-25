@@ -1,0 +1,203 @@
+services:
+  db:
+    restart: always
+    # imresamu/postgis is a multi-arch fork that ships ARM64 builds; the
+    # upstream postgis/postgis publishes amd64 only. Required to run the
+    # geo-agent stack on the DGX Spark (aarch64).
+    image: imresamu/postgis:16-3.4
+    environment:
+      POSTGRES_USER: geoagent
+      POSTGRES_PASSWORD: geoagent
+      POSTGRES_DB: geoagent
+    ports:
+      - "9846:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U geoagent"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  tileserver:
+    image: maptiler/tileserver-gl:v5.6.0
+    # INTERNAL ONLY — no host port. All tile traffic enters through the
+    # backend's /api/v1/tiles/* routes, which proxy the tilecache below.
+    # Nothing outside this compose stack reaches the tileserver.
+    volumes:
+      # Checked-in tileserver config + style definitions. The config
+      # declares a single `basemap` data source pointing at the Protomaps
+      # public planet PMTiles archive (https://build.protomaps.com/*.pmtiles);
+      # terrain-dem is declared directly in the style JSONs via
+      # tiles: [https://tiles.mapterhorn.com/{z}/{x}/{y}.webp]. Everything
+      # is range-fetched from public infrastructure — no local mbtile
+      # archives, no per-AO tile preload, no offline profile.
+      - ./infra/tileserver/tileserver-config.json:/data/tileserver-config.json:ro
+      - ./infra/tileserver/styles:/data/styles:ro
+      # Checked-in sprite sheets (PNG + JSON manifest). The terrain style
+      # references the mcoo sprite for the doctrinal restricted-/severely-
+      # restricted-terrain hatch fill-patterns; tileserver-gl resolves it
+      # via paths.sprites in tileserver-config.json.
+      - ./infra/tileserver/sprites:/data/sprites:ro
+    command: ["--config", "/data/tileserver-config.json", "--port", "8080"]
+    restart: always
+    depends_on:
+      # The planet PMTiles archive is opened THROUGH the tilecache's
+      # self-resolving /planet.pmtiles URL.
+      - tilecache
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"require('http').get('http://localhost:8080/health',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))\" || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  tilecache:
+    # On-disk tile cache fronting the tileserver (tileserver-gl has no
+    # persistent cache of its own — its deployment docs direct you to put
+    # a caching proxy in front). INTERNAL ONLY — the backend's
+    # /api/v1/tiles/* routes are the sole consumer. Also owns the ESRI
+    # World Imagery satellite proxy AND the self-resolving Protomaps
+    # planet URL (/planet.pmtiles — the njs resolver counts dated builds
+    # until it hits a live one, so no pinned date ever rots; see
+    # infra/tilecache/pmtiles_resolver.js). No depends_on: the TILESERVER
+    # depends on THIS container (it opens the planet archive through it).
+    image: nginx:1.27-alpine
+    restart: always
+    volumes:
+      - ./infra/tilecache/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./infra/tilecache/pmtiles_resolver.js:/etc/nginx/pmtiles_resolver.js:ro
+      - tile_cache:/var/cache/nginx/tiles
+
+  # NOTE: there is deliberately no standalone `frontend` service. The
+  # React app is baked into the backend image by the multistage
+  # backend/Dockerfile (stage 1 node build → /srv/geo-agent) and served
+  # by FastAPI under /geo-app. The old service (and frontend/Dockerfile)
+  # left with the pre-standalone layout in Feb 2026.
+
+  backend:
+    restart: always
+    build:
+      # Build context is the repo root so the multistage frontend build
+      # (stage 1: node:alpine + vite build under frontend/) can pull the
+      # frontend source in a single Dockerfile alongside the Python
+      # backend. See backend/Dockerfile.
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      # THE single public surface of the map service. Consumers (pytho-app
+      # edge, vcorps, cloud, anything) reach geo-agent at this host port —
+      # REST, WebSocket, render, tiles, and the /geo-app frontend all ride
+      # it. No shared docker networks with consumer stacks.
+      - "9845:8000"
+      # The in-container editor's own port, published so the consumer's
+      # nginx proxies editor session traffic NATIVELY (WS + statics).
+      # The session path embeds an encoded WOPI URL that survives no
+      # intermediate parse — nginx passes the raw request line, which
+      # no application-level bridge can guarantee (uvicorn exposes no
+      # raw path on websocket scopes). coolwsd's service_root matches
+      # the unstripped /geo-api/v1/editor prefix.
+      # Host port 9981: 9980 on the intel box is held by another
+      # stack's editor container; the in-container port stays 9980.
+      - "9981:9980"
+    environment:
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:3000,http://localhost:5173}
+      ALLOWED_ORIGIN_REGEX: ${ALLOWED_ORIGIN_REGEX:-}
+      DATABASE_URL: postgresql+asyncpg://geoagent:geoagent@db:5432/geoagent
+      AWS_S3_BUCKET: ${AWS_S3_BUCKET:-}
+      AWS_REGION: ${AWS_REGION:-us-east-1}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+      OFFLINE_MODE: ${OFFLINE_MODE:-false}
+      OWM_API_KEY: ${OWM_API_KEY:-}
+      # NL chat inference — gemma4 26B everywhere; per-deployment
+      # TRANSPORT only (scratch/docs/agent/map-nl-chat-scope.md).
+      # Defaults are the cloud shape (bedrock-mantle, bearer minted
+      # from the AWS credentials above). An edge box overrides in .env:
+      #   LLM_BASE_URL=http://172.17.0.1:18000/v1   (GB10 vllm)
+      #   LLM_MODEL=nvidia/Gemma-4-26B-A4B-NVFP4
+      #   LLM_ENABLE_THINKING=true
+      # Doctrine tool egress: the consumer stack's API host (the doctrine
+      # library lives in pytho-app's ES; geo-agent's doctrine tools call
+      # it here). Empty = tools report unconfigured, visibly.
+      DOCTRINE_API_URL: ${DOCTRINE_API_URL:-}
+      LLM_PROVIDER: ${LLM_PROVIDER:-openai_compatible}
+      LLM_MODEL: ${LLM_MODEL:-google.gemma-4-26b-a4b}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://bedrock-mantle.us-east-1.api.aws/openai/v1}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_ENABLE_THINKING: ${LLM_ENABLE_THINKING:-}
+      # Per-deployment first-open camera "lng,lat,zoom" (served via
+      # /config; used when a map has no saved viewport yet).
+      DEFAULT_VIEW: ${DEFAULT_VIEW:-}
+      # Tile plumbing (internal): /api/v1/tiles/* proxies the tilecache,
+      # which fronts the tileserver with an on-disk cache. The headless
+      # render path also pulls its basemap through the cache so repeated
+      # product renders never re-render tiles.
+      TILECACHE_URL: http://tilecache:8080
+      # Playwright driver env — mode switch:
+      #  - Default (spark): host-side chromium-cdp.service (installed by
+      #    `install_geoagent.sh --host-render`) binds CDP on
+      #    127.0.0.1:9222; cdp-forward.service exposes it on
+      #    172.17.0.1:9222 for docker bridge reach.
+      #  - Cloud / no host Chromium: set `PYTHO_RENDER_CDP=` (EMPTY) in
+      #    .env — the backend then launches the Chromium baked into its
+      #    own image (SwiftShader WebGL, CPU-speed, correct output).
+      PYTHO_RENDER_CDP: ${PYTHO_RENDER_CDP-http://172.17.0.1:9222}
+      # SPA origin the render browser loads /geo-app/headless from.
+      # Empty -> headless.py picks by mode: CDP mode uses
+      # https://localhost (consumer nginx on the shared host); launch
+      # mode uses http://127.0.0.1:8000 (the browser lives inside this
+      # container and hits uvicorn directly — self-contained).
+      GEO_AGENT_RENDER_HOST_BASE: ${GEO_AGENT_RENDER_HOST_BASE-}
+      RENDER_CONCURRENCY: ${RENDER_CONCURRENCY-4}
+      RENDER_WEBGL: ${RENDER_WEBGL-hardware}
+      # Bind-mount dev flow: the entrypoint passes these to uvicorn.
+      UVICORN_EXTRA_ARGS: --reload --reload-dir app
+      # DLA supply feature (backend/app/api/v1/supply.py): BigQuery SAP mirror.
+      GOOGLE_APPLICATION_PROJECT_ID: ${GOOGLE_APPLICATION_PROJECT_ID:-}
+      GOOGLE_APPLICATION_CLIENT_EMAIL: ${GOOGLE_APPLICATION_CLIENT_EMAIL:-}
+      GOOGLE_APPLICATION_PRIVATE_KEY: ${GOOGLE_APPLICATION_PRIVATE_KEY:-}
+      BQ_DATASET: ${BQ_DATASET:-sap_mirror}
+    volumes:
+      - ./backend/app:/app/app
+      # GEO_DATA_DIR points at the actual offline asset stash on
+      # spark-dev (~/pytho-data/geo-agent), which holds the OSM-derived
+      # roads.json, builtup.json, forest.json, water.json, etc. used by
+      # offline_mode loaders. Falls back to in-repo ./data so dev
+      # environments without the stash continue to work.
+      - ${GEO_DATA_DIR:-./data}:/app/data
+      - ./scripts:/app/scripts
+    depends_on:
+      db:
+        condition: service_healthy
+      tileserver:
+        condition: service_healthy
+    # The entrypoint supervises the in-container subprocesses (MinIO;
+    # coolwsd — the one-container law) and execs uvicorn. The cap set
+    # is the editor's (coolwsd) own container requirement (forkit jail setup);
+    # without it coolwsd force-exits during startup (observed: ECHILD
+    # + 'Shutdown requested while starting up', exit 70).
+    cap_add:
+      # The editor's jail privileges come from coolforkit-caps' FILE
+      # capabilities (chown/fowner/sys_chroot) under Docker's default
+      # bounding set; MKNOD parity with the assessed profile. No
+      # SYS_ADMIN, no privileged, default seccomp/AppArmor.
+      - MKNOD
+    healthcheck:
+      # The coolwsd clause asserts the LISTENER, not a 2xx: in-container
+      # discovery answers 400 (the request's Host is outside coolwsd's
+      # alias allowlist) while the editor is fully functional through
+      # the proxy path — a -f probe marked every deployment unhealthy.
+      test:
+        - CMD-SHELL
+        - >-
+          curl -fsS http://127.0.0.1:8000/health >/dev/null &&
+          curl -s -o /dev/null http://127.0.0.1:9980/hosting/discovery
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+volumes:
+  postgres_data:
+  tile_cache:

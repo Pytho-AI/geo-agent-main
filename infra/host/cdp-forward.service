@@ -1,0 +1,30 @@
+[Unit]
+Description=Pytho headless map renderer — CDP TCP forwarder 172.17.0.1:9222 -> 127.0.0.1:9222
+Documentation=file:///%h/geo-agent/infra/host/cdp_forward.py
+After=chromium-cdp.service
+Requires=chromium-cdp.service
+
+# Chromium binds CDP to 127.0.0.1:9222 only (the --remote-debugging-
+# address=0.0.0.0 flag is ignored in some headless Chromium versions).
+# This forwarder exposes that loopback port on the docker bridge IP
+# so docker-api containers can reach it.
+#
+# USER-SCOPE systemd unit: installed under ~/.config/systemd/user/,
+# runs as the invoking user. 172.17.0.1:9222 is an unprivileged port
+# (>1024) so no root needed to bind. 172.17.0.1 is the docker bridge
+# IP from the host's perspective — docker daemon puts it up when the
+# daemon starts, so we require nothing about network topology beyond
+# "docker is running".
+
+[Service]
+Type=exec
+
+# python3 from system, no venv needed — only stdlib asyncio used.
+ExecStart=/usr/bin/python3 %h/geo-agent/infra/host/cdp_forward.py
+
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=15
+
+[Install]
+WantedBy=default.target

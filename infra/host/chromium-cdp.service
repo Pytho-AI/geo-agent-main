@@ -1,0 +1,49 @@
+[Unit]
+Description=Pytho headless map renderer — host Chromium spawned via Playwright (GB10 GPU, surfaceless EGL)
+Documentation=file:///%h/geo-agent/infra/host/playwright_server.py
+After=network.target
+Wants=network-online.target
+
+# USER-SCOPE systemd unit: installed under ~/.config/systemd/user/,
+# runs as the invoking user (`systemctl --user enable --now`), no
+# sudo required for the pytho-app deploy. Base-image responsibility
+# (sysadmin, one-time per host) is `loginctl enable-linger <user>`
+# so this survives reboot without a logged-in session.
+#
+# Why host-side systemd (not a docker compose service):
+#   GB10 GPU access requires host-side Chromium with --use-gl=angle.
+#   Containerized Chromium gets no GPU (12 hours of investigation, ruled out).
+#   See feedback_gb10_host_chrome_only.md in the agent memory.
+#
+# No Xvfb: playwright_server.py sets EGL_PLATFORM=surfaceless and
+# spawns Chromium with --headless=new --ozone-platform=headless.
+# libEGL_nvidia creates a surfaceless GPU context directly — no X
+# display / no Xvfb package required. Verified 2026-07-01: WebGL
+# reports the GB10 as the renderer, max_texture_size 32768.
+#
+# Pair with cdp-forward.service which exposes the loopback-bound
+# CDP port to the docker bridge so docker-api can reach it.
+
+[Service]
+Type=exec
+
+# ExecStart derives from the invoking user's home (%h). The checkout
+# is expected at ~/geo-agent (install_geoagent.sh --host-render creates
+# the symlink if it isn't already there). Playwright's bundled Chromium
+# lives in ~/.cache/ms-playwright/ automatically.
+ExecStart=%h/.venvs/pw-gpu/bin/python %h/geo-agent/infra/host/playwright_server.py
+
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=60
+
+# Chromium opens many FDs for tile fetches; bump from 1024.
+LimitNOFILE=16384
+
+# Don't write coredumps — the service auto-restarts.
+LimitCORE=0
+
+[Install]
+# User units target default.target (equivalent of multi-user.target for
+# the user session).
+WantedBy=default.target

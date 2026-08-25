@@ -1,0 +1,404 @@
+{
+ "symbolset": "60",
+ "name": "Cyberspace",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "code": "110000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Combat Mission Team",
+   "code": "110100",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "National Mission Team",
+   "code": "110200",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Cyber Protection Team",
+   "code": "110300",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "{Disused}",
+   "code": "110400",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "{Disused}",
+   "code": "110500",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Defensive Cyberspace",
+   "code": "110600",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Offensive Cyberspace",
+   "code": "110700",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Internet Service Provider",
+   "code": "110800",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Security/Security Operations",
+   "code": "110900",
+   "remarks": ""
+  },
+  {
+   "entity": "Cyberspace Unit/Cyberspace Unit (non specified)",
+   "entity type": "Operations/Active Cyber Operations",
+   "code": "111000",
+   "remarks": ""
+  },
+  {
+   "entity": "Threat Actors",
+   "code": "120000",
+   "remarks": ""
+  },
+  {
+   "entity": "Threat Actors",
+   "entity type": "Insider",
+   "code": "120200",
+   "remarks": ""
+  },
+  {
+   "entity": "Agent",
+   "code": "130000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Agent",
+   "entity type": "Firewall",
+   "code": "130100",
+   "remarks": ""
+  },
+  {
+   "entity": "Agent",
+   "entity type": "Firmware",
+   "code": "130200",
+   "remarks": ""
+  },
+  {
+   "entity": "Application",
+   "code": "140000",
+   "remarks": ""
+  },
+  {
+   "entity": "Application",
+   "entity type": "Search Engine",
+   "code": "140300",
+   "remarks": ""
+  },
+  {
+   "entity": "Application",
+   "entity type": "Social Media",
+   "code": "140400",
+   "remarks": ""
+  },
+  {
+   "entity": "Threat",
+   "code": "150000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Threat",
+   "entity type": "Malware",
+   "code": "150100",
+   "remarks": ""
+  },
+  {
+   "entity": "Threat",
+   "entity type": "Phishing",
+   "code": "150200",
+   "remarks": ""
+  },
+  {
+   "entity": "Threat",
+   "entity type": "Spear Phishing",
+   "code": "150300",
+   "remarks": ""
+  },
+  {
+   "entity": "Threat",
+   "entity type": "Whale Phishing",
+   "code": "150400",
+   "remarks": ""
+  },
+  {
+   "entity": "Data",
+   "code": "160000",
+   "remarks": ""
+  },
+  {
+   "entity": "Data",
+   "entity type": "Digital Currency",
+   "code": "160100",
+   "remarks": ""
+  },
+  {
+   "entity": "Data",
+   "entity type": "Persona",
+   "code": "160200",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "code": "170000",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Server",
+   "code": "170100",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Workstation",
+   "code": "170200",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "code": "170300",
+   "remarks": "Reserved for hierarchical purposes."
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Smartphone/Mobile",
+   "code": "170301",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Tablet/Mobile Personal Device",
+   "code": "170302",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Laptop",
+   "code": "170303",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Health Monitor",
+   "code": "170304",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Smartvest",
+   "code": "170305",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Smartwatch",
+   "code": "170306",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Portable Electronic Device (PED)",
+   "entity subtype": "Wearable",
+   "code": "170307",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Internet of Things Device",
+   "code": "170400",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Printer",
+   "code": "170500",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Router",
+   "code": "170600",
+   "remarks": ""
+  },
+  {
+   "entity": "Endpoint",
+   "entity type": "Switch",
+   "code": "170700",
+   "remarks": ""
+  },
+  {
+   "entity": "Network",
+   "code": "180000",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Defensive Cyberspace",
+   "category": "",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Offensive Cyberspace",
+   "category": "",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Social",
+   "category": "",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Wired",
+   "category": "",
+   "code": "04",
+   "remarks": ""
+  },
+  {
+   "modifier": "Wireless",
+   "category": "",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "Radio Frequency",
+   "category": "",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "Operating System",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "Continuity of Operations",
+   "category": "",
+   "code": "08",
+   "remarks": ""
+  },
+  {
+   "modifier": "Internet Service Provider (ISP)",
+   "category": "",
+   "code": "09",
+   "remarks": ""
+  },
+  {
+   "modifier": "Finance",
+   "category": "",
+   "code": "10",
+   "remarks": ""
+  },
+  {
+   "modifier": "Out of Band",
+   "category": "",
+   "code": "11",
+   "remarks": ""
+  },
+  {
+   "modifier": "Cloud",
+   "category": "",
+   "code": "12",
+   "remarks": ""
+  },
+  {
+   "modifier": "Data",
+   "category": "",
+   "code": "13",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Secured",
+   "category": "Capability",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Open",
+   "category": "Capability",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Response Actions",
+   "category": "Capability",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Internal Defense Measures",
+   "category": "Capability",
+   "code": "05",
+   "remarks": ""
+  },
+  {
+   "modifier": "Advanced Persistent Threat",
+   "category": "Capability",
+   "code": "06",
+   "remarks": ""
+  },
+  {
+   "modifier": "Nation State",
+   "category": "",
+   "code": "07",
+   "remarks": ""
+  },
+  {
+   "modifier": "Nation State Sponsored",
+   "category": "",
+   "code": "08",
+   "remarks": ""
+  }
+ ]
+}

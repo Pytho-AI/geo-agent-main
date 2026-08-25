@@ -1,0 +1,394 @@
+{
+  "version": 8,
+  "name": "Terrain — doctrinal restricted-terrain hatching + major roads only (ATP 2-01.3 fig 4-7)",
+  "metadata": {
+    "comment": "Server-rendered basemap for Modified Combined Obstacle Overlay (MCOO). Ported from OpenMapTiles v3.11 schema to Protomaps basemaps schema. Filter mapping: OMT landcover.class=wood -> Protomaps landcover.kind=forest; OMT landcover.class=wetland -> Protomaps landcover.kind=wetland; OMT waterway.class=river,canal -> Protomaps water.kind=river; OMT waterway.class=stream -> Protomaps water.kind=stream; OMT landuse.class=residential,commercial,industrial,retail -> Protomaps landcover.kind=urban_area; OMT transportation.class=motorway,trunk,primary -> Protomaps roads.kind=highway (Protomaps collapses motorway/trunk/primary into a unified highway class; MCOO's spiderweb-prevention intent is preserved because kind=highway still excludes minor_road/other/path). Hillshade layer added referencing the terrain-dem source (Mapterhorn Terrarium DEM via tileserver-gl).",
+    "doctrine_mapping": {
+      "landcover[kind=forest]": "restricted_terrain (diagonal green hatch / mcoo-pat-restricted)",
+      "landcover[kind=wetland]": "severely_restricted_terrain (cross-hatch green / mcoo-pat-severe)",
+      "water polygons": "severely_restricted_terrain (cross-hatch green / mcoo-pat-severe)",
+      "landcover[kind=urban_area]": "urban_area (black X-cell / mcoo-pat-urban)",
+      "roads[kind=highway]": "shown with casing + fill (motorway/trunk/primary collapsed)",
+      "roads[kind=major_road,minor_road,other,path]": "OMITTED (spiderweb prevention)"
+    }
+  },
+  "center": [0, 0],
+  "zoom": 1,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "basemap": {
+      "type": "vector",
+      "url": "mbtiles://basemap"
+    },
+    "terrain-dem": {
+      "type": "raster-dem",
+      "tiles": ["https://tiles.mapterhorn.com/{z}/{x}/{y}.webp"],
+      "encoding": "terrarium",
+      "tileSize": 512,
+      "minzoom": 0,
+      "maxzoom": 12
+    }
+  },
+  "sprite": "mcoo",
+  "glyphs": "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#f5ecd9"
+      }
+    },
+    {
+      "id": "earth",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "earth",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#f5ecd9"
+      }
+    },
+
+    {
+      "id": "restricted-terrain-forest-landcover-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "scrub"]]],
+      "paint": {
+        "fill-color": "#4a9a4d",
+        "fill-opacity": 0.22
+      }
+    },
+    {
+      "id": "restricted-terrain-forest-landcover-hatch",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "scrub"]]],
+      "paint": {
+        "fill-pattern": "mcoo-pat-restricted",
+        "fill-opacity": 0.88
+      }
+    },
+    {
+      "id": "restricted-terrain-forest-landcover-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "scrub"]]],
+      "paint": {
+        "line-color": "#1a4d1f",
+        "line-width": 0.6,
+        "line-opacity": 0.55
+      }
+    },
+    {
+      "id": "restricted-terrain-forest-landuse-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "wood", "protected_area", "nature_reserve", "national_park", "park", "cemetery", "golf_course"]]],
+      "paint": {
+        "fill-color": "#4a9a4d",
+        "fill-opacity": 0.22
+      }
+    },
+    {
+      "id": "restricted-terrain-forest-landuse-hatch",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "wood", "protected_area", "nature_reserve", "national_park", "park", "cemetery", "golf_course"]]],
+      "paint": {
+        "fill-pattern": "mcoo-pat-restricted",
+        "fill-opacity": 0.88
+      }
+    },
+    {
+      "id": "restricted-terrain-forest-landuse-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["forest", "wood", "protected_area", "nature_reserve", "national_park", "park", "cemetery", "golf_course"]]],
+      "paint": {
+        "line-color": "#1a4d1f",
+        "line-width": 0.6,
+        "line-opacity": 0.55
+      }
+    },
+
+    {
+      "id": "severe-terrain-wetland-landcover-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-color": "#3f7c40",
+        "fill-opacity": 0.30
+      }
+    },
+    {
+      "id": "severe-terrain-wetland-landcover-hatch",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-pattern": "mcoo-pat-severe",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "severe-terrain-wetland-landuse-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-color": "#3f7c40",
+        "fill-opacity": 0.30
+      }
+    },
+    {
+      "id": "severe-terrain-wetland-landuse-hatch",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["==", ["get", "kind"], "wetland"],
+      "paint": {
+        "fill-pattern": "mcoo-pat-severe",
+        "fill-opacity": 0.85
+      }
+    },
+
+    {
+      "id": "severe-terrain-water-base",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#2c5f3a",
+        "fill-opacity": 0.62
+      }
+    },
+    {
+      "id": "severe-terrain-water-hatch",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-pattern": "mcoo-pat-severe",
+        "fill-opacity": 1.0
+      }
+    },
+    {
+      "id": "severe-terrain-water-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "line-color": "#143f17",
+        "line-width": 0.8,
+        "line-opacity": 0.85
+      }
+    },
+
+    {
+      "id": "waterway-river-casing",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", ["get", "kind"], "river"],
+      "minzoom": 7,
+      "paint": {
+        "line-color": "#0e2c64",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          7, 1.8,
+          10, 3.2,
+          14, 6.5
+        ],
+        "line-opacity": 0.85
+      }
+    },
+    {
+      "id": "waterway-river",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", ["get", "kind"], "river"],
+      "minzoom": 7,
+      "paint": {
+        "line-color": "#1a4ea0",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          7, 1.2,
+          10, 2.4,
+          14, 5.0
+        ]
+      }
+    },
+    {
+      "id": "waterway-stream",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "water",
+      "filter": ["==", ["get", "kind"], "stream"],
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#2e63b3",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          12, 0.8,
+          14, 2.4
+        ]
+      }
+    },
+
+    {
+      "id": "urban-area-landcover-fill",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "urban_area"],
+      "paint": {
+        "fill-pattern": "mcoo-pat-urban",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "urban-area-landcover-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": ["==", ["get", "kind"], "urban_area"],
+      "paint": {
+        "line-color": "#1f1f1f",
+        "line-width": 1.0,
+        "line-opacity": 0.85
+      }
+    },
+    {
+      "id": "urban-area-landuse-fill",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["industrial", "commercial", "residential", "retail"]]],
+      "paint": {
+        "fill-pattern": "mcoo-pat-urban",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "urban-area-landuse-outline",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["in", ["get", "kind"], ["literal", ["industrial", "commercial", "residential", "retail"]]],
+      "paint": {
+        "line-color": "#1f1f1f",
+        "line-width": 1.0,
+        "line-opacity": 0.85
+      }
+    },
+
+    {
+      "id": "highway-casing",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#0a0a0a",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          5, 1.4,
+          14, 7.0
+        ]
+      }
+    },
+    {
+      "id": "highway-fill",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["==", ["get", "kind"], "highway"],
+        ["!", ["has", "is_tunnel"]]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#e87864",
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          5, 0.9,
+          14, 5.2
+        ]
+      }
+    },
+
+    {
+      "id": "boundary-country",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundaries",
+      "filter": ["<=", ["get", "kind_detail"], 2],
+      "paint": {
+        "line-color": "#7a3030",
+        "line-width": 1.4,
+        "line-dasharray": [3, 2],
+        "line-opacity": 0.8
+      }
+    },
+    {
+      "id": "boundary-admin1",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [">", ["get", "kind_detail"], 2],
+        ["<=", ["get", "kind_detail"], 4]
+      ],
+      "minzoom": 7,
+      "paint": {
+        "line-color": "#9a6a6a",
+        "line-width": 0.8,
+        "line-dasharray": [2, 2],
+        "line-opacity": 0.7
+      }
+    },
+
+    {
+      "id": "hillshade",
+      "type": "hillshade",
+      "source": "terrain-dem",
+      "paint": {
+        "hillshade-exaggeration": 1,
+        "hillshade-shadow-color": "#0d2a14",
+        "hillshade-highlight-color": "#fff4d8",
+        "hillshade-accent-color": "#4a6b2e",
+        "hillshade-illumination-direction": 315
+      }
+    }
+  ]
+}

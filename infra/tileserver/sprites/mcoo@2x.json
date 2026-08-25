@@ -1,0 +1,23 @@
+{
+  "mcoo-pat-restricted": {
+    "x": 0,
+    "y": 0,
+    "width": 56,
+    "height": 56,
+    "pixelRatio": 2
+  },
+  "mcoo-pat-severe": {
+    "x": 56,
+    "y": 0,
+    "width": 44,
+    "height": 44,
+    "pixelRatio": 2
+  },
+  "mcoo-pat-urban": {
+    "x": 100,
+    "y": 0,
+    "width": 36,
+    "height": 36,
+    "pixelRatio": 2
+  }
+}

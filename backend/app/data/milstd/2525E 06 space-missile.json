@@ -1,0 +1,146 @@
+{
+ "symbolset": "06",
+ "name": "Space Missile",
+ "main icon": [
+  {
+   "entity": "Unspecified",
+   "code": "000000",
+   "remarks": ""
+  },
+  {
+   "entity": "Missile",
+   "code": "110000",
+   "remarks": ""
+  }
+ ],
+ "modifier 1": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Ballistic",
+   "category": "Missile Class",
+   "code": "01",
+   "remarks": ""
+  },
+  {
+   "modifier": "Space",
+   "category": "Launch Origin",
+   "code": "02",
+   "remarks": ""
+  },
+  {
+   "modifier": "Interceptor",
+   "category": "Missile Class",
+   "code": "03",
+   "remarks": ""
+  },
+  {
+   "modifier": "Hypersonic",
+   "category": "Missile Class",
+   "code": "04",
+   "remarks": ""
+  }
+ ],
+ "modifier 2": [
+  {
+   "modifier": "Unspecified",
+   "category": "",
+   "code": "00",
+   "remarks": ""
+  },
+  {
+   "modifier": "Short Range",
+   "category": "Missile Range",
+   "code": "01",
+   "remarks": "1000km or less."
+  },
+  {
+   "modifier": "Medium Range",
+   "category": "Missile Range",
+   "code": "02",
+   "remarks": "1000km to 3500km."
+  },
+  {
+   "modifier": "Intermediate Range",
+   "category": "Missile Range",
+   "code": "03",
+   "remarks": "1000km to 3500km."
+  },
+  {
+   "modifier": "Long Range",
+   "category": "Missile Range",
+   "code": "04",
+   "remarks": "3500km to 5500km."
+  },
+  {
+   "modifier": "Intercontinental",
+   "category": "Missile Range",
+   "code": "05",
+   "remarks": "5500km or greater."
+  },
+  {
+   "modifier": "Arrow",
+   "category": "Missile Type-BMD",
+   "code": "06",
+   "remarks": "Used with Interceptor modifier 1 only."
+  },
+  {
+   "modifier": "Ground-Based Interceptor (GBI)",
+   "category": "Missile Type-BMD",
+   "code": "07",
+   "remarks": "Used with Interceptor modifier 1 only."
+  },
+  {
+   "modifier": "Patriot",
+   "category": "Missile Type-BMD",
+   "code": "08",
+   "remarks": "Used with Interceptor modifier 1 only."
+  },
+  {
+   "modifier": "Standard Missile Terminal Phase (SM-T)",
+   "category": "Missile Type-BMD",
+   "code": "09",
+   "remarks": "Used with Interceptor modifier 1 only."
+  },
+  {
+   "modifier": "Standard Missile – 3 (SM-3)",
+   "category": "Missile Type-BMD",
+   "code": "10",
+   "remarks": "Used with Interceptor modifier 1 only."
+  },
+  {
+   "modifier": "Terminal High Altitude Area Defense (THAAD)",
+   "category": "Missile Type-BMD",
+   "code": "11",
+   "remarks": "Used with Interceptor modifier 1 only."
+  },
+  {
+   "modifier": "Space",
+   "category": "Launch Origin",
+   "code": "12",
+   "remarks": ""
+  },
+  {
+   "modifier": "Close Range (CRBM)",
+   "category": "Missile Range",
+   "code": "13",
+   "remarks": ""
+  },
+  {
+   "modifier": "Debris",
+   "category": "Missile Type-BMD",
+   "code": "14",
+   "remarks": ""
+  },
+  {
+   "modifier": "Unknown",
+   "category": "Missile Type-BMD",
+   "code": "15",
+   "remarks": ""
+  }
+ ]
+}

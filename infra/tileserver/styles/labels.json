@@ -1,0 +1,129 @@
+{
+  "version": 8,
+  "name": "Labels — English place names overlay",
+  "metadata": {
+    "comment": "Server-rendered PNG label overlay. Transparent background; only place-name symbol labels drawn from Protomaps basemaps.places source-layer. English-language names via name:en with fallback to name. Painted on top of any basemap raster."
+  },
+  "center": [0, 0],
+  "zoom": 1,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "basemap": {
+      "type": "vector",
+      "url": "mbtiles://basemap"
+    }
+  },
+  "glyphs": "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "places-country",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "places",
+      "filter": ["==", ["get", "kind"], "country"],
+      "minzoom": 3,
+      "maxzoom": 8,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          3, 10,
+          6, 14
+        ],
+        "text-letter-spacing": 0.15,
+        "text-transform": "uppercase",
+        "text-padding": 6,
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "rgba(255,255,255,0.85)",
+        "text-halo-width": 1.2,
+        "text-halo-blur": 0.4
+      }
+    },
+    {
+      "id": "places-region",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "places",
+      "filter": ["==", ["get", "kind"], "region"],
+      "minzoom": 4,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Noto Sans Medium"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          4, 9,
+          10, 13
+        ],
+        "text-letter-spacing": 0.05,
+        "text-padding": 4,
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "#4a4a4a",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 1.0,
+        "text-halo-blur": 0.3
+      }
+    },
+    {
+      "id": "places-locality",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "places",
+      "filter": ["==", ["get", "kind"], "locality"],
+      "minzoom": 5,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          5, 8,
+          8, 11,
+          12, 14,
+          14, 16
+        ],
+        "text-letter-spacing": 0.02,
+        "text-padding": 4,
+        "text-max-width": 8,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#1a1a1a",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 1.0,
+        "text-halo-blur": 0.3
+      }
+    },
+    {
+      "id": "places-neighbourhood",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "places",
+      "filter": ["in", ["get", "kind"], ["literal", ["neighbourhood", "macrohood"]]],
+      "minzoom": 12,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          12, 10,
+          16, 13
+        ],
+        "text-letter-spacing": 0.02,
+        "text-padding": 2,
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "#4a4a4a",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 0.8,
+        "text-halo-blur": 0.2
+      }
+    }
+  ]
+}
