@@ -8,6 +8,11 @@ on:
 permissions:
   issues: write     # create/update stale-branch issues
   contents: write   # delete stale branches
+  pull-requests: read   # REQUIRED by pr-check below. Declaring a permissions block
+                        # sets every unlisted scope to `none`, so without this the
+                        # PR lookup returns "Resource not accessible by integration"
+                        # — and the action logs the error and deletes the branch
+                        # anyway. The guard fails OPEN. Do not remove.
 
 jobs:
   stale_branches:
