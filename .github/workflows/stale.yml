@@ -18,6 +18,17 @@ jobs:
   stale_branches:
     runs-on: ubuntu-latest
     steps:
+      # The stale-branches action fails OPEN: if its pull-request lookup errors it
+      # logs the failure and deletes the branch anyway. Prove the token can list
+      # PRs before letting the deleter run, so a 403, a rate limit or a transient
+      # 5xx aborts the job instead of silently disabling pr-check.
+      - name: Verify pull-request read access
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls?state=open&per_page=1" >/dev/null 2>&1 \
+            || { echo "::error::Cannot list pull requests - pr-check would fail open. Aborting before any deletion."; exit 1; }
+
       - name: Stale Branches
         uses: crs-k/stale-branches@v10.0.0
         with:
