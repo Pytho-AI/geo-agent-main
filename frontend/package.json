@@ -12,7 +12,7 @@
     "@armyc2.c5isr.renderer/mil-sym-ts-web": "^2.6.6",
     "@mapbox/mapbox-gl-draw": "^1.5.1",
     "maplibre-contour": "^0.1.0",
-    "maplibre-gl": "^3.6.2",
+    "maplibre-gl": "^6.4.1",
     "milsymbol": "^3.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
